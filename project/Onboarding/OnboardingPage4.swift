@@ -46,7 +46,7 @@ struct OnboardingPage4: View {
                     Button(action: {
                         ShowOnboarding.toggle()
                     }, label: {
-                        Text("계속하기")
+                        Text("시작하기")
                             .foregroundColor(.white)
                             .bold()
                             .cornerRadius(100)

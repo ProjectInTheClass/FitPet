@@ -11,11 +11,11 @@ struct OnboardingMainView: View {
     @Binding var ShowOnboarding: Bool
     var body: some View {
         TabView {
-            OnboardingPage1(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
+            OnboardingPage1(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
             
-            OnboardingPage2(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
+            OnboardingPage2(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
                 
-            OnboardingPage3(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
+            OnboardingPage3(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
             
             OnboardingPage4(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
 

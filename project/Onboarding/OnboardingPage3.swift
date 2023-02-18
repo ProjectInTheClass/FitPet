@@ -39,22 +39,7 @@ struct OnboardingPage3: View {
                 }.padding()
                 
                 
-                if showsDismissButton {
-                    // 온보딩이 끝나고 메인 페이지로 넘어가기 위한 버튼
-                    // ShowOnboarding 값을 false로 바꾸기 때문에 최초 실행 이후에는 onboardingview를 보여주지 않는다.
-                    Button(action: {
-                        ShowOnboarding.toggle()
-                    }, label: {
-                        Text("계속하기")
-                            .foregroundColor(.white)
-                            .bold()
-                            .cornerRadius(100)
-                            .frame(width: 300, height: 50)
-                            .background(.yellow)
-                        
-                        
-                    })
-                }
+              
                 Spacer(minLength: 20)
             }.padding()
         }
