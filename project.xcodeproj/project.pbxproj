@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675B29A107570098C9FE /* OnboardingMainView.swift */; };
+		AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675C29A107570098C9FE /* OnboardingPage4.swift */; };
+		AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675D29A107570098C9FE /* OnboardingPage2.swift */; };
+		AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675E29A107570098C9FE /* OnboardingPage3.swift */; };
+		AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675F29A107570098C9FE /* OnboardingPage1.swift */; };
 		ACA18A97299FB32800B4F82C /* projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18A96299FB32800B4F82C /* projectApp.swift */; };
 		ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18A98299FB32800B4F82C /* ContentView.swift */; };
 		ACA18A9B299FB32A00B4F82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9A299FB32A00B4F82C /* Assets.xcassets */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC99675B29A107570098C9FE /* OnboardingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
+		AC99675C29A107570098C9FE /* OnboardingPage4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage4.swift; sourceTree = "<group>"; };
+		AC99675D29A107570098C9FE /* OnboardingPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage2.swift; sourceTree = "<group>"; };
+		AC99675E29A107570098C9FE /* OnboardingPage3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage3.swift; sourceTree = "<group>"; };
+		AC99675F29A107570098C9FE /* OnboardingPage1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage1.swift; sourceTree = "<group>"; };
 		ACA18A93299FB32800B4F82C /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA18A96299FB32800B4F82C /* projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectApp.swift; sourceTree = "<group>"; };
 		ACA18A98299FB32800B4F82C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +44,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC99675A29A107570098C9FE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AC99675B29A107570098C9FE /* OnboardingMainView.swift */,
+				AC99675F29A107570098C9FE /* OnboardingPage1.swift */,
+				AC99675D29A107570098C9FE /* OnboardingPage2.swift */,
+				AC99675E29A107570098C9FE /* OnboardingPage3.swift */,
+				AC99675C29A107570098C9FE /* OnboardingPage4.swift */,
+			);
+			name = Onboarding;
+			path = project/Onboarding;
+			sourceTree = SOURCE_ROOT;
+		};
 		ACA18A8A299FB32800B4F82C = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +79,7 @@
 				ACA18A96299FB32800B4F82C /* projectApp.swift */,
 				ACA18A98299FB32800B4F82C /* ContentView.swift */,
 				ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */,
+				AC99675A29A107570098C9FE /* Onboarding */,
 				ACA18A9A299FB32A00B4F82C /* Assets.xcassets */,
 				ACA18A9C299FB32A00B4F82C /* Preview Content */,
 			);
@@ -140,9 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */,
 				ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */,
+				AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */,
 				ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */,
+				AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */,
 				ACA18A97299FB32800B4F82C /* projectApp.swift in Sources */,
+				AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */,
+				AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
