@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OnboardingMainView: View {
     @Binding var ShowOnboarding: Bool
+    @AppStorage("_Firstrun") var Firstrun: Bool = true
+    @State var Showintro: Bool = true
     var body: some View {
         TabView {
             OnboardingPage1(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
@@ -19,6 +21,9 @@ struct OnboardingMainView: View {
             
             OnboardingPage4(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
 
+        }
+        .fullScreenCover(isPresented: $Firstrun) {
+            Onboarding_intro(Showintro: $Firstrun, showsButton: true)
         }
         .tabViewStyle(PageTabViewStyle())
         .ignoresSafeArea()

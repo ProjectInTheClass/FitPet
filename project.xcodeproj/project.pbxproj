@@ -28,6 +28,7 @@
 		AC8B694229A262C900286198 /* Animal& Web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animal& Web.swift"; sourceTree = "<group>"; };
 		AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEncyclopedia.swift; sourceTree = "<group>"; };
 		AC8B694629A264BF00286198 /* RecommendedSites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedSites.swift; sourceTree = "<group>"; };
+		AC8B694829A273FB00286198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC99675B29A107570098C9FE /* OnboardingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		AC99675C29A107570098C9FE /* OnboardingPage4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage4.swift; sourceTree = "<group>"; };
 		AC99675D29A107570098C9FE /* OnboardingPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage2.swift; sourceTree = "<group>"; };
@@ -67,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				AC99675B29A107570098C9FE /* OnboardingMainView.swift */,
-				AC99675F29A107570098C9FE /* OnboardingPage1.swift */,
 				AC8B693F29A25E9900286198 /* Onboarding_intro.swift */,
+				AC99675F29A107570098C9FE /* OnboardingPage1.swift */,
 				AC99675D29A107570098C9FE /* OnboardingPage2.swift */,
 				AC99675E29A107570098C9FE /* OnboardingPage3.swift */,
 				AC99675C29A107570098C9FE /* OnboardingPage4.swift */,
@@ -96,6 +97,7 @@
 		ACA18A95299FB32800B4F82C /* project */ = {
 			isa = PBXGroup;
 			children = (
+				AC8B694829A273FB00286198 /* Info.plist */,
 				ACA18A96299FB32800B4F82C /* projectApp.swift */,
 				ACA18A98299FB32800B4F82C /* ContentView.swift */,
 				AC8B694129A2622200286198 /* Animalsdictionary */,
@@ -327,7 +329,7 @@
 				DEVELOPMENT_TEAM = 8N7YRTC92N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = project/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -356,7 +358,7 @@
 				DEVELOPMENT_TEAM = 8N7YRTC92N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = project/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
