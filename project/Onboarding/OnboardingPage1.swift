@@ -23,7 +23,7 @@ struct OnboardingPage1: View {
                 VStack(alignment: .center) {
                     Image("onboarding1")
                         .resizable()
-                        .frame(width: 300, height: 280)
+                        .frame(width: 300, height:  280)
                         Spacer(minLength: 30)
                     Text("반려동물, 일상을 함께 공유하다.")
                         .font(.title2)

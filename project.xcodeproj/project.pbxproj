@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC8B694029A25E9900286198 /* Onboarding_intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B693F29A25E9900286198 /* Onboarding_intro.swift */; };
+		AC8B694329A262C900286198 /* Animal& Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694229A262C900286198 /* Animal& Web.swift */; };
+		AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */; };
+		AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694629A264BF00286198 /* RecommendedSites.swift */; };
 		AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675B29A107570098C9FE /* OnboardingMainView.swift */; };
 		AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675C29A107570098C9FE /* OnboardingPage4.swift */; };
 		AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675D29A107570098C9FE /* OnboardingPage2.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC8B693F29A25E9900286198 /* Onboarding_intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding_intro.swift; sourceTree = "<group>"; };
+		AC8B694229A262C900286198 /* Animal& Web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animal& Web.swift"; sourceTree = "<group>"; };
+		AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEncyclopedia.swift; sourceTree = "<group>"; };
+		AC8B694629A264BF00286198 /* RecommendedSites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedSites.swift; sourceTree = "<group>"; };
 		AC99675B29A107570098C9FE /* OnboardingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		AC99675C29A107570098C9FE /* OnboardingPage4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage4.swift; sourceTree = "<group>"; };
 		AC99675D29A107570098C9FE /* OnboardingPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage2.swift; sourceTree = "<group>"; };
@@ -44,11 +52,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC8B694129A2622200286198 /* Animalsdictionary */ = {
+			isa = PBXGroup;
+			children = (
+				ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */,
+				AC8B694229A262C900286198 /* Animal& Web.swift */,
+				AC8B694629A264BF00286198 /* RecommendedSites.swift */,
+				AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */,
+			);
+			path = Animalsdictionary;
+			sourceTree = "<group>";
+		};
 		AC99675A29A107570098C9FE /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
 				AC99675B29A107570098C9FE /* OnboardingMainView.swift */,
 				AC99675F29A107570098C9FE /* OnboardingPage1.swift */,
+				AC8B693F29A25E9900286198 /* Onboarding_intro.swift */,
 				AC99675D29A107570098C9FE /* OnboardingPage2.swift */,
 				AC99675E29A107570098C9FE /* OnboardingPage3.swift */,
 				AC99675C29A107570098C9FE /* OnboardingPage4.swift */,
@@ -78,7 +98,7 @@
 			children = (
 				ACA18A96299FB32800B4F82C /* projectApp.swift */,
 				ACA18A98299FB32800B4F82C /* ContentView.swift */,
-				ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */,
+				AC8B694129A2622200286198 /* Animalsdictionary */,
 				AC99675A29A107570098C9FE /* Onboarding */,
 				ACA18A9A299FB32A00B4F82C /* Assets.xcassets */,
 				ACA18A9C299FB32A00B4F82C /* Preview Content */,
@@ -164,13 +184,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */,
 				AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */,
+				AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */,
 				ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */,
+				AC8B694329A262C900286198 /* Animal& Web.swift in Sources */,
 				AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */,
 				ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */,
 				AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */,
 				ACA18A97299FB32800B4F82C /* projectApp.swift in Sources */,
 				AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */,
+				AC8B694029A25E9900286198 /* Onboarding_intro.swift in Sources */,
 				AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
