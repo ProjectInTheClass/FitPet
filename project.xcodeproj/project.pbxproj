@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC888EA129A334D200FA8026 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EA029A334D200FA8026 /* WebView.swift */; };
 		AC8B694029A25E9900286198 /* Onboarding_intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B693F29A25E9900286198 /* Onboarding_intro.swift */; };
 		AC8B694329A262C900286198 /* Animal& Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694229A262C900286198 /* Animal& Web.swift */; };
 		AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC888EA029A334D200FA8026 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		AC8B693F29A25E9900286198 /* Onboarding_intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding_intro.swift; sourceTree = "<group>"; };
 		AC8B694229A262C900286198 /* Animal& Web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animal& Web.swift"; sourceTree = "<group>"; };
 		AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEncyclopedia.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				AC8B694229A262C900286198 /* Animal& Web.swift */,
 				AC8B694629A264BF00286198 /* RecommendedSites.swift */,
 				AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */,
+				AC888EA029A334D200FA8026 /* WebView.swift */,
 			);
 			path = Animalsdictionary;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */,
 				AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */,
+				AC888EA129A334D200FA8026 /* WebView.swift in Sources */,
 				AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */,
 				ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */,
 				AC8B694329A262C900286198 /* Animal& Web.swift in Sources */,
