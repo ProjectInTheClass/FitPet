@@ -17,7 +17,7 @@ struct OnboardingPage3: View {
             
             VStack(alignment: .center) {
                 HStack {
-                    Text("앱이름")
+                    Text("Fitpet")
                 }
                 VStack(alignment: .center) {
                     Image("onboarding3")

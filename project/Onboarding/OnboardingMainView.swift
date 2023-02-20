@@ -10,21 +10,21 @@ import SwiftUI
 struct OnboardingMainView: View {
     @Binding var ShowOnboarding: Bool
     @AppStorage("_Firstrun") var Firstrun: Bool = true
-    @State var Showintro: Bool = true
     var body: some View {
         TabView {
+            
             OnboardingPage1(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
             
             OnboardingPage2(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
                 
             OnboardingPage3(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
             
-            OnboardingPage4(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
+            OnboardingPage4(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
+            
+            Onboarding_intro(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
 
         }
-        .fullScreenCover(isPresented: $Firstrun) {
-            Onboarding_intro(Showintro: $Firstrun, showsButton: true)
-        }
+       
         .tabViewStyle(PageTabViewStyle())
         .ignoresSafeArea()
     }

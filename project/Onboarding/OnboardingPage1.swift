@@ -17,7 +17,7 @@ struct OnboardingPage1: View {
             
             VStack(alignment: .center) {
                 HStack {
-                    Text("앱이름")
+                    Text("Fitpet")
                 }
                 Spacer(minLength: 20)
                 VStack(alignment: .center) {

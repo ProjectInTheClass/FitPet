@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct Onboarding_intro: View {
-    @Binding var Showintro: Bool
-    let showsButton: Bool
-    @AppStorage("_Firstrun") var Firstrun: Bool = true
+    @Binding var ShowOnboarding: Bool
+    let showsDismissButton: Bool
     var body: some View {
         VStack(alignment: .center, spacing: 50) {
-            Spacer(minLength: 10)
+            Spacer()
             Text("반려동물, 일상을 함께 공유하다.")
                 .font(.title.bold())
              
@@ -25,11 +24,12 @@ struct Onboarding_intro: View {
             
             Text("은 반려동물 추천 서비스를 통해 반려동물 함께하는 지속가능한 일상을 만들어  나갑니다.")
                 .font(.title3)
-            Spacer(minLength: 10)
+            Spacer()
+            Spacer()
             VStack {
-                if showsButton {
+                if showsDismissButton {
                     Button(action: {
-                        Showintro.toggle()
+                        ShowOnboarding.toggle()
                     }, label: {
                         Text("시작하기")
                             .foregroundColor(.white)
@@ -42,7 +42,7 @@ struct Onboarding_intro: View {
                     })
                 }
             }
-            Spacer(minLength: 10)
+            Spacer()
         }
         
         .padding()
@@ -54,6 +54,6 @@ struct Onboarding_intro: View {
 
 struct Onboarding_intro_Previews: PreviewProvider {
     static var previews: some View {
-        Onboarding_intro(Showintro: .constant(true),showsButton: true)
+        Onboarding_intro(ShowOnboarding: .constant(true),showsDismissButton: true)
     }
 }
