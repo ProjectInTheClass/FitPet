@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AC888EA129A334D200FA8026 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EA029A334D200FA8026 /* WebView.swift */; };
+		AC888EC329A49FB900FA8026 /* AnimalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EC229A49FB900FA8026 /* AnimalList.swift */; };
+		AC888EC529A4A12800FA8026 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */; };
 		AC8B694029A25E9900286198 /* Onboarding_intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B693F29A25E9900286198 /* Onboarding_intro.swift */; };
 		AC8B694329A262C900286198 /* Animal& Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694229A262C900286198 /* Animal& Web.swift */; };
 		AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		AC888EA029A334D200FA8026 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AC888EC229A49FB900FA8026 /* AnimalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalList.swift; sourceTree = "<group>"; };
+		AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		AC8B693F29A25E9900286198 /* Onboarding_intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding_intro.swift; sourceTree = "<group>"; };
 		AC8B694229A262C900286198 /* Animal& Web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animal& Web.swift"; sourceTree = "<group>"; };
 		AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEncyclopedia.swift; sourceTree = "<group>"; };
@@ -59,9 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */,
+				AC888EC229A49FB900FA8026 /* AnimalList.swift */,
 				AC8B694229A262C900286198 /* Animal& Web.swift */,
 				AC8B694629A264BF00286198 /* RecommendedSites.swift */,
 				AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */,
+				AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */,
 				AC888EA029A334D200FA8026 /* WebView.swift */,
 			);
 			path = Animalsdictionary;
@@ -198,10 +204,12 @@
 				AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */,
 				ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */,
 				AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */,
+				AC888EC329A49FB900FA8026 /* AnimalList.swift in Sources */,
 				ACA18A97299FB32800B4F82C /* projectApp.swift in Sources */,
 				AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */,
 				AC8B694029A25E9900286198 /* Onboarding_intro.swift in Sources */,
 				AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */,
+				AC888EC529A4A12800FA8026 /* AnimalDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
