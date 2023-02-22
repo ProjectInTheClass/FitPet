@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Animal__Web: View {
+struct Animal_Web: View {
     var body: some View {
         NavigationStack {
             Text("키우고 싶으신 동물을 찾으셨나요?")
@@ -27,7 +27,11 @@ struct Animal__Web: View {
                     .background(Color.yellow)
                     .cornerRadius(10)
             }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+            .background(Color.yellow)
+            .cornerRadius(10)
             .padding()
+            
             
             NavigationLink(destination: RecommendedSites()) {
                 Text("추천 사이트")
@@ -37,16 +41,19 @@ struct Animal__Web: View {
                     .background(Color.yellow)
                     .cornerRadius(10)
             }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+            .background(Color.yellow)
+            .cornerRadius(10)
             .padding()
             .navigationTitle("더 알아보기")
         }
-      
+        
     }
 }
 
 
-struct Animal__Web_Previews: PreviewProvider {
+struct Animal_Web_Previews: PreviewProvider {
     static var previews: some View {
-        Animal__Web()
+        Animal_Web()
     }
 }

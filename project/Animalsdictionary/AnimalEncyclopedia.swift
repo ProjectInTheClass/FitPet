@@ -10,7 +10,7 @@ import SwiftUI
 struct AnimalEncyclopedia: View {
     var animals : [Animal] = animalsData
     var body: some View {
-        NavigationView{
+        NavigationStack {
                     List(animals){ animal in
                         NavigationLink(destination: AnimalDetailView(animal: animal)){
                             AnimalList(animal: animal)

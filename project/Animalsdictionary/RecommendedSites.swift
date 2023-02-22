@@ -14,13 +14,13 @@ struct RecommendedSites: View {
     var body: some View {
         NavigationStack {
             
-            VStack(alignment: .center ,spacing: 20) {
-                Text("This is a link to a cafe and YouTube related to animals.")
-                    .font(.title.bold())
-                Text("Use the link you want to learn more information.")
+            VStack(alignment: .leading ,spacing: 20) {
+                Text("아래 링크를 통해 동물에 관련된 더 많은 정보를 확인 해보세요.")
                     .font(.title3.bold())
             }
+            Spacer(minLength: 20)
             Divider()
+            Spacer(minLength: 20)
             // MARK: - Picker
             VStack {
                 // Picker to select classification
@@ -169,8 +169,8 @@ struct RecommendedSites: View {
                 }
                 .listStyle(GroupedListStyle())
                 .padding()
-                .navigationTitle("Recommended Sites")
-                .navigationBarTitleDisplayMode(.inline)
+                .navigationTitle("추천사이트")
+                
             }
         }
     }

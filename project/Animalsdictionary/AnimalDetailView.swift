@@ -11,30 +11,31 @@ struct AnimalDetailView: View {
     var animal: Animal
 
     var body: some View {
-        ScrollView(showsIndicators: false){
-            VStack(spacing:20){
-                Image(animal.image)
-
-                VStack(alignment:.leading, spacing:20){
-                    HStack{
-                        Text(animal.title)
-                            .font(.largeTitle)
-                            .fontWeight(.heavy)
-
-                        Spacer()
+        ScrollView {
+                VStack(spacing:20){
+                    Image(animal.image)
+                    
+                    VStack(alignment:.leading, spacing:20){
+                        HStack{
+                            Text(animal.title)
+                                .font(.largeTitle)
+                                .fontWeight(.heavy)
+                            
+                            Spacer()
+                        }
+                        Text(animal.headline)
+                            .font(.headline)
+                        
+                        Text("Learn more about \(animal.title)".uppercased())
+                            .fontWeight(.bold)
+                        
+                        Text(animal.description)
+                        
                     }
-                    Text(animal.headline)
-                        .font(.headline)
-
-                    Text("Learn more about \(animal.title)".uppercased())
-                        .fontWeight(.bold)
-
-                    Text(animal.description)
-
+                    .padding(.horizontal, 20)
                 }
-                .padding(.horizontal, 20)
-            }
-            .padding(.top, 100)
+                .padding(.top, 100)
+            
         }
         .edgesIgnoringSafeArea(.top)
     }
