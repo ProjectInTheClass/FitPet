@@ -11,7 +11,7 @@ import SwiftUI
 struct projectApp: App {
     var body: some Scene {
         WindowGroup {
-            Animal_Web()
+            MainPage()
         }
     }
 }

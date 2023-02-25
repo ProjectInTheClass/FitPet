@@ -17,9 +17,7 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .fullScreenCover(isPresented: $Firstrun) {
-            OnboardingMainView(ShowOnboarding: $Firstrun)
-        }
+        
         .padding()
     }
 }

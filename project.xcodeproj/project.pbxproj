@@ -63,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC36BA2929A9EDE8005B90D2 /* QnA */ = {
+			isa = PBXGroup;
+			children = (
+				AC36BA2529A9ECC7005B90D2 /* QnA.swift */,
+			);
+			path = QnA;
+			sourceTree = "<group>";
+		};
 		AC8B694129A2622200286198 /* Animalsdictionary */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +81,7 @@
 				AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */,
 				AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */,
 				AC888EA029A334D200FA8026 /* WebView.swift */,
-				AC36BA2629A9ECC7005B90D2 /* MainPage.swift */,
-				AC36BA2529A9ECC7005B90D2 /* QnA.swift */,
+				AC36BA2929A9EDE8005B90D2 /* QnA */,
 			);
 			path = Animalsdictionary;
 			sourceTree = "<group>";
@@ -115,6 +122,7 @@
 				AC8B694829A273FB00286198 /* Info.plist */,
 				ACA18A96299FB32800B4F82C /* projectApp.swift */,
 				ACA18A98299FB32800B4F82C /* ContentView.swift */,
+				AC36BA2629A9ECC7005B90D2 /* MainPage.swift */,
 				AC8B694129A2622200286198 /* Animalsdictionary */,
 				AC99675A29A107570098C9FE /* Onboarding */,
 				ACA18A9A299FB32A00B4F82C /* Assets.xcassets */,
