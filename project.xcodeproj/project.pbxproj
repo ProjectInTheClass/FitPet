@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41991D3429A9EB00001C08A0 /* QnA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41991D3229A9EB00001C08A0 /* QnA.swift */; };
+		41991D3529A9EB00001C08A0 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41991D3329A9EB00001C08A0 /* MainPage.swift */; };
 		AC888EA129A334D200FA8026 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EA029A334D200FA8026 /* WebView.swift */; };
 		AC888EC329A49FB900FA8026 /* AnimalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EC229A49FB900FA8026 /* AnimalList.swift */; };
 		AC888EC529A4A12800FA8026 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41991D3229A9EB00001C08A0 /* QnA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QnA.swift; path = ../../../../../.Trash/QnA.swift; sourceTree = "<group>"; };
+		41991D3329A9EB00001C08A0 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPage.swift; path = ../../../../../.Trash/MainPage.swift; sourceTree = "<group>"; };
 		AC888EA029A334D200FA8026 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		AC888EC229A49FB900FA8026 /* AnimalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalList.swift; sourceTree = "<group>"; };
 		AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */,
 				AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */,
 				AC888EA029A334D200FA8026 /* WebView.swift */,
+				41991D3329A9EB00001C08A0 /* MainPage.swift */,
+				41991D3229A9EB00001C08A0 /* QnA.swift */,
 			);
 			path = Animalsdictionary;
 			sourceTree = "<group>";
@@ -199,11 +205,13 @@
 				AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */,
 				AC888EA129A334D200FA8026 /* WebView.swift in Sources */,
 				AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */,
+				41991D3429A9EB00001C08A0 /* QnA.swift in Sources */,
 				ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */,
 				AC8B694329A262C900286198 /* Animal_Web.swift in Sources */,
 				AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */,
 				ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */,
 				AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */,
+				41991D3529A9EB00001C08A0 /* MainPage.swift in Sources */,
 				AC888EC329A49FB900FA8026 /* AnimalList.swift in Sources */,
 				ACA18A97299FB32800B4F82C /* projectApp.swift in Sources */,
 				AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */,
