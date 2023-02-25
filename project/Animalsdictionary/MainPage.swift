@@ -59,7 +59,7 @@ struct MainPage: View {
                     }
                     Spacer().frame(width: 25)
                     NavigationLink(destination: QnA().font(.largeTitle)) {
-                        Text("가나다라 마바사아")
+                        Text("asdaksdasdk;asdlk")
                             .font(.title)
                             .padding()
                             .frame(maxWidth: .infinity)
