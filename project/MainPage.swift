@@ -23,7 +23,7 @@ struct MainPage: View {
                 Spacer().frame(height: 75)
                 HStack{
                     Spacer().frame(width: 25)
-                    NavigationLink(destination: QnA().font(.largeTitle).navigationBarHidden(true)) {
+                    NavigationLink(destination: QnA().navigationBarHidden(true)) {
                         Text("반려동물 자격요건")
                             .font(.title)
                             .padding()
@@ -34,7 +34,7 @@ struct MainPage: View {
                             .cornerRadius(10)
                     }
                     Spacer().frame(width: 25)
-                    NavigationLink(destination: QnA().font(.largeTitle)) {
+                    NavigationLink(destination: QnA().navigationBarHidden(true)) {
                         Text("반려동물 추천받기")
                             .font(.title)
                             .padding()
@@ -49,7 +49,7 @@ struct MainPage: View {
                 Spacer().frame(height: 25)
                 HStack{
                     Spacer().frame(width: 25)
-                    NavigationLink(destination: Animal_Web()) {
+                    NavigationLink(destination: Animal_Web().navigationBarHidden(true)) {
                         Text("반려동물 백과사전")
                             .font(.title)
                             .padding()
@@ -60,7 +60,7 @@ struct MainPage: View {
                             .cornerRadius(10)
                     }
                     Spacer().frame(width: 25)
-                    NavigationLink(destination: QnA().font(.largeTitle)) {
+                    NavigationLink(destination: QnA().navigationBarHidden(true)) {
                         Text("asdaksdasdk;asdlk")
                             .font(.title)
                             .padding()

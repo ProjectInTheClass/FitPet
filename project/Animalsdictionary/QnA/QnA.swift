@@ -9,7 +9,6 @@ import SwiftUI
 
 struct QnA: View {
     var body: some View {
-        NavigationView() {
             VStack {
                 Spacer()
                 Spacer()
@@ -31,7 +30,6 @@ struct QnA: View {
                 Spacer()
             }.padding()
                 .navigationBarItems(trailing: NavigationLink(destination: MainPage().navigationBarHidden(true)){Image(systemName: "house.fill").font(.system(size: 25)).foregroundColor(Color.orange)})
-        }
     }
 }
 
