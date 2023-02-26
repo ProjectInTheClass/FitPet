@@ -12,36 +12,34 @@ struct MainPage: View {
     @AppStorage("_Firstrun") var Firstrun: Bool = true
     @State var ShowOnboarding: Bool = true
     var body: some View {
-        NavigationView() {
+        NavigationStack() {
             VStack {
                 Spacer().frame(height: 50)
                 Image(systemName: "pawprint.fill")
-                    .foregroundColor(.orange)
+                    .foregroundColor(.yellow)
                     .font(.system(size: 50))
                 Spacer().frame(height: 25)
                 Text("반려동물과 함께 일상을 공유하다").multilineTextAlignment(.center).font(.largeTitle).bold()
                 Spacer().frame(height: 75)
-                HStack{
+                /*HStack{
                     Spacer().frame(width: 25)
-                    NavigationLink(destination: QnA().navigationBarHidden(false)) {
+                    NavigationLink(destination: QnA()) {
                         Text("반려동물 자격요건")
-                            .font(.title)
+                            .font(.bold(.title)())
                             .padding()
-                            .frame(maxWidth: .infinity)
-                            .bold()
-                            .background(Color.orange)
-                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, minHeight: 100)
+                            .foregroundColor(.black)
+                            .background(Color.yellow)
                             .cornerRadius(10)
                     }
                     Spacer().frame(width: 25)
-                    NavigationLink(destination: QnA().navigationBarHidden(false)) {
+                    NavigationLink(destination: QnA()) {
                         Text("반려동물 추천받기")
-                            .font(.title)
+                            .font(.bold(.title)())
                             .padding()
-                            .frame(maxWidth: .infinity)
-                            .bold()
-                            .background(Color.orange)
-                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, minHeight: 100)
+                            .foregroundColor(.black)
+                            .background(Color.yellow)
                             .cornerRadius(10)
                     }
                     Spacer().frame(width: 25)
@@ -49,37 +47,64 @@ struct MainPage: View {
                 Spacer().frame(height: 25)
                 HStack{
                     Spacer().frame(width: 25)
-                    NavigationLink(destination: Animal_Web().navigationBarHidden(false)) {
+                    NavigationLink(destination: Animal_Web()) {
                         Text("반려동물 백과사전")
-                            .font(.title)
+                            .font(.bold(.title)())
                             .padding()
-                            .frame(maxWidth: .infinity)
-                            .bold()
-                            .background(Color.orange)
-                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, minHeight: 100)
+                            .foregroundColor(.black)
+                            .background(Color.yellow)
                             .cornerRadius(10)
                     }
                     Spacer().frame(width: 25)
-                    NavigationLink(destination: QnA().navigationBarHidden(false)) {
-                        Text("asdaksdasdk;asdlk")
-                            .font(.title)
+                    NavigationLink(destination: QnA()) {
+                        Text("추가")
+                            .font(.bold(.title)())
                             .padding()
-                            .frame(maxWidth: .infinity)
-                            .bold()
-                            .background(Color.orange)
-                            .foregroundColor(Color.black)
+                            .frame(maxWidth: .infinity, minHeight: 100)
+                            .foregroundColor(.black)
+                            .background(Color.yellow)
                             .cornerRadius(10)
                     }
                     Spacer().frame(width: 25)
-                }
+                }*/
+                NavigationLink(destination: QnA()) {
+                    Text("반려동물 자격요건")
+                        .font(.bold(.headline)())
+                        .padding()
+                        .frame(maxWidth: .infinity, minHeight: 50)
+                        .foregroundColor(.black)
+                        .background(Color.yellow)
+                        .cornerRadius(10)
+                }.padding(.horizontal)
+                Spacer().frame(height: 25)
+                NavigationLink(destination: QnA()) {
+                    Text("반려동물 추천받기")
+                        .font(.bold(.headline)())
+                        .padding()
+                        .frame(maxWidth: .infinity, minHeight: 50)
+                        .foregroundColor(.black)
+                        .background(Color.yellow)
+                        .cornerRadius(10)
+                }.padding(.horizontal)
+                Spacer().frame(height: 25)
+                NavigationLink(destination: Animal_Web()) {
+                    Text("반려동물 백과사전")
+                        .font(.bold(.headline)())
+                        .padding()
+                        .frame(maxWidth: .infinity, minHeight: 50)
+                        .foregroundColor(.black)
+                        .background(Color.yellow)
+                        .cornerRadius(10)
+                }.padding(.horizontal)
             }
             Spacer().frame(height: 50)
+                .navigationTitle("Home")
         }
         .fullScreenCover(isPresented: $Firstrun) {
             OnboardingMainView(ShowOnboarding: $Firstrun)
         }
     }
-       
 }
 
 struct MainPage_Previews: PreviewProvider {
