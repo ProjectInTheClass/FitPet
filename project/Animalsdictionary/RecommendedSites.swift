@@ -12,8 +12,7 @@ struct RecommendedSites: View {
     @State var selectedClassification = "Mammals"
     
     var body: some View {
-        VStack {
-            
+        NavigationStack {
             VStack(alignment: .leading ,spacing: 20) {
                 Text("아래 링크를 통해 동물에 관련된 더 많은 정보를 확인 해보세요.")
                     .font(.title3.bold())
