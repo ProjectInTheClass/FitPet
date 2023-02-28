@@ -14,18 +14,17 @@ struct MainPage: View {
     var body: some View {
         NavigationStack() {
             VStack {
-                Spacer().frame(height: 50)
                 Image(systemName: "pawprint.fill")
                     .foregroundColor(.yellow)
                     .font(.system(size: 50))
                 Spacer().frame(height: 25)
                 Text("반려동물과 함께 일상을 공유하다").multilineTextAlignment(.center).font(.largeTitle).bold()
-                Spacer().frame(height: 75)
+                Spacer().frame(height: 150)
                 /*HStack{
                     Spacer().frame(width: 25)
                     NavigationLink(destination: QnA()) {
                         Text("반려동물 자격요건")
-                            .font(.bold(.title)())
+                            .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity, minHeight: 100)
                             .foregroundColor(.black)
@@ -35,7 +34,7 @@ struct MainPage: View {
                     Spacer().frame(width: 25)
                     NavigationLink(destination: QnA()) {
                         Text("반려동물 추천받기")
-                            .font(.bold(.title)())
+                            .font(title).bold()
                             .padding()
                             .frame(maxWidth: .infinity, minHeight: 100)
                             .foregroundColor(.black)
@@ -49,7 +48,7 @@ struct MainPage: View {
                     Spacer().frame(width: 25)
                     NavigationLink(destination: Animal_Web()) {
                         Text("반려동물 백과사전")
-                            .font(.bold(.title)())
+                            .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity, minHeight: 100)
                             .foregroundColor(.black)
@@ -59,7 +58,7 @@ struct MainPage: View {
                     Spacer().frame(width: 25)
                     NavigationLink(destination: QnA()) {
                         Text("추가")
-                            .font(.bold(.title)())
+                            .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity, minHeight: 100)
                             .foregroundColor(.black)
@@ -70,27 +69,25 @@ struct MainPage: View {
                 }*/
                 NavigationLink(destination: QnA()) {
                     Text("반려동물 자격요건")
-                        .font(.bold(.headline)())
+                        .font(.headline).bold()
                         .padding()
                         .frame(maxWidth: .infinity, minHeight: 50)
                         .foregroundColor(.black)
                         .background(Color.yellow)
                         .cornerRadius(10)
                 }.padding(.horizontal)
-                Spacer().frame(height: 25)
-                NavigationLink(destination: QnA()) {
+                NavigationLink(destination: FitPetTest()) {
                     Text("반려동물 추천받기")
-                        .font(.bold(.headline)())
+                        .font(.headline).bold()
                         .padding()
                         .frame(maxWidth: .infinity, minHeight: 50)
                         .foregroundColor(.black)
                         .background(Color.yellow)
                         .cornerRadius(10)
                 }.padding(.horizontal)
-                Spacer().frame(height: 25)
                 NavigationLink(destination: Animal_Web()) {
                     Text("반려동물 백과사전")
-                        .font(.bold(.headline)())
+                        .font(.headline).bold()
                         .padding()
                         .frame(maxWidth: .infinity, minHeight: 50)
                         .foregroundColor(.black)

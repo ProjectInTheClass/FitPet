@@ -21,28 +21,24 @@ struct Animal_Web: View {
             
             NavigationLink(destination: AnimalEncyclopedia()) {
                 Text("동물 백과 사전")
-                    .foregroundColor(.white)
-                    .font(.headline)
+                    .font(.headline).bold()
                     .padding()
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .foregroundColor(.white)
                     .background(Color.yellow)
                     .cornerRadius(10)
             }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-            .background(Color.yellow)
-            .cornerRadius(10)
             .padding()
             
             NavigationLink(destination: RecommendedSites()) {
                 Text("추천 사이트")
-                    .foregroundColor(.white)
-                    .font(.headline)
+                    .font(.headline).bold()
                     .padding()
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .foregroundColor(.white)
                     .background(Color.yellow)
                     .cornerRadius(10)
             }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-            .background(Color.yellow)
-            .cornerRadius(10)
             .padding()
             .navigationTitle("더 알아보기")
         }
