@@ -25,6 +25,8 @@
 		ACA18A9B299FB32A00B4F82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9A299FB32A00B4F82C /* Assets.xcassets */; };
 		ACA18A9E299FB32A00B4F82C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9D299FB32A00B4F82C /* Preview Assets.xcassets */; };
 		ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */; };
+		ACA237A429AC73B7003538EE /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = ACA237A329AC73B7003538EE /* SwiftSoup */; };
+		ACA237A629AC8410003538EE /* ResultExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA237A529AC8410003538EE /* ResultExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,7 @@
 		ACA18A9A299FB32A00B4F82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA18A9D299FB32A00B4F82C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsData.swift; sourceTree = "<group>"; };
+		ACA237A529AC8410003538EE /* ResultExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA237A429AC73B7003538EE /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +124,7 @@
 				ACA18A96299FB32800B4F82C /* projectApp.swift */,
 				ACA18A98299FB32800B4F82C /* ContentView.swift */,
 				AC36BA2629A9ECC7005B90D2 /* MainPage.swift */,
+				ACA237A529AC8410003538EE /* ResultExample.swift */,
 				AC8B694129A2622200286198 /* Animalsdictionary */,
 				AC99675A29A107570098C9FE /* Onboarding */,
 				ACA18A9A299FB32A00B4F82C /* Assets.xcassets */,
@@ -152,6 +157,9 @@
 			dependencies = (
 			);
 			name = project;
+			packageProductDependencies = (
+				ACA237A329AC73B7003538EE /* SwiftSoup */,
+			);
 			productName = project;
 			productReference = ACA18A93299FB32800B4F82C /* project.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +188,9 @@
 				Base,
 			);
 			mainGroup = ACA18A8A299FB32800B4F82C;
+			packageReferences = (
+				ACA237A229AC73B7003538EE /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = ACA18A94299FB32800B4F82C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -215,6 +226,7 @@
 				AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */,
 				ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */,
 				AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */,
+				ACA237A629AC8410003538EE /* ResultExample.swift in Sources */,
 				AC36BA2729A9ECC7005B90D2 /* QnA.swift in Sources */,
 				ACA18A97299FB32800B4F82C /* projectApp.swift in Sources */,
 				AC36BA2829A9ECC7005B90D2 /* MainPage.swift in Sources */,
@@ -354,6 +366,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = project/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -383,6 +396,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = project/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -422,6 +436,26 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACA237A229AC73B7003538EE /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 3.0.0;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACA237A329AC73B7003538EE /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACA237A229AC73B7003538EE /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACA18A8B299FB32800B4F82C /* Project object */;
 }
