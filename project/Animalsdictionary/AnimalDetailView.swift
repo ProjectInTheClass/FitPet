@@ -22,7 +22,13 @@ struct AnimalDetailView: View {
                             .fontWeight(.heavy)
                         
                         Spacer()
-                    }
+                        
+                        NavigationLink(
+                                    destination: RecommendedSites(),
+                                    label: {
+                                        Text("추천 사이트").bold().foregroundColor(.blue)
+                                    })
+                            }
                     Text(animal.headline)
                         .font(.headline)
                     
@@ -30,6 +36,8 @@ struct AnimalDetailView: View {
                         .fontWeight(.bold)
                     
                     Text(animal.description)
+                    
+                    
                     
                     ScrollView(.horizontal) {
                         HStack(spacing: 20) {
