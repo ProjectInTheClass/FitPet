@@ -61,8 +61,6 @@ struct AnimalRecommendationView: View {
             } else {
                 animals = ["Bird", "Rabbit", "Medium or Large Dog", "Cat"]
             }
-        } else if livingSituation == "farm" {
-            animals = ["Any animal"]
         }
         
         if timeToDedicate == "limited" {
