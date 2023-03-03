@@ -268,6 +268,6 @@ struct TF: View {
 
 struct FitPetTest_Previews: PreviewProvider {
     static var previews: some View {
-        FitPetTest()
+        FitPetTest2()
     }
 }
