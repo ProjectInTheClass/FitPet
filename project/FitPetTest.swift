@@ -23,7 +23,7 @@ var turtle: Int = 0
 var parrot: Int = 0
 var pets: [Int] = [dog, cat, lizard, goldfish]
 
-struct FitPetTest: View {
+struct FitPetTest2: View {
     var body: some View {
         NavigationStack {
             Spacer().frame(height: 100)

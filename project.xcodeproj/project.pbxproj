@@ -16,6 +16,9 @@
 		AC8B694329A262C900286198 /* Animal_Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694229A262C900286198 /* Animal_Web.swift */; };
 		AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */; };
 		AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694629A264BF00286198 /* RecommendedSites.swift */; };
+		AC95E87129B268840086D547 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95E87029B268840086D547 /* ProgressBar.swift */; };
+		AC95E87329B268C80086D547 /* ResultEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95E87229B268C80086D547 /* ResultEX.swift */; };
+		AC95E87529B269B80086D547 /* PetRecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95E87429B269B80086D547 /* PetRecommendationView.swift */; };
 		AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675B29A107570098C9FE /* OnboardingMainView.swift */; };
 		AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675C29A107570098C9FE /* OnboardingPage4.swift */; };
 		AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675D29A107570098C9FE /* OnboardingPage2.swift */; };
@@ -41,6 +44,9 @@
 		AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEncyclopedia.swift; sourceTree = "<group>"; };
 		AC8B694629A264BF00286198 /* RecommendedSites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedSites.swift; sourceTree = "<group>"; };
 		AC8B694829A273FB00286198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC95E87029B268840086D547 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		AC95E87229B268C80086D547 /* ResultEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultEX.swift; sourceTree = "<group>"; };
+		AC95E87429B269B80086D547 /* PetRecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRecommendationView.swift; sourceTree = "<group>"; };
 		AC99675B29A107570098C9FE /* OnboardingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		AC99675C29A107570098C9FE /* OnboardingPage4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage4.swift; sourceTree = "<group>"; };
 		AC99675D29A107570098C9FE /* OnboardingPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage2.swift; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 				ACA18A98299FB32800B4F82C /* ContentView.swift */,
 				AC36BA2629A9ECC7005B90D2 /* MainPage.swift */,
 				410ADDC929ADE2FD009D899D /* FitPetTest.swift */,
+				AC95E87029B268840086D547 /* ProgressBar.swift */,
+				AC95E87229B268C80086D547 /* ResultEX.swift */,
+				AC95E87429B269B80086D547 /* PetRecommendationView.swift */,
 				ACA237A529AC8410003538EE /* ResultExample.swift */,
 				AC8B694129A2622200286198 /* Animalsdictionary */,
 				AC99675A29A107570098C9FE /* Onboarding */,
@@ -221,12 +230,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */,
+				AC95E87129B268840086D547 /* ProgressBar.swift in Sources */,
 				410ADDCA29ADE2FD009D899D /* FitPetTest.swift in Sources */,
 				AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */,
 				AC888EA129A334D200FA8026 /* WebView.swift in Sources */,
 				AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */,
 				ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */,
 				AC8B694329A262C900286198 /* Animal_Web.swift in Sources */,
+				AC95E87529B269B80086D547 /* PetRecommendationView.swift in Sources */,
 				AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */,
 				ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */,
 				AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */,
@@ -236,6 +247,7 @@
 				AC36BA2829A9ECC7005B90D2 /* MainPage.swift in Sources */,
 				AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */,
 				AC8B694029A25E9900286198 /* Onboarding_intro.swift in Sources */,
+				AC95E87329B268C80086D547 /* ResultEX.swift in Sources */,
 				AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */,
 				AC888EC529A4A12800FA8026 /* AnimalDetailView.swift in Sources */,
 			);
