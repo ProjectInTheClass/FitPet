@@ -45,7 +45,7 @@ struct T01: View {
             ProgressBar(progress: 00)
             VStack {
                 Spacer()
-                Text("당신은 어느 환경에서 주거하나요?")
+                Text("당신은 어느 환경에서 주로 생활하나요?")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
@@ -62,7 +62,7 @@ struct T01: View {
                     }.simultaneousGesture(TapGesture().onEnded{
                         dict["강아지"]! -= score
                         dict["고양이"]! += score
-                        dict["도마뱀"]! -= score
+                        dict["도마뱀"]! += score
                         dict["물고기"]! += score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
@@ -79,12 +79,12 @@ struct T01: View {
                             .foregroundColor(Color.black)
                             .cornerRadius(25)
                     }.simultaneousGesture(TapGesture().onEnded{
-                        dict["강아지"]! -= score
+                        dict["강아지"]! += score
                         dict["고양이"]! += score
-                        dict["도마뱀"]! -= score
+                        dict["도마뱀"]! += score
                         dict["물고기"]! += score
-                        dict["새"]! -= score
-                        dict["토끼"]! -= score
+                        dict["새"]! += score
+                        dict["토끼"]! += score
                         dict["햄스터"]! += score
                     })
                 Spacer()
@@ -116,7 +116,7 @@ struct T02: View {
                     }.simultaneousGesture(TapGesture().onEnded{
                         dict["강아지"]! -= score
                         dict["고양이"]! += score
-                        dict["도마뱀"]! -= score
+                        dict["도마뱀"]! += score
                         dict["물고기"]! += score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
@@ -135,11 +135,11 @@ struct T02: View {
                     }.simultaneousGesture(TapGesture().onEnded{
                         dict["강아지"]! += score
                         dict["고양이"]! += score
-                        dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["도마뱀"]! += score
+                        dict["물고기"]! += score
                         dict["새"]! += score
                         dict["토끼"]! += score
-                        dict["햄스터"]! -= score
+                        dict["햄스터"]! += score
                     })
                 NavigationLink(destination: T03()
                     .font(.largeTitle)
@@ -154,11 +154,11 @@ struct T02: View {
                     }.simultaneousGesture(TapGesture().onEnded{
                         dict["강아지"]! += score
                         dict["고양이"]! += score
-                        dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["도마뱀"]! += score
+                        dict["물고기"]! += score
                         dict["새"]! += score
                         dict["토끼"]! += score
-                        dict["햄스터"]! -= score
+                        dict["햄스터"]! += score
                     })
                 Spacer()
             }.padding()
@@ -227,11 +227,11 @@ struct T03: View {
                     }.simultaneousGesture(TapGesture().onEnded{
                         dict["강아지"]! += score
                         dict["고양이"]! += score
-                        dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["도마뱀"]! += score
+                        dict["물고기"]! += score
                         dict["새"]! += score
                         dict["토끼"]! += score
-                        dict["햄스터"]! -= score
+                        dict["햄스터"]! += score
                     })
                 Spacer()
             }.padding()
@@ -245,33 +245,14 @@ struct T04: View {
             ProgressBar(progress: 30)
             VStack {
                 Spacer()
-                Text("이미 키우고 있는 어린이나 다른 반려동물이 있나요?")
+                Text("희망하는 반려동물의 크기를 선택해주세요.")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
                 NavigationLink(destination: T05()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                        Text("네")
-                            .font(.title).bold()
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.gray.opacity(0.3))
-                            .foregroundColor(Color.black)
-                            .cornerRadius(25)
-                    }.simultaneousGesture(TapGesture().onEnded{
-                        dict["강아지"]! += score
-                        dict["고양이"]! += score
-                        dict["도마뱀"]! -= score
-                        dict["물고기"]! += score
-                        dict["새"]! += score
-                        dict["토끼"]! += score
-                        dict["햄스터"]! -= score
-                    })
-                NavigationLink(destination: T05()
-                    .font(.largeTitle)
-                    .navigationBarBackButtonHidden(true)) {
-                        Text("아니오")
+                        Text("소형")
                             .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -282,10 +263,48 @@ struct T04: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! += score
+                        dict["물고기"]! += score
+                        dict["새"]! += score
+                        dict["토끼"]! -= score
+                        dict["햄스터"]! += score
+                    })
+                NavigationLink(destination: T05()
+                    .font(.largeTitle)
+                    .navigationBarBackButtonHidden(true)) {
+                        Text("중형")
+                            .font(.title).bold()
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.gray.opacity(0.3))
+                            .foregroundColor(Color.black)
+                            .cornerRadius(25)
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        dict["강아지"]! += score
+                        dict["고양이"]! += score
+                        dict["도마뱀"]! -= score
+                        dict["물고기"]! -= score
+                        dict["새"]! -= score
+                        dict["토끼"]! += score
+                        dict["햄스터"]! -= score
+                    })
+                NavigationLink(destination: T05()
+                    .font(.largeTitle)
+                    .navigationBarBackButtonHidden(true)) {
+                        Text("대형")
+                            .font(.title).bold()
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.gray.opacity(0.3))
+                            .foregroundColor(Color.black)
+                            .cornerRadius(25)
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        dict["강아지"]! += score
+                        dict["고양이"]! -= score
+                        dict["도마뱀"]! -= score
                         dict["물고기"]! -= score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
-                        dict["햄스터"]! += score
+                        dict["햄스터"]! -= score
                     })
                 Spacer()
             }.padding()
@@ -469,14 +488,14 @@ struct T06: View {
             ProgressBar(progress: 50)
             VStack {
                 Spacer()
-                Text("당신은 활동적인 사람인가요?")
+                Text("어떤 활동을 선호 하나요?")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
                 NavigationLink(destination: T07()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                        Text("외향적이에요.")
+                        Text("활발한 활동(운동, 산책, 등산)")
                             .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -495,26 +514,7 @@ struct T06: View {
                 NavigationLink(destination: T07()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                        Text("적당해요.")
-                            .font(.title).bold()
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.gray.opacity(0.3))
-                            .foregroundColor(Color.black)
-                            .cornerRadius(25)
-                    }.simultaneousGesture(TapGesture().onEnded{
-                        dict["강아지"]! += score
-                        dict["고양이"]! += score
-                        dict["도마뱀"]! += score
-                        dict["물고기"]! += score
-                        dict["새"]! += score
-                        dict["토끼"]! += score
-                        dict["햄스터"]! += score
-                    })
-                NavigationLink(destination: T07()
-                    .font(.largeTitle)
-                    .navigationBarBackButtonHidden(true)) {
-                        Text("내성적이에요.")
+                        Text("정적인 활동(독서, 실내 활동)")
                             .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -528,6 +528,25 @@ struct T06: View {
                         dict["물고기"]! += score
                         dict["새"]! += score
                         dict["토끼"]! -= score
+                        dict["햄스터"]! += score
+                    })
+                NavigationLink(destination: T07()
+                    .font(.largeTitle)
+                    .navigationBarBackButtonHidden(true)) {
+                        Text("상관없어요")
+                            .font(.title).bold()
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.gray.opacity(0.3))
+                            .foregroundColor(Color.black)
+                            .cornerRadius(25)
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        dict["강아지"]! += score
+                        dict["고양이"]! += score
+                        dict["도마뱀"]! += score
+                        dict["물고기"]! += score
+                        dict["새"]! += score
+                        dict["토끼"]! += score
                         dict["햄스터"]! += score
                     })
                 Spacer()
@@ -558,7 +577,7 @@ struct T07: View {
                             .cornerRadius(25)
                     }.simultaneousGesture(TapGesture().onEnded{
                         dict["강아지"]! += score
-                        dict["고양이"]! -= score
+                        dict["고양이"]! += score
                         dict["도마뱀"]! -= score
                         dict["물고기"]! -= score
                         dict["새"]! += score
@@ -577,7 +596,7 @@ struct T07: View {
                             .cornerRadius(25)
                     }.simultaneousGesture(TapGesture().onEnded{
                         dict["강아지"]! -= score
-                        dict["고양이"]! += score
+                        dict["고양이"]! -= score
                         dict["도마뱀"]! += score
                         dict["물고기"]! += score
                         dict["새"]! -= score
@@ -634,7 +653,7 @@ struct T08: View {
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
                         dict["물고기"]! -= score
-                        dict["새"]! += score
+                        dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! -= score
                     })
@@ -652,7 +671,7 @@ struct T08: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! -= score
-                        dict["물고기"]! += score
+                        dict["물고기"]! -= score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! -= score
@@ -676,7 +695,7 @@ struct T09: View {
                 NavigationLink(destination: T10()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                        Text("고려하지 않음")
+                        Text("입양")
                             .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -684,18 +703,18 @@ struct T09: View {
                             .foregroundColor(Color.black)
                             .cornerRadius(25)
                     }.simultaneousGesture(TapGesture().onEnded{
-                        /*dict["강아지"]! += score
+                         dict["강아지"]! += score
                          dict["고양이"]! += score
                          dict["도마뱀"]! += score
                          dict["물고기"]! += score
                          dict["새"]! += score
                          dict["토끼"]! += score
-                         dict["햄스터"]! += score*/
+                         dict["햄스터"]! += score
                     })
                 NavigationLink(destination: T10()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                        Text("10만 원 이상")
+                        Text("10만원 미만")
                             .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -703,18 +722,18 @@ struct T09: View {
                             .foregroundColor(Color.black)
                             .cornerRadius(25)
                     }.simultaneousGesture(TapGesture().onEnded{
-                        /*dict["강아지"]! += score
-                         dict["고양이"]! += score
-                         dict["도마뱀"]! += score
+                         dict["강아지"]! -= score
+                         dict["고양이"]! -= score
+                         dict["도마뱀"]! -= score
                          dict["물고기"]! += score
-                         dict["새"]! += score
-                         dict["토끼"]! += score
-                         dict["햄스터"]! += score*/
+                         dict["새"]! -= score
+                         dict["토끼"]! -= score
+                         dict["햄스터"]! += score
                     })
                 NavigationLink(destination: T10()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                        Text("50만 원 이상")
+                        Text("30만 원 이상")
                             .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -722,13 +741,13 @@ struct T09: View {
                             .foregroundColor(Color.black)
                             .cornerRadius(25)
                     }.simultaneousGesture(TapGesture().onEnded{
-                        /*dict["강아지"]! += score
+                         dict["강아지"]! += score
                          dict["고양이"]! += score
                          dict["도마뱀"]! += score
                          dict["물고기"]! += score
                          dict["새"]! += score
                          dict["토끼"]! += score
-                         dict["햄스터"]! += score*/
+                         dict["햄스터"]! += score
                     })
                 Spacer()
             }.padding()

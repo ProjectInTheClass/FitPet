@@ -68,7 +68,7 @@ struct MainPage: View {
                     Spacer().frame(width: 25)
                 }*/
                 NavigationLink(destination: QnA()) {
-                    Text("반려동물 자격요건")
+                    Text("반려동물 자가 진단 퀴즈")//반려동물 자격 요건 검사, 사전 지식 퀴즈
                         .font(.headline).bold()
                         .padding()
                         .frame(maxWidth: .infinity, minHeight: 50)

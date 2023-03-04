@@ -67,6 +67,7 @@ struct AnimalDetailView: View {
                         
                         ScrollView(.horizontal) {
                             HStack(spacing: 20) {
+                                
                                 ForEach(animal.species.indices, id: \.self) { index in
                                     VStack(spacing: 5) {
                                         Image(animal.speciesImage[index])

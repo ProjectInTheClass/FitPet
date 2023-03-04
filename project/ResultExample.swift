@@ -62,7 +62,7 @@ struct ResultExample: View {
                     )
                 }
             }
-        }
+        }.padding()
        
     }
 }
