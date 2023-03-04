@@ -35,12 +35,12 @@ struct ResultExample: View {
         .init(type: bestPet[2].key, count: Double(bestPet[2].value)),
     ]
     var data2: [PetShape] = [
-        .init(type: bestPet[Dnum-1].key, count: Double(bestPet[Dnum-1].value)),
-        .init(type: bestPet[Dnum-2].key, count: Double(bestPet[Dnum-2].value)),
-        .init(type: bestPet[Dnum-3].key, count: Double(bestPet[Dnum-3].value)),
+        .init(type: bestPet[dict.count-1].key, count: Double(bestPet[dict.count-1].value)),
+        .init(type: bestPet[dict.count-2].key, count: Double(bestPet[dict.count-2].value)),
+        .init(type: bestPet[dict.count-3].key, count: Double(bestPet[dict.count-3].value)),
     ]
+    
     var body: some View {
-        
         VStack(alignment: .leading) {
             Text("Best 3")
                 .bold()
@@ -63,9 +63,9 @@ struct ResultExample: View {
                 }
             }
         }.padding()
-       
     }
 }
+
 struct ResultExample_Previews: PreviewProvider {
     static var previews: some View {
         ResultExample()

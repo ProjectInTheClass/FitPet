@@ -8,11 +8,10 @@
 import Swift
 import SwiftUI
 
-// 강아지 고양이 도마뱀 금붕어 토끼 햄스터 페럿 고슴도치 개구리 뱀 카멜레온 거북이 앵무새
+// 강아지 고양이 도마뱀 금붕어 새 토끼 햄스터
 var defalt: Int = 50
 var score: Int = 5
-var dict: [String: Int] = ["강아지": defalt, "고양이": defalt, "도마뱀": defalt, "물고기": defalt, "새": defalt, "토끼": defalt, "햄스터": defalt]
-var Dnum: Int = dict.count
+var dict: [String: Int] = ["강아지": defalt, "고양이": defalt, "도마뱀": defalt, "금붕어": defalt, "새": defalt, "토끼": defalt, "햄스터": defalt]
 var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
 
 struct FitPetTest: View {
@@ -63,7 +62,7 @@ struct T01: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! += score
@@ -82,7 +81,7 @@ struct T01: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! += score
                         dict["토끼"]! += score
                         dict["햄스터"]! += score
@@ -117,7 +116,7 @@ struct T02: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! += score
@@ -136,7 +135,7 @@ struct T02: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! += score
                         dict["토끼"]! += score
                         dict["햄스터"]! += score
@@ -155,7 +154,7 @@ struct T02: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! += score
                         dict["토끼"]! += score
                         dict["햄스터"]! += score
@@ -190,7 +189,7 @@ struct T03: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! += score
@@ -209,7 +208,7 @@ struct T03: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["금붕어"]! -= score
                         dict["새"]! += score
                         dict["토끼"]! += score
                         dict["햄스터"]! -= score
@@ -228,7 +227,7 @@ struct T03: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! += score
                         dict["토끼"]! += score
                         dict["햄스터"]! += score
@@ -263,7 +262,7 @@ struct T04: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! += score
                         dict["토끼"]! -= score
                         dict["햄스터"]! += score
@@ -282,7 +281,7 @@ struct T04: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["금붕어"]! -= score
                         dict["새"]! -= score
                         dict["토끼"]! += score
                         dict["햄스터"]! -= score
@@ -301,7 +300,7 @@ struct T04: View {
                         dict["강아지"]! += score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["금붕어"]! -= score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! -= score
@@ -337,7 +336,7 @@ struct T05: View {
                             dict["강아지"]! -= defalt
                             dict["고양이"]! += score
                             dict["도마뱀"]! += score
-                            dict["물고기"]! += score
+                            dict["금붕어"]! += score
                             dict["새"]! += score
                             dict["토끼"]! += score
                             dict["햄스터"]! += score
@@ -356,7 +355,7 @@ struct T05: View {
                             dict["강아지"]! += score
                             dict["고양이"]! -= defalt
                             dict["도마뱀"]! += score
-                            dict["물고기"]! += score
+                            dict["금붕어"]! += score
                             dict["새"]! += score
                             dict["토끼"]! += score
                             dict["햄스터"]! += score
@@ -375,7 +374,7 @@ struct T05: View {
                             dict["강아지"]! += score
                             dict["고양이"]! += score
                             dict["도마뱀"]! -= defalt
-                            dict["물고기"]! += score
+                            dict["금붕어"]! += score
                             dict["새"]! += score
                             dict["토끼"]! += score
                             dict["햄스터"]! += score
@@ -383,7 +382,7 @@ struct T05: View {
                     NavigationLink(destination: T06()
                         .font(.largeTitle)
                         .navigationBarBackButtonHidden(true)) {
-                            Text("물고기")
+                            Text("금붕어")
                                 .font(.title).bold()
                                 .padding()
                                 .frame(maxWidth: .infinity)
@@ -394,7 +393,7 @@ struct T05: View {
                             dict["강아지"]! += score
                             dict["고양이"]! += score
                             dict["도마뱀"]! += score
-                            dict["물고기"]! -= defalt
+                            dict["금붕어"]! -= defalt
                             dict["새"]! += score
                             dict["토끼"]! += score
                             dict["햄스터"]! += score
@@ -413,7 +412,7 @@ struct T05: View {
                             dict["강아지"]! += score
                             dict["고양이"]! += score
                             dict["도마뱀"]! += score
-                            dict["물고기"]! += score
+                            dict["금붕어"]! += score
                             dict["새"]! -= defalt
                             dict["토끼"]! += score
                             dict["햄스터"]! += score
@@ -432,7 +431,7 @@ struct T05: View {
                             dict["강아지"]! += score
                             dict["고양이"]! += score
                             dict["도마뱀"]! += score
-                            dict["물고기"]! += score
+                            dict["금붕어"]! += score
                             dict["새"]! += score
                             dict["토끼"]! -= defalt
                             dict["햄스터"]! += score
@@ -451,7 +450,7 @@ struct T05: View {
                             dict["강아지"]! += score
                             dict["고양이"]! += score
                             dict["도마뱀"]! += score
-                            dict["물고기"]! += score
+                            dict["금붕어"]! += score
                             dict["새"]! += score
                             dict["토끼"]! += score
                             dict["햄스터"]! -= defalt
@@ -470,7 +469,7 @@ struct T05: View {
                             dict["강아지"]! += score
                             dict["고양이"]! += score
                             dict["도마뱀"]! += score
-                            dict["물고기"]! += score
+                            dict["금붕어"]! += score
                             dict["새"]! += score
                             dict["토끼"]! += score
                             dict["햄스터"]! += score
@@ -506,7 +505,7 @@ struct T06: View {
                         dict["강아지"]! += score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["금붕어"]! -= score
                         dict["새"]! -= score
                         dict["토끼"]! += score
                         dict["햄스터"]! -= score
@@ -525,7 +524,7 @@ struct T06: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! += score
                         dict["토끼"]! -= score
                         dict["햄스터"]! += score
@@ -544,7 +543,7 @@ struct T06: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! += score
                         dict["토끼"]! += score
                         dict["햄스터"]! += score
@@ -579,7 +578,7 @@ struct T07: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["금붕어"]! -= score
                         dict["새"]! += score
                         dict["토끼"]! += score
                         dict["햄스터"]! -= score
@@ -598,7 +597,7 @@ struct T07: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! += score
+                        dict["금붕어"]! += score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! += score
@@ -633,7 +632,7 @@ struct T08: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["금붕어"]! -= score
                         dict["새"]! -= score
                         dict["토끼"]! += score
                         dict["햄스터"]! += score
@@ -652,7 +651,7 @@ struct T08: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["물고기"]! -= score
+                        dict["금붕어"]! -= score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! -= score
@@ -671,7 +670,7 @@ struct T08: View {
                         dict["강아지"]! -= score
                         dict["고양이"]! -= score
                         dict["도마뱀"]! -= score
-                        dict["물고기"]! -= score
+                        dict["금붕어"]! -= score
                         dict["새"]! -= score
                         dict["토끼"]! -= score
                         dict["햄스터"]! -= score
@@ -706,7 +705,7 @@ struct T09: View {
                          dict["강아지"]! += score
                          dict["고양이"]! += score
                          dict["도마뱀"]! += score
-                         dict["물고기"]! += score
+                         dict["금붕어"]! += score
                          dict["새"]! += score
                          dict["토끼"]! += score
                          dict["햄스터"]! += score
@@ -725,7 +724,7 @@ struct T09: View {
                          dict["강아지"]! -= score
                          dict["고양이"]! -= score
                          dict["도마뱀"]! -= score
-                         dict["물고기"]! += score
+                         dict["금붕어"]! += score
                          dict["새"]! -= score
                          dict["토끼"]! -= score
                          dict["햄스터"]! += score
@@ -744,7 +743,7 @@ struct T09: View {
                          dict["강아지"]! += score
                          dict["고양이"]! += score
                          dict["도마뱀"]! += score
-                         dict["물고기"]! += score
+                         dict["금붕어"]! += score
                          dict["새"]! += score
                          dict["토끼"]! += score
                          dict["햄스터"]! += score
@@ -780,7 +779,7 @@ struct T10: View {
                             dict["강아지"]! += score
                             dict["고양이"]! -= score
                             dict["도마뱀"]! -= score
-                            dict["물고기"]! -= score
+                            dict["금붕어"]! -= score
                             dict["새"]! -= score
                             dict["토끼"]! -= score
                             dict["햄스터"]! -= score
@@ -799,7 +798,7 @@ struct T10: View {
                             dict["강아지"]! -= score
                             dict["고양이"]! += score
                             dict["도마뱀"]! -= score
-                            dict["물고기"]! -= score
+                            dict["금붕어"]! -= score
                             dict["새"]! -= score
                             dict["토끼"]! -= score
                             dict["햄스터"]! -= score
@@ -818,7 +817,7 @@ struct T10: View {
                             dict["강아지"]! -= score
                             dict["고양이"]! -= score
                             dict["도마뱀"]! += score
-                            dict["물고기"]! -= score
+                            dict["금붕어"]! -= score
                             dict["새"]! -= score
                             dict["토끼"]! -= score
                             dict["햄스터"]! -= score
@@ -826,7 +825,7 @@ struct T10: View {
                     NavigationLink(destination: TF()
                         .font(.largeTitle)
                         .navigationBarBackButtonHidden(true)) {
-                            Text("물고기")
+                            Text("금붕어")
                                 .font(.title).bold()
                                 .padding()
                                 .frame(maxWidth: .infinity)
@@ -837,7 +836,7 @@ struct T10: View {
                             dict["강아지"]! -= score
                             dict["고양이"]! -= score
                             dict["도마뱀"]! -= score
-                            dict["물고기"]! += score
+                            dict["금붕어"]! += score
                             dict["새"]! -= score
                             dict["토끼"]! -= score
                             dict["햄스터"]! -= score
@@ -856,7 +855,7 @@ struct T10: View {
                             dict["강아지"]! -= score
                             dict["고양이"]! -= score
                             dict["도마뱀"]! -= score
-                            dict["물고기"]! -= score
+                            dict["금붕어"]! -= score
                             dict["새"]! += score
                             dict["토끼"]! -= score
                             dict["햄스터"]! -= score
@@ -875,7 +874,7 @@ struct T10: View {
                             dict["강아지"]! -= score
                             dict["고양이"]! -= score
                             dict["도마뱀"]! -= score
-                            dict["물고기"]! -= score
+                            dict["금붕어"]! -= score
                             dict["새"]! -= score
                             dict["토끼"]! += score
                             dict["햄스터"]! -= score
@@ -894,7 +893,7 @@ struct T10: View {
                             dict["강아지"]! -= score
                             dict["고양이"]! -= score
                             dict["도마뱀"]! -= score
-                            dict["물고기"]! -= score
+                            dict["금붕어"]! -= score
                             dict["새"]! -= score
                             dict["토끼"]! -= score
                             dict["햄스터"]! += score
@@ -913,7 +912,7 @@ struct T10: View {
                             dict["강아지"]! -= score
                             dict["고양이"]! -= score
                             dict["도마뱀"]! -= score
-                            dict["물고기"]! -= score
+                            dict["금붕어"]! -= score
                             dict["새"]! -= score
                             dict["토끼"]! -= score
                             dict["햄스터"]! -= score
@@ -926,58 +925,72 @@ struct T10: View {
 }
 
 // MARK: - Test End
-var bestPets: [String] = [""]
 let bestPet = dict.sorted { $0.1 > $1.1 }
-
-struct form: View {
-    var number: Int = Dnum+1
-    var body: some View {
-        VStack {
-            ForEach(0..<7) { i in
-                if bestPet[i].value == bestPet[0].value {
-                    //bestPets.append(contentsOf: "bestPet[i].key")
-                    Text("\(bestPet[i].key) O")
-                } else {
-                    Text("\(i) X")
-                }
-            }
-        }
-    }
-}
+let bestScore: Int = dict.values.max()!
 
 struct TF: View {
     var body: some View {
         VStack {
-            Image(systemName: "lizard.fill")
-                .font(.system(size: 50))
-                .foregroundColor(.yellow)
-            /*Image(animalsData[0].image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:100, height: 100)
-                .cornerRadius(10)*/
-            Spacer().frame(height: 25)
-            if bestPet[0].value == defalt {
+            if bestScore < defalt {
                 Text("아쉽게도 당신에게 알맞은 동물을 찾지 못했습니다.")
                     .font(.title).bold()
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
             } else {
-                Text("당신에게 알맞은 동물은 \"\(bestPet[0].key)\"으로 선정됐습니다.")
+                Text("당신에게 알맞은 동물은")
+                    .font(.title).bold()
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                Divider()
+                HStack {
+                    ForEach(0..<3, id: \.self) { i in
+                        if bestPet[i].value == bestScore {
+                            ForEach(0..<dict.count, id: \.self) { k in
+                                if animalsData[k].title == bestPet[i].key {
+                                    VStack {
+                                        Image(animalsData[k].image)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width:100, height: 100)
+                                            .cornerRadius(10)
+                                        Text("\(animalsData[k].title)")
+                                            .font(.title).bold()
+                                            .multilineTextAlignment(.center)
+                                            .padding(.horizontal)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                Divider()
+                Text("으로 선정됐습니다.")
                     .font(.title).bold()
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
             }
-            Spacer().frame(height: 350)
-            Text("Score Check: \n\(bestPet[0].key) \(bestPet[0].value), \(bestPet[1].key) \(bestPet[1].value), \(bestPet[2].key) \(bestPet[2].value), \(bestPet[3].key) \(bestPet[3].value), \(bestPet[4].key) \(bestPet[4].value), \(bestPet[5].key) \(bestPet[5].value), \(bestPet[6].key) \(bestPet[6].value).").font(.headline)
-            NavigationLink(destination: ResultExample()) {
-                Text("자세히 보기")
-                    .font(.largeTitle).bold()
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.yellow)
-                    .foregroundColor(Color.white)
-                    .cornerRadius(25)
+            Spacer().frame(height: 250)
+            //Text("Score Check: \n\(bestPet[0].key) \(bestPet[0].value), \(bestPet[1].key) \(bestPet[1].value), \(bestPet[2].key) \(bestPet[2].value), \(bestPet[3].key) \(bestPet[3].value), \(bestPet[4].key) \(bestPet[4].value), \(bestPet[5].key) \(bestPet[5].value), \(bestPet[6].key) \(bestPet[6].value).").font(.headline)
+            VStack {
+                NavigationLink(destination: ResultExample()) {
+                    Text("결과 자세히 보기")
+                        .font(.largeTitle).bold()
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.yellow)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(25)
+                }
+                NavigationLink(destination: MainPage()
+                    .navigationBarBackButtonHidden(true)) {
+                        Text("메인으로 돌아가기")
+                            .font(.largeTitle).bold()
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.yellow)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(25)
+                    }
             }.padding()
         }
     }

@@ -15,7 +15,8 @@ struct QnA: View {
                 .font(.largeTitle).bold()
                 .multilineTextAlignment(.center)
             Spacer().frame(height: 350)
-            NavigationLink(destination: Question()) {
+            NavigationLink(destination: Question()
+                .navigationBarBackButtonHidden(true)) {
                 Text("시작하기")
                     .font(.largeTitle).bold()
                     .padding()
@@ -46,7 +47,9 @@ struct Question: View {
                 .multilineTextAlignment(.center)
             Spacer().frame(height: 50)
             HStack{
-                NavigationLink(destination: Answer().font(.largeTitle)) {
+                NavigationLink(destination: Answer()
+                    .font(.largeTitle)
+                    .navigationBarBackButtonHidden(true)) {
                     Text("예")
                         .font(.title).bold()
                         .padding()
@@ -59,7 +62,9 @@ struct Question: View {
                     Anum = Qnum+0
                 })
                 Spacer().frame(width: 25)
-                NavigationLink(destination: Answer().font(.largeTitle)) {
+                NavigationLink(destination: Answer()
+                    .font(.largeTitle)
+                    .navigationBarBackButtonHidden(true)) {
                     Text("아니오")
                         .font(.title).bold()
                         .padding()
@@ -93,7 +98,11 @@ struct Answer: View {
                 .cornerRadius(25)
             Spacer().frame(height: 150)
             NavigationLink(destination:
-                            Qnum == 4 ? AnyView(QF()) : AnyView(Question())
+                            Qnum == 4
+                           ? AnyView(QF())
+                .navigationBarBackButtonHidden(true)
+                           : AnyView(Question())
+                .navigationBarBackButtonHidden(true)
             ) {
                 Text("다음")
                     .font(.largeTitle).bold()
@@ -107,7 +116,7 @@ struct Answer: View {
                 Qnum += 1
             })
             Spacer().frame(height: 0)
-        }
+        }.padding()
     }
 }
 
