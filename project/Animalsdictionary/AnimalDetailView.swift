@@ -77,7 +77,7 @@ struct AnimalDetailView: View {
                                     }
                                 }
                             }
-                        }
+                        }.padding(.all)
                     }
                 }
                 .padding(.horizontal, 20)

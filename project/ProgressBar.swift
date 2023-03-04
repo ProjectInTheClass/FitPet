@@ -4,7 +4,6 @@
 //
 //  Created by 백대홍 on 2023/03/04.
 //
-
 import SwiftUI
 
 struct ProgressBar: View {
@@ -16,7 +15,7 @@ struct ProgressBar: View {
                 .frame(height: 8)
                 .foregroundColor(Color.gray.opacity(0.3))
             Capsule()
-                .frame(width: progress, height: 8)
+                .frame(width: progress*(3.6), height: 8)
                 .foregroundColor(Color.blue)
         }.padding()
         .animation(.linear(duration: 0.5))

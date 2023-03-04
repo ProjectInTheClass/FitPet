@@ -8,6 +8,20 @@
 import SwiftUI
 import Charts
 
+struct PetRecommendationView: View {
+    var preferredPet: String
+    
+    var body: some View {
+        Text("당신의 답변을 토대로 추천하는 동물은 \(preferredPet)!")
+            .padding()
+        if preferredPet == "dog" {
+            Image("강아지")
+                .resizable()
+                .frame(width: 100, height: 100)
+        }
+    }
+}
+
 struct PetShape: Identifiable {
     var type: String
     var count: Double
@@ -16,14 +30,14 @@ struct PetShape: Identifiable {
 
 struct ResultExample: View {
     var data: [PetShape] = [
-        .init(type: "A", count: 10),
-        .init(type: "B", count: 8),
-        .init(type: "C", count: 11),
+        .init(type: bestPet[0].key, count: Double(bestPet[0].value)),
+        .init(type: bestPet[1].key, count: Double(bestPet[1].value)),
+        .init(type: bestPet[2].key, count: Double(bestPet[2].value)),
     ]
     var data2: [PetShape] = [
-        .init(type: "C", count: 5),
-        .init(type: "D", count: 4),
-        .init(type: "E", count: 4),
+        .init(type: bestPet[Dnum-1].key, count: Double(bestPet[Dnum-1].value)),
+        .init(type: bestPet[Dnum-2].key, count: Double(bestPet[Dnum-2].value)),
+        .init(type: bestPet[Dnum-3].key, count: Double(bestPet[Dnum-3].value)),
     ]
     var body: some View {
         

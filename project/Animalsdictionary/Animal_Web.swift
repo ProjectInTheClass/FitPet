@@ -11,10 +11,11 @@ struct Animal_Web: View {
     @State private var showHelpModal = false
     var body: some View {
         NavigationStack {
-            Text("키우고 싶은 동물을 찾으셨나요?")
+            Text("이제 공부할 시간입니다! 다양한 정보를 통해 반려동물을 학습해보세요!")
                 .font(.title.bold())
                 .padding(.horizontal)
-            Text("이제 더 알아 볼 시간 입니다. 동물 백과 사전과 추천 사이트를 통해 결과에서 확인한 동물에 대해 더 공부해보세요.")
+            Text("어떻게 써야할지 모르겠다면 상단의 ? 를 눌러주세요!")
+                .foregroundColor(.secondary)
                 .padding()
             Image("onboarding4")
                 .resizable()
@@ -75,20 +76,17 @@ struct HelpModalView: View {
                     .fixedSize(horizontal: false, vertical: true)
             }
             
-            Spacer()
+            
             VStack(alignment: .center) {
                 Image(systemName:"person.2.wave.2")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(10)
                     .padding()
+                    .frame(width: 120, height: 120)
                 Text("만약 실제 동물을 키우기 위한 더 많은 정보가 필요하시다면 아래 추천 사이트 페이지에서 다양한 동물에 대한 다양한 YouTube 자료와 이미 동물을 키우고 있는 사람들과 소통 할 수 있는 카페에 가입해보세요! ")
                     .fixedSize(horizontal: false, vertical: true)
                 
-                Image("recommended_sites")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(10)
             }
             
         }
