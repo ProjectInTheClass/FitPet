@@ -14,6 +14,8 @@ struct AnimalDetailView: View {
         ScrollView {
             VStack(spacing:20){
                 Image(animal.image)
+                    .resizable()
+                    .frame(width: .infinity, height: 200)
                 
                 VStack(alignment:.leading, spacing:20){
                     HStack{
