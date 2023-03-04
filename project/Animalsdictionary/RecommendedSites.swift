@@ -9,7 +9,7 @@ import SwiftUI
 struct RecommendedSites: View {
     
     // Variable to keep track of selected classification
-    @State var selectedClassification = "Mammals"
+    @State var selectedClassification = "포유류"
     
     var body: some View {
         NavigationStack {
@@ -40,19 +40,20 @@ struct RecommendedSites: View {
                         
                             Section(header: Text("포유류")) {
                                 HStack(alignment: .center) {
-                                    NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                        Image("파사모")
+                                    NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/dogpalza")) {
+                                        Image("강사모")
                                             .resizable()
                                             .frame(width: 80, height: 80)
-                                        Text("Naver Cafe - Passamo")
+                                        Text("네이버 카페 - 강사모")
                                     }
+                                    
                                 }
                                 HStack(alignment: .center) {
-                                    NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                        Image("파사모")
+                                    NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/ilovecat")) {
+                                        Image("고양이카페")
                                             .resizable()
                                             .frame(width: 80, height: 80)
-                                        Text("Naver Cafe - Passamo")
+                                        Text("네이버 카페 - 고양이라서 다행이야")
                                     }
                                 }
                             }

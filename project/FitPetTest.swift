@@ -873,6 +873,7 @@ struct form: View {
 }
 
 struct TF: View {
+    @State private var showWhuModal = false
     var body: some View {
         VStack {
             Image(systemName: "lizard.fill")
@@ -905,6 +906,19 @@ struct TF: View {
                     .background(Color.yellow)
                     .foregroundColor(Color.white)
                     .cornerRadius(25)
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        showWhuModal = true
+                    }, label: {
+                        Image(systemName: "questionmark.circle.fill")
+                            .foregroundColor(.black)
+                    })
+                }
+            }
+            .sheet(isPresented: $showWhuModal) {
+                WhyModalView()
             }
         }.padding()
     }

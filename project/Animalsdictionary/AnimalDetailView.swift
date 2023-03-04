@@ -22,11 +22,11 @@ struct AnimalDetailView: View {
                         Text(animal.title)
                             .font(.largeTitle)
                             .fontWeight(.heavy)
-                        
+                       
                         Spacer()
                         
                         NavigationLink(
-                                    destination: RecommendedSites(),
+                            destination: RecommendedSites(selectedClassification: animal.recommandtype),
                                     label: {
                                         Text("추천 사이트").bold().foregroundColor(.blue)
                                     })
