@@ -8,31 +8,31 @@
 import Swift
 import SwiftUI
 
-// 강아지 고양이 도마뱀 금붕어 새 토끼 햄스터
+// 강아지 고양이 금붕어 도마뱀 새 토끼 햄스터
 var defalt: Int = 50
 var score: Int = 5
-var dict: [String: Int] = ["강아지": defalt, "고양이": defalt, "도마뱀": defalt, "금붕어": defalt, "새": defalt, "토끼": defalt, "햄스터": defalt]
+var dict: [String: Int] = ["강아지": defalt, "고양이": defalt, "금붕어": defalt, "도마뱀": defalt, "새": defalt, "토끼": defalt, "햄스터": defalt]
 var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
 
 struct FitPetTest: View {
     var body: some View {
         NavigationStack {
-            Spacer().frame(height: 100)
+            Spacer().frame(height: 25)
             Text("나의 맞춤 동물을 알아볼까요?")
                 .font(.largeTitle).bold()
                 .multilineTextAlignment(.center)
-            Spacer().frame(height: 350)
+            Spacer().frame(height: 300)
             NavigationLink(destination: T01()
                 .font(.largeTitle)
                 .navigationBarBackButtonHidden(true)) {
                     Text("알아보기")
-                        .font(.largeTitle).bold()
+                        .font(.headline).bold()
                         .padding()
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, minHeight: 50)
+                        .foregroundColor(.black)
                         .background(Color.yellow)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(25)
-                }
+                        .cornerRadius(10)
+                }.padding(.horizontal)
         }.padding()
     }
 }
@@ -93,7 +93,7 @@ struct T01: View {
 }
 
 struct T02: View {
-    init() {UINavigationBar.setAnimationsEnabled(false)}
+    init() { UINavigationBar.setAnimationsEnabled(false) }
     var body: some View {
         VStack {
             ProgressBar(progress: 10)
@@ -495,7 +495,7 @@ struct T06: View {
                 NavigationLink(destination: T07()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                        Text("활발한 활동(운동, 산책, 등산)")
+                        Text("활발한 활동\n(운동, 산책, 등산)")
                             .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -514,7 +514,7 @@ struct T06: View {
                 NavigationLink(destination: T07()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                        Text("정적인 활동(독서, 실내 활동)")
+                        Text("정적인 활동\n(독서, 실내 활동)")
                             .font(.title).bold()
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -536,7 +536,7 @@ struct T06: View {
                         Text("상관없어요")
                             .font(.title).bold()
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, minHeight: 100)
                             .background(Color.gray.opacity(0.3))
                             .foregroundColor(Color.black)
                             .cornerRadius(25)
@@ -930,7 +930,7 @@ let bestPet = dict.sorted { $0.1 > $1.1 }
 let bestScore: Int = dict.values.max()!
 
 struct TF: View {
-    init() {UINavigationBar.setAnimationsEnabled(true)}
+    init() { UINavigationBar.setAnimationsEnabled(true) }
     var body: some View {
         VStack {
             if bestScore < defalt {
@@ -976,23 +976,23 @@ struct TF: View {
             VStack {
                 NavigationLink(destination: ResultExample()) {
                     Text("결과 자세히 보기")
-                        .font(.largeTitle).bold()
+                        .font(.headline).bold()
                         .padding()
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, minHeight: 50)
+                        .foregroundColor(.black)
                         .background(Color.yellow)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(25)
-                }
+                        .cornerRadius(10)
+                }.padding(.horizontal)
                 NavigationLink(destination: MainPage()
                     .navigationBarBackButtonHidden(true)) {
                         Text("메인으로 돌아가기")
-                            .font(.largeTitle).bold()
+                            .font(.headline).bold()
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .foregroundColor(.black)
                             .background(Color.yellow)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(25)
-                    }
+                            .cornerRadius(10)
+                    }.padding(.horizontal)
             }.padding()
         }
     }
