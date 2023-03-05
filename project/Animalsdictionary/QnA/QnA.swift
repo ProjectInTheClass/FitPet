@@ -10,30 +10,21 @@ import SwiftUI
 struct QnA: View {
     var body: some View {
         NavigationStack {
-            Spacer().frame(height: 100)
             Text("과연 내가 반려동물을 키워도 될까요?")
                 .font(.largeTitle).bold()
                 .multilineTextAlignment(.center)
-            Spacer().frame(height: 350)
+            Spacer().frame(height: 300)
             NavigationLink(destination: Question()
                 .navigationBarBackButtonHidden(true)) {
-                Text("시작하기")
-                    .font(.largeTitle).bold()
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.yellow)
-                    .foregroundColor(Color.white)
-                    .cornerRadius(25)
-            }
-            /*.font(.headline).bold()
-             .padding()
-             .frame(maxWidth: .infinity, minHeight: 50)
-             .foregroundColor(.white)
-             .background(Color.yellow)
-             .cornerRadius(10)
-             .padding()*/
-            //Spacer().frame(height: 50)
-        }.padding()
+                    Text("시작하기")
+                        .font(.headline).bold()
+                        .padding()
+                        .frame(maxWidth: .infinity, minHeight: 50)
+                        .foregroundColor(.white)
+                        .background(Color.yellow)
+                        .cornerRadius(10)
+                }.padding(.horizontal)
+        }
         /*.navigationBarItems(trailing: NavigationLink(destination: MainPage().navigationBarHidden(true)){Image(systemName: "house.fill").font(.system(size: 25)).foregroundColor(Color.yellow)})*/
     }
 }
@@ -128,24 +119,20 @@ struct QF: View {
                 .font(.largeTitle).bold()
                 .multilineTextAlignment(.center)
             Spacer().frame(height: 350)
-            NavigationLink(destination: MainPage().navigationBarBackButtonHidden(true)) {
-                HStack {
-                    Spacer()
-                    Text("메인")
-                        .font(.largeTitle).bold()
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.yellow)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(25)
-                    Spacer()
-                }
-            }
-            .simultaneousGesture(TapGesture().onEnded{
-                Qnum = 0
-                Anum = 0
-            })
-            //Spacer().frame(height: 50)
+            NavigationLink(destination: MainPage()
+                .navigationBarBackButtonHidden(true)) {
+                Text("메인")
+                    .font(.headline).bold()
+                    .padding()
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .foregroundColor(.white)
+                    .background(Color.yellow)
+                    .cornerRadius(10)
+            }.padding(.horizontal)
+                .simultaneousGesture(TapGesture().onEnded{
+                    Qnum = 0
+                    Anum = 0
+                })
         }
     }
 }
