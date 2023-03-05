@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Charts
-
+import SwiftUICharts
 struct PetRecommendationView: View {
     var preferredPet: String
     
@@ -27,6 +27,10 @@ struct PetShape: Identifiable {
     var count: Double
     var id = UUID()
 }
+enum Taste: String {
+    case Best
+    case Worst
+}
 
 struct ResultExample: View {
     var data: [PetShape] = [
@@ -39,32 +43,40 @@ struct ResultExample: View {
         .init(type: bestPet[dict.count-2].key, count: Double(bestPet[dict.count-2].value)),
         .init(type: bestPet[dict.count-3].key, count: Double(bestPet[dict.count-3].value)),
     ]
+    @State var taste: Taste = .Best
+    
+    var selectedData: [PetShape] {
+        switch taste {
+        case .Best:
+            return data
+        case .Worst:
+            return data2
+        }
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Best 3")
-                .bold()
+            Picker("Taste", selection: $taste.animation(.easeInOut)) {
+                Text(Taste.Best.rawValue).tag(Taste.Best)
+                Text(Taste.Worst.rawValue).tag(Taste.Worst)
+            }
+            .pickerStyle(.segmented)
+            
             Chart {
-                ForEach(data) { shape in
+                ForEach(selectedData) { shape in
                     BarMark(
-                        x: .value("Shape Type", shape.count),
-                        y: .value("Total Count", shape.type)
+                        x: .value("Total Count", shape.type),
+                        y: .value("Shape Type", shape.count)
                     )
                 }
             }
-            Text("Worst 3")
-                .bold()
-            Chart {
-                ForEach(data2) { shape in
-                    BarMark(
-                        x: .value("Shape Type", shape.count),
-                        y: .value("Total Count", shape.type)
-                    )
-                }
-            }
-        }.padding()
+            .navigationTitle("자세히 보기")
+        }
+      
+        .padding()
     }
 }
+
 
 struct ResultExample_Previews: PreviewProvider {
     static var previews: some View {
