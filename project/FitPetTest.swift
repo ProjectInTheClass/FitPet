@@ -730,13 +730,13 @@ struct T09: View {
                             .cornerRadius(10)
                     }
                     .simultaneousGesture(TapGesture().onEnded{
-                         dict["강아지"]! += score
-                         dict["고양이"]! += score
-                         dict["도마뱀"]! += score
-                         dict["금붕어"]! += score
-                         dict["새"]! += score
-                         dict["토끼"]! += score
-                         dict["햄스터"]! += score
+                        dict["강아지"]! += score
+                        dict["고양이"]! += score
+                        dict["도마뱀"]! += score
+                        dict["금붕어"]! += score
+                        dict["새"]! += score
+                        dict["토끼"]! += score
+                        dict["햄스터"]! += score
                     })
                 NavigationLink(destination: T10()
                     .font(.largeTitle)
@@ -750,13 +750,13 @@ struct T09: View {
                             .cornerRadius(10)
                     }
                     .simultaneousGesture(TapGesture().onEnded{
-                         dict["강아지"]! -= score
-                         dict["고양이"]! -= score
-                         dict["도마뱀"]! -= score
-                         dict["금붕어"]! += score
-                         dict["새"]! -= score
-                         dict["토끼"]! -= score
-                         dict["햄스터"]! += score
+                        dict["강아지"]! -= score
+                        dict["고양이"]! -= score
+                        dict["도마뱀"]! -= score
+                        dict["금붕어"]! += score
+                        dict["새"]! -= score
+                        dict["토끼"]! -= score
+                        dict["햄스터"]! += score
                     })
                 NavigationLink(destination: T10()
                     .font(.largeTitle)
@@ -770,13 +770,13 @@ struct T09: View {
                             .cornerRadius(10)
                     }
                     .simultaneousGesture(TapGesture().onEnded{
-                         dict["강아지"]! += score
-                         dict["고양이"]! += score
-                         dict["도마뱀"]! += score
-                         dict["금붕어"]! += score
-                         dict["새"]! += score
-                         dict["토끼"]! += score
-                         dict["햄스터"]! += score
+                        dict["강아지"]! += score
+                        dict["고양이"]! += score
+                        dict["도마뱀"]! += score
+                        dict["금붕어"]! += score
+                        dict["새"]! += score
+                        dict["토끼"]! += score
+                        dict["햄스터"]! += score
                     })
                 Spacer()
             }.padding()
@@ -796,7 +796,7 @@ struct T10: View {
                 Spacer().frame(height: 50)
                 LazyVGrid(columns: columns) {
                     NavigationLink(destination: TF()
-                        .font(.largeTitle)
+                                   
                         .navigationBarBackButtonHidden(true)) {
                             Text("강아지")
                                 .font(.headline).bold()
@@ -816,7 +816,7 @@ struct T10: View {
                             dict["햄스터"]! -= score
                         })
                     NavigationLink(destination: TF()
-                        .font(.largeTitle)
+                                   
                         .navigationBarBackButtonHidden(true)) {
                             Text("고양이")
                                 .font(.headline).bold()
@@ -836,7 +836,7 @@ struct T10: View {
                             dict["햄스터"]! -= score
                         })
                     NavigationLink(destination: TF()
-                        .font(.largeTitle)
+                                   
                         .navigationBarBackButtonHidden(true)) {
                             Text("금붕어")
                                 .font(.headline).bold()
@@ -856,7 +856,7 @@ struct T10: View {
                             dict["햄스터"]! -= score
                         })
                     NavigationLink(destination: TF()
-                        .font(.largeTitle)
+                                   
                         .navigationBarBackButtonHidden(true)) {
                             Text("도마뱀")
                                 .font(.headline).bold()
@@ -876,7 +876,7 @@ struct T10: View {
                             dict["햄스터"]! -= score
                         })
                     NavigationLink(destination: TF()
-                        .font(.largeTitle)
+                                   
                         .navigationBarBackButtonHidden(true)) {
                             Text("새")
                                 .font(.headline).bold()
@@ -896,7 +896,7 @@ struct T10: View {
                             dict["햄스터"]! -= score
                         })
                     NavigationLink(destination: TF()
-                        .font(.largeTitle)
+                                   
                         .navigationBarBackButtonHidden(true)) {
                             Text("토끼")
                                 .font(.headline).bold()
@@ -916,7 +916,7 @@ struct T10: View {
                             dict["햄스터"]! -= score
                         })
                     NavigationLink(destination: TF()
-                        .font(.largeTitle)
+                                   
                         .navigationBarBackButtonHidden(true)) {
                             Text("햄스터")
                                 .font(.headline).bold()
@@ -936,7 +936,7 @@ struct T10: View {
                             dict["햄스터"]! += score
                         })
                     NavigationLink(destination: TF()
-                        .font(.largeTitle)
+                                   
                         .navigationBarBackButtonHidden(true)) {
                             Text("해당 없음")
                                 .font(.headline).bold()
@@ -968,6 +968,7 @@ let bestScore: Int = dict.values.max()!
 
 struct TF: View {
     init() { UINavigationBar.setAnimationsEnabled(true) }
+    @State private var showWhyModal = false
     var body: some View {
         VStack {
             if bestScore < defalt {
@@ -1027,7 +1028,21 @@ struct TF: View {
                             .cornerRadius(10)
                     }
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        showWhyModal = true
+                    }, label: {
+                        Image(systemName: "questionmark.circle.fill")
+                            .foregroundColor(.black)
+                    })
+                }
+            }
+            .sheet(isPresented: $showWhyModal) {
+                WhyModalView()
+            }
         }.padding()
+        
     }
 }
 

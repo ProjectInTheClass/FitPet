@@ -118,6 +118,11 @@ struct QF: View {
             Text("반려동물 \n자가 진단 완료!")
                 .font(.largeTitle).bold()
                 .multilineTextAlignment(.center)
+            Spacer().frame(height: 100)
+            Text("이제 바로 나와 잘맞는 반려동물을 찾아보세요")
+                .font(.title3).bold()
+                .multilineTextAlignment(.center)
+                .foregroundColor(.secondary)
             Spacer().frame(height: 350)
             NavigationLink(destination: MainPage()
                 .navigationBarBackButtonHidden(true)) {
