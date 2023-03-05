@@ -88,11 +88,12 @@ struct T01: View {
                     })
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
 struct T02: View {
+    init() {UINavigationBar.setAnimationsEnabled(false)}
     var body: some View {
         VStack {
             ProgressBar(progress: 10)
@@ -161,7 +162,7 @@ struct T02: View {
                     })
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -234,7 +235,7 @@ struct T03: View {
                     })
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -307,7 +308,7 @@ struct T04: View {
                     })
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -477,7 +478,7 @@ struct T05: View {
                 }
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -550,7 +551,7 @@ struct T06: View {
                     })
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -604,7 +605,7 @@ struct T07: View {
                     })
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -677,7 +678,7 @@ struct T08: View {
                     })
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -750,7 +751,7 @@ struct T09: View {
                     })
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -920,7 +921,7 @@ struct T10: View {
                 }
                 Spacer()
             }.padding()
-        }
+        }.transition(.scale)
     }
 }
 
@@ -929,6 +930,7 @@ let bestPet = dict.sorted { $0.1 > $1.1 }
 let bestScore: Int = dict.values.max()!
 
 struct TF: View {
+    init() {UINavigationBar.setAnimationsEnabled(true)}
     var body: some View {
         VStack {
             if bestScore < defalt {
