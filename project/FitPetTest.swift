@@ -714,7 +714,7 @@ struct T09: View {
             ProgressBar(progress: 80)
             VStack {
                 Spacer()
-                Text("반려동물을 분양가는 어느 정도까지 고려하고 있나요?")
+                Text("반려동물의 분양가는 어느 정도까지 고려하고 있나요?")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
