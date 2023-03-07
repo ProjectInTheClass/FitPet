@@ -108,6 +108,7 @@ struct ResultExample: View {
                     .background(Color.blue.opacity(0.3))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
+                    
                     HStack  {
                         Text("\(bestPet[2].key)")
                             .bold()
