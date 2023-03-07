@@ -55,27 +55,119 @@ struct ResultExample: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Picker("Taste", selection: $taste.animation(.easeInOut)) {
-                Text(Taste.Best.rawValue).tag(Taste.Best)
-                Text(Taste.Worst.rawValue).tag(Taste.Worst)
+        VStack(alignment: .center) {
+            VStack {
+                Picker("Taste", selection: $taste.animation(.easeInOut)) {
+                    Text(Taste.Best.rawValue).tag(Taste.Best)
+                    Text(Taste.Worst.rawValue).tag(Taste.Worst)
+                }
+                .pickerStyle(.segmented)
+                
+                Chart {
+                    ForEach(selectedData) { shape in
+                        BarMark(
+                            x: .value("Total Count", shape.type),
+                            y: .value("Shape Type", shape.count)
+                        )
+                        
+                    }
+                }
+                .frame(height: 300)
+                
+                Spacer().frame(height: 50)
+                
+           
             }
-            .pickerStyle(.segmented)
-            
-            Chart {
-                ForEach(selectedData) { shape in
-                    BarMark(
-                        x: .value("Total Count", shape.type),
-                        y: .value("Shape Type", shape.count)
-                    )
+            VStack(alignment: .center) {
+               
+                
+                if taste == .Best {
+                    Text("최고의 궁합!:")
+                        .font(.title2).bold()
+                    HStack  {
+                        Text("\(bestPet[0].key)")
+                            .bold()
+                        Spacer().frame(width: 80)
+                        Text("\(bestPet[0].value)점")
+                            .bold()
+                        
+                    }
+                    .frame(width: 200, height: 50)
+                    .background(Color.blue.opacity(0.3))
+                    .foregroundColor(Color.black)
+                    .cornerRadius(25)
+                    HStack  {
+                        Text("\(bestPet[1].key)")
+                            .bold()
+                        Spacer().frame(width: 80)
+                        Text("\(bestPet[1].value)점")
+                            .bold()
+                        
+                    }
+                    .frame(width: 200, height: 50)
+                    .background(Color.blue.opacity(0.3))
+                    .foregroundColor(Color.black)
+                    .cornerRadius(25)
+                    HStack  {
+                        Text("\(bestPet[2].key)")
+                            .bold()
+                        Spacer().frame(width: 80)
+                        Text("\(bestPet[2].value)점")
+                            .bold()
+                        
+                    }
+                    .frame(width: 200, height: 50)
+                    .background(Color.blue.opacity(0.3))
+                    .foregroundColor(Color.black)
+                    .cornerRadius(25)
+                 
+                } else {
+                    Text("좋지 않은 궁합..:")
+                        .font(.title2).bold()
+                    HStack  {
+                        Text("\(bestPet[dict.count-3].key)")
+                            .bold()
+                        Spacer().frame(width: 80)
+                        Text("\(bestPet[dict.count-3].value)점")
+                            .bold()
+                        
+                    }
+                    .frame(width: 200, height: 50)
+                    .background(Color.blue.opacity(0.3))
+                    .foregroundColor(Color.black)
+                    .cornerRadius(25)
+                    HStack  {
+                        Text("\(bestPet[dict.count-2].key)")
+                            .bold()
+                        Spacer().frame(width: 80)
+                        Text("\(bestPet[dict.count-2].value)점")
+                            .bold()
+                        
+                    }
+                    .frame(width: 200, height: 50)
+                    .background(Color.blue.opacity(0.3))
+                    .foregroundColor(Color.black)
+                    .cornerRadius(25)
+                    HStack  {
+                        Text("\(bestPet[dict.count-1].key)")
+                            .bold()
+                        Spacer().frame(width: 80)
+                        Text("\(bestPet[dict.count-1].value)점")
+                            .bold()
+                        
+                    }
+                    .frame(width: 200, height: 50)
+                    .background(Color.blue.opacity(0.3))
+                    .foregroundColor(Color.black)
+                    .cornerRadius(25)
                 }
             }
-            .navigationTitle("자세히 보기")
+            .padding()
         }
       
-        .padding()
     }
 }
+    
 
 
 struct ResultExample_Previews: PreviewProvider {
