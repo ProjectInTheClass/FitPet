@@ -68,108 +68,119 @@ struct ResultExample: View {
                         BarMark(
                             x: .value("Total Count", shape.type),
                             y: .value("Shape Type", shape.count)
-                        )
-                        
+                        ).foregroundStyle( taste == .Best
+                                           ? .blue
+                                           : .red)
                     }
                 }
                 .frame(height: 300)
+                .padding()
                 
                 Spacer().frame(height: 50)
-                
-           
             }
             VStack(alignment: .center) {
-               
-                
                 if taste == .Best {
-                    Text("최고의 궁합!:")
+                    Text("최고의 궁합!")
                         .font(.title2).bold()
                     HStack  {
                         Text("\(bestPet[0].key)")
-                            .bold()
-                        Spacer().frame(width: 80)
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.trailing)
+                        Text("|")
+                            .bold().frame(width: 30)
+                            .multilineTextAlignment(.center)
                         Text("\(bestPet[0].value)점")
-                            .bold()
-                        
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.3))
+                    .background(Color.blue.opacity(0.5))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
                         Text("\(bestPet[1].key)")
-                            .bold()
-                        Spacer().frame(width: 80)
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.trailing)
+                        Text("|")
+                            .bold().frame(width: 30)
+                            .multilineTextAlignment(.center)
                         Text("\(bestPet[1].value)점")
-                            .bold()
-                        
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.3))
+                    .background(Color.blue.opacity(0.5))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
-                    
                     HStack  {
                         Text("\(bestPet[2].key)")
-                            .bold()
-                        Spacer().frame(width: 80)
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.trailing)
+                        Text("|")
+                            .bold().frame(width: 30)
+                            .multilineTextAlignment(.center)
                         Text("\(bestPet[2].value)점")
-                            .bold()
-                        
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.3))
+                    .background(Color.blue.opacity(0.5))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
-                 
                 } else {
-                    Text("좋지 않은 궁합..:")
+                    Text("좋지 않은 궁합...")
                         .font(.title2).bold()
                     HStack  {
                         Text("\(bestPet[dict.count-3].key)")
-                            .bold()
-                        Spacer().frame(width: 80)
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.trailing)
+                        Text("|")
+                            .bold().frame(width: 30)
+                            .multilineTextAlignment(.center)
                         Text("\(bestPet[dict.count-3].value)점")
-                            .bold()
-                        
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.3))
+                    .background(Color.red.opacity(0.5))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
                         Text("\(bestPet[dict.count-2].key)")
-                            .bold()
-                        Spacer().frame(width: 80)
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.trailing)
+                        Text("|")
+                            .bold().frame(width: 30)
+                            .multilineTextAlignment(.center)
                         Text("\(bestPet[dict.count-2].value)점")
-                            .bold()
-                        
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.3))
+                    .background(Color.red.opacity(0.5))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
                         Text("\(bestPet[dict.count-1].key)")
-                            .bold()
-                        Spacer().frame(width: 80)
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.trailing)
+                        Text("|")
+                            .bold().frame(width: 30)
+                            .multilineTextAlignment(.center)
                         Text("\(bestPet[dict.count-1].value)점")
-                            .bold()
-                        
+                            .bold().frame(width: 50)
+                            .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.3))
+                    .background(Color.red.opacity(0.5))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                 }
             }
             .padding()
         }
-      
     }
 }
-    
-
 
 struct ResultExample_Previews: PreviewProvider {
     static var previews: some View {

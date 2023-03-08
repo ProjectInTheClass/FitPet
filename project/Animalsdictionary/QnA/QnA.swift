@@ -25,14 +25,13 @@ struct QnA: View {
                         .cornerRadius(10)
                 }.padding(.horizontal)
         }
-        /*.navigationBarItems(trailing: NavigationLink(destination: MainPage().navigationBarHidden(true)){Image(systemName: "house.fill").font(.system(size: 25)).foregroundColor(Color.yellow)})*/
     }
 }
 
 struct Question: View {
     var body: some View {
         VStack {
-            Spacer().frame(height: 50)
+            //Spacer().frame(height: 50)
             Text("\(question[Qnum])")
                 .font(.largeTitle).bold()
                 .multilineTextAlignment(.center)
@@ -41,32 +40,32 @@ struct Question: View {
                 NavigationLink(destination: Answer()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                    Text("예")
-                        .font(.title).bold()
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.gray.opacity(0.3))
-                        .foregroundColor(Color.black)
-                        .cornerRadius(25)
-                }
-                .simultaneousGesture(TapGesture().onEnded{
-                    Anum = Qnum+0
-                })
+                        Text("예")
+                            .font(.headline).bold()
+                            .padding()
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .foregroundColor(.black)
+                            .background(Color.yellow)
+                            .cornerRadius(10)
+                    }
+                    .simultaneousGesture(TapGesture().onEnded{
+                        Anum = Qnum+0
+                    })
                 Spacer().frame(width: 25)
                 NavigationLink(destination: Answer()
                     .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
-                    Text("아니오")
-                        .font(.title).bold()
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.gray.opacity(0.3))
-                        .foregroundColor(Color.black)
-                        .cornerRadius(25)
-                }
-                .simultaneousGesture(TapGesture().onEnded{
-                    Anum = Qnum+1
-                })
+                        Text("아니오")
+                            .font(.headline).bold()
+                            .padding()
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .foregroundColor(.black)
+                            .background(Color.yellow)
+                            .cornerRadius(10)
+                    }
+                    .simultaneousGesture(TapGesture().onEnded{
+                        Anum = Qnum+1
+                    })
             }
             Spacer().frame(height: 100)
         }.padding()
@@ -87,7 +86,7 @@ struct Answer: View {
                 .background(Color.gray.opacity(0.3))
                 .foregroundColor(Color.black)
                 .cornerRadius(25)
-            Spacer().frame(height: 150)
+            Spacer().frame(height: 100)
             NavigationLink(destination:
                             Qnum == 4
                            ? AnyView(QF())
@@ -96,12 +95,12 @@ struct Answer: View {
                 .navigationBarBackButtonHidden(true)
             ) {
                 Text("다음")
-                    .font(.largeTitle).bold()
+                    .font(.headline).bold()
                     .padding()
-                    .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .foregroundColor(.black)
                     .background(Color.yellow)
-                    .foregroundColor(Color.white)
-                    .cornerRadius(25)
+                    .cornerRadius(10)
             }
             .simultaneousGesture(TapGesture().onEnded{
                 Qnum += 1
@@ -118,26 +117,28 @@ struct QF: View {
             Text("반려동물 \n자가 진단 완료!")
                 .font(.largeTitle).bold()
                 .multilineTextAlignment(.center)
-            Spacer().frame(height: 100)
+            Spacer().frame(height: 50)
             Text("이제 바로 나와 잘맞는 반려동물을 찾아보세요")
                 .font(.title3).bold()
                 .multilineTextAlignment(.center)
                 .foregroundColor(.secondary)
-            Spacer().frame(height: 350)
+                .padding()
+            Spacer().frame(height: 200)
             NavigationLink(destination: MainPage()
                 .navigationBarBackButtonHidden(true)) {
-                Text("메인")
-                    .font(.headline).bold()
-                    .padding()
-                    .frame(maxWidth: .infinity, minHeight: 50)
-                    .foregroundColor(.white)
-                    .background(Color.yellow)
-                    .cornerRadius(10)
-            }.padding(.horizontal)
+                    Text("메인")
+                        .font(.headline).bold()
+                        .padding()
+                        .frame(maxWidth: .infinity, minHeight: 50)
+                        .foregroundColor(.white)
+                        .background(Color.yellow)
+                        .cornerRadius(10)
+                }.padding(.horizontal)
                 .simultaneousGesture(TapGesture().onEnded{
                     Qnum = 0
                     Anum = 0
                 })
+            Spacer().frame(height: 75)
         }
     }
 }
