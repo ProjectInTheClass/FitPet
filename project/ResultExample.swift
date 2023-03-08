@@ -64,7 +64,7 @@ struct ResultExample: View {
                 
                 Chart {
                     ForEach(selectedData) { shape in
-                        LineMark(
+                       LineMark(
                             x: .value("Total Count", shape.type),
                             y: .value("Shape Type", shape.count)
                             

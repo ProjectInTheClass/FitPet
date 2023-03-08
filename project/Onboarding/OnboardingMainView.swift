@@ -12,16 +12,11 @@ struct OnboardingMainView: View {
     @AppStorage("_Firstrun") var Firstrun: Bool = true
     var body: some View {
         TabView {
-            
-            OnboardingPage1(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
-            
-            OnboardingPage2(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
-                
-            OnboardingPage3(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
-            
-            OnboardingPage4(ShowOnboarding: $ShowOnboarding,showsDismissButton: false)
-            
             Onboarding_intro(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
+            OnboardingPage1(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
+            OnboardingPage2(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
+            
+            
 
         }
        

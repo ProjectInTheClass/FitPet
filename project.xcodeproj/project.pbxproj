@@ -19,9 +19,7 @@
 		AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694629A264BF00286198 /* RecommendedSites.swift */; };
 		AC95E87129B268840086D547 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95E87029B268840086D547 /* ProgressBar.swift */; };
 		AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675B29A107570098C9FE /* OnboardingMainView.swift */; };
-		AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675C29A107570098C9FE /* OnboardingPage4.swift */; };
 		AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675D29A107570098C9FE /* OnboardingPage2.swift */; };
-		AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675E29A107570098C9FE /* OnboardingPage3.swift */; };
 		AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675F29A107570098C9FE /* OnboardingPage1.swift */; };
 		ACA18A97299FB32800B4F82C /* projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18A96299FB32800B4F82C /* projectApp.swift */; };
 		ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18A98299FB32800B4F82C /* ContentView.swift */; };
@@ -45,9 +43,7 @@
 		AC8B694829A273FB00286198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC95E87029B268840086D547 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		AC99675B29A107570098C9FE /* OnboardingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
-		AC99675C29A107570098C9FE /* OnboardingPage4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage4.swift; sourceTree = "<group>"; };
 		AC99675D29A107570098C9FE /* OnboardingPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage2.swift; sourceTree = "<group>"; };
-		AC99675E29A107570098C9FE /* OnboardingPage3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage3.swift; sourceTree = "<group>"; };
 		AC99675F29A107570098C9FE /* OnboardingPage1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage1.swift; sourceTree = "<group>"; };
 		ACA18A93299FB32800B4F82C /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA18A96299FB32800B4F82C /* projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectApp.swift; sourceTree = "<group>"; };
@@ -98,8 +94,6 @@
 				AC8B693F29A25E9900286198 /* Onboarding_intro.swift */,
 				AC99675F29A107570098C9FE /* OnboardingPage1.swift */,
 				AC99675D29A107570098C9FE /* OnboardingPage2.swift */,
-				AC99675E29A107570098C9FE /* OnboardingPage3.swift */,
-				AC99675C29A107570098C9FE /* OnboardingPage4.swift */,
 			);
 			name = Onboarding;
 			path = project/Onboarding;
@@ -224,7 +218,6 @@
 			files = (
 				AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */,
 				AC95E87129B268840086D547 /* ProgressBar.swift in Sources */,
-				AC99676129A107570098C9FE /* OnboardingPage4.swift in Sources */,
 				AC888EA129A334D200FA8026 /* WebView.swift in Sources */,
 				AC83DA0429B3052A00637B95 /* FitPetTest.swift in Sources */,
 				AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */,
@@ -232,7 +225,6 @@
 				AC8B694329A262C900286198 /* Animal_Web.swift in Sources */,
 				AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */,
 				ACA18A99299FB32800B4F82C /* ContentView.swift in Sources */,
-				AC99676329A107570098C9FE /* OnboardingPage3.swift in Sources */,
 				ACA237A629AC8410003538EE /* ResultExample.swift in Sources */,
 				AC36BA2729A9ECC7005B90D2 /* QnA.swift in Sources */,
 				AC83DA0629B31AE500637B95 /* WhyModalView.swift in Sources */,

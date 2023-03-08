@@ -986,11 +986,13 @@ struct TF: View {
                             ForEach(0..<dict.count, id: \.self) { k in
                                 if animalsData[k].title == bestPet[i].key {
                                     VStack {
+                                        
                                         Image(animalsData[k].image)
                                             .resizable()
-                                            .aspectRatio(contentMode: .fit)
+                                            .aspectRatio(contentMode: .fill)
                                             .frame(width:100, height: 100)
-                                            .cornerRadius(20)
+                                            .clipShape(Circle()) // Apply clipShape modifier
+                                            .overlay(Circle().stroke(Color.yellow, lineWidth: 5))
                                         Text("\(animalsData[k].title)")
                                             .font(.title).bold()
                                             .multilineTextAlignment(.center)
