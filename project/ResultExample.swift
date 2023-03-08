@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Charts
-import SwiftUICharts
 struct PetRecommendationView: View {
     var preferredPet: String
     
@@ -65,16 +64,28 @@ struct ResultExample: View {
                 
                 Chart {
                     ForEach(selectedData) { shape in
-                        BarMark(
+                        LineMark(
                             x: .value("Total Count", shape.type),
                             y: .value("Shape Type", shape.count)
-                        ).foregroundStyle( taste == .Best
-                                           ? .blue
-                                           : .red)
+                            
+                        )
+                        .interpolationMethod(.cardinal)
+                        .foregroundStyle( taste == .Best
+                                          ? .blue
+                                          : .red)
+                        PointMark(x: .value("Total Count", shape.type), y: .value("Shape Type", shape.count))
+                            .symbol(.diamond)
+                            .annotation {
+                                                Text("\(Int(shape.count))")
+                                            }
+                            .foregroundStyle( taste == .Best
+                                              ? .blue
+                                              : .red)
+                        
                     }
                 }
-                .frame(height: 300)
-                .padding()
+                .frame(height: 350)
+                .padding(.top)
                 
                 Spacer().frame(height: 50)
             }
@@ -131,13 +142,13 @@ struct ResultExample: View {
                     Text("좋지 않은 궁합...")
                         .font(.title2).bold()
                     HStack  {
-                        Text("\(bestPet[dict.count-3].key)")
+                        Text("\(bestPet[dict.count-1].key)")
                             .bold().frame(width: 50)
                             .multilineTextAlignment(.trailing)
                         Text("|")
                             .bold().frame(width: 30)
                             .multilineTextAlignment(.center)
-                        Text("\(bestPet[dict.count-3].value)점")
+                        Text("\(bestPet[dict.count-1].value)점")
                             .bold().frame(width: 50)
                             .multilineTextAlignment(.leading)
                     }
@@ -161,13 +172,13 @@ struct ResultExample: View {
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
-                        Text("\(bestPet[dict.count-1].key)")
+                        Text("\(bestPet[dict.count-3].key)")
                             .bold().frame(width: 50)
                             .multilineTextAlignment(.trailing)
                         Text("|")
                             .bold().frame(width: 30)
                             .multilineTextAlignment(.center)
-                        Text("\(bestPet[dict.count-1].value)점")
+                        Text("\(bestPet[dict.count-3].value)점")
                             .bold().frame(width: 50)
                             .multilineTextAlignment(.leading)
                     }

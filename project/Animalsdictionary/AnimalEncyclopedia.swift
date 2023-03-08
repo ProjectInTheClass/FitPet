@@ -40,7 +40,7 @@ struct AnimalEncyclopedia: View {
                     AnimalList(animal: animal)
                 }
             }
-            .navigationBarTitle("Animals")
+            
         }
     }
 }

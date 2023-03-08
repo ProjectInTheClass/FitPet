@@ -990,7 +990,7 @@ struct TF: View {
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
                                             .frame(width:100, height: 100)
-                                            .cornerRadius(10)
+                                            .cornerRadius(20)
                                         Text("\(animalsData[k].title)")
                                             .font(.title).bold()
                                             .multilineTextAlignment(.center)
