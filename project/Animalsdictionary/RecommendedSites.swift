@@ -7,7 +7,6 @@
 import SwiftUI
 
 struct RecommendedSites: View {
-    
     // Variable to keep track of selected classification
     @State var selectedClassification = "포유류"
     
@@ -37,26 +36,24 @@ struct RecommendedSites: View {
                 // MARK: - 포유류
                 List {
                     if selectedClassification == "포유류" {
-                        
-                            Section(header: Text("포유류")) {
-                                HStack(alignment: .center) {
-                                    NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/dogpalza")) {
-                                        Image("강사모")
-                                            .resizable()
-                                            .frame(width: 80, height: 80)
-                                        Text("네이버 카페 - 강사모")
-                                    }
-                                    
-                                }
-                                HStack(alignment: .center) {
-                                    NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/ilovecat")) {
-                                        Image("고양이카페")
-                                            .resizable()
-                                            .frame(width: 80, height: 80)
-                                        Text("네이버 카페 - 고양이라서 다행이야")
-                                    }
+                        Section(header: Text("포유류")) {
+                            HStack(alignment: .center) {
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/dogpalza")) {
+                                    Image("강사모")
+                                        .resizable()
+                                        .frame(width: 80, height: 80)
+                                    Text("네이버 카페 - 강사모")
                                 }
                             }
+                            HStack(alignment: .center) {
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/ilovecat")) {
+                                    Image("고양이카페")
+                                        .resizable()
+                                        .frame(width: 80, height: 80)
+                                    Text("네이버 카페 - 고양이라서 다행이야")
+                                }
+                            }
+                        }
                         // MARK: - 양서류
                     } else if selectedClassification == "양서류" {
                         Section(header: Text("양서류")) {
@@ -170,7 +167,6 @@ struct RecommendedSites: View {
                 .listStyle(GroupedListStyle())
                 .padding()
                 .navigationTitle("추천사이트")
-                
             }
         }
     }
@@ -188,7 +184,4 @@ struct RecommendedSites_Previews: PreviewProvider {
 - 파충류(뱀, 도마뱀, 카멜레온, 거북, 자라)
 - 조류(십자매, 카나리아, 문조, 앵무새, 비둘기)
 - 어류(구피, 금붕어, 닥터피쉬, 비단잉어, 해파리?)
-
- 
- 
  */

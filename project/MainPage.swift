@@ -18,7 +18,6 @@ struct MainPage: View {
                     Circle()
                         .stroke(Color.yellow, lineWidth: 5)
                         .frame(width: 100, height: 100)
-                    
                     Image("Applogo")
                         .resizable()
                         .frame(width: 130, height: 130)
@@ -29,8 +28,8 @@ struct MainPage: View {
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 150)
-                NavigationLink(destination: QnA()) {
-                    Text("반려동물 자가 진단 퀴즈")//반려동물 자격 요건 검사, 사전 지식 퀴즈
+                NavigationLink(destination: QualificationTest()) {
+                    Text("반려동물 자가 진단 퀴즈") //반려동물 자격 요건 검사, 사전 지식 퀴즈
                         .font(.headline).bold()
                         .padding()
                         .frame(maxWidth: .infinity, minHeight: 50)

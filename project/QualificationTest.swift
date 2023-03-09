@@ -1,5 +1,5 @@
 //
-//  QnA.swift
+//  QualificationTest.swift
 //  PetFollow
 //
 //  Created by mnzdrm on 2023/02/18.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QnA: View {
+struct QualificationTest: View {
     var body: some View {
         NavigationStack {
             Text("과연 내가 반려동물을 키워도 될까요?")
@@ -89,7 +89,7 @@ struct Answer: View {
             Spacer().frame(height: 100)
             NavigationLink(destination:
                             Qnum == 4
-                           ? AnyView(QF())
+                           ? AnyView(CompletionPage())
                 .navigationBarBackButtonHidden(true)
                            : AnyView(Question())
                 .navigationBarBackButtonHidden(true)
@@ -110,7 +110,7 @@ struct Answer: View {
     }
 }
 
-struct QF: View {
+struct CompletionPage: View {
     var body: some View {
         VStack {
             Spacer().frame(height: 100)
@@ -149,8 +149,8 @@ var question: [String] = ["Q1. 식비나 병원비 등의 지출을 감당할 �
 var answerYN: [String] = ["정답", "오답", "정답", "오답", "정답", "오답"]
 var answerEX: [String] = ["반려동물을 입양하게 되면, 식비나 건강 검진비 및 치료비 등 관리 비용이 발생합니다. 이러한 지출을 감당할 여유가 있는지 고려한 후 반려동물을 입양하시길 바랍니다.", "매일 산책하거나 함께 있어 줄 시간이 충분한가요? \n어떤 동물이든 교감하고 유대감을 형성하는 충분한 시간이 필요합니다.", "동물은 예상치 못한 다양한 문제행동을 보일 수도 있습니다. 반려동물이 문제행동을 보일 시에 적절한 방법으로 대처할 지식과 지도력이 필요합니다.", "일반적으로 반려동물의 수명은 10-20년 정도입니다. 반려동물이 늙고 병들거나 보호자의 생활 패턴과 환경이 바뀌어도, 반려동물을 끝까지 책임지고 돌보려는 마음가짐이 필요합니다.", "반려동물을 입양하기 전에 모든 구성원이 입양에 동의하고, 해당 동물에 알레르기가 없어야 하며, 동물을 입양한 후에도 잘 책임질 수 있을지 충분히 생각해 보셔야 합니다."]
 
-struct QnA_Previews: PreviewProvider {
+struct QualificationTest_Previews: PreviewProvider {
     static var previews: some View {
-        QnA()
+        QualificationTest()
     }
 }

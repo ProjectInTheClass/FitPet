@@ -7,25 +7,13 @@
 
 import SwiftUI
 import Charts
-struct PetRecommendationView: View {
-    var preferredPet: String
-    
-    var body: some View {
-        Text("당신의 답변을 토대로 추천하는 동물은 \(preferredPet)!")
-            .padding()
-        if preferredPet == "dog" {
-            Image("강아지")
-                .resizable()
-                .frame(width: 100, height: 100)
-        }
-    }
-}
 
 struct PetShape: Identifiable {
     var type: String
     var count: Double
     var id = UUID()
 }
+
 enum Taste: String {
     case Best
     case Worst
@@ -43,7 +31,6 @@ struct ResultExample: View {
         .init(type: bestPet[dict.count-3].key, count: Double(bestPet[dict.count-3].value)),
     ]
     @State var taste: Taste = .Best
-    
     var selectedData: [PetShape] {
         switch taste {
         case .Best:
@@ -55,41 +42,35 @@ struct ResultExample: View {
     
     var body: some View {
         VStack(alignment: .center) {
-            VStack {
+            Spacer().frame(height: 0)
+            Section {
                 Picker("Taste", selection: $taste.animation(.easeInOut)) {
                     Text(Taste.Best.rawValue).tag(Taste.Best)
                     Text(Taste.Worst.rawValue).tag(Taste.Worst)
                 }
                 .pickerStyle(.segmented)
+                .padding()
                 
                 Chart {
                     ForEach(selectedData) { shape in
-                       LineMark(
+                        LineMark(
                             x: .value("Total Count", shape.type),
                             y: .value("Shape Type", shape.count)
-                            
                         )
                         .interpolationMethod(.cardinal)
-                        .foregroundStyle( taste == .Best
-                                          ? .blue
-                                          : .red)
+                        .foregroundStyle(taste == .Best ? .blue : .red)
                         PointMark(x: .value("Total Count", shape.type), y: .value("Shape Type", shape.count))
                             .symbol(.diamond)
-                            .annotation {
-                                                Text("\(Int(shape.count))")
-                                            }
-                            .foregroundStyle( taste == .Best
-                                              ? .blue
-                                              : .red)
-                        
+                            .annotation { Text("\(Int(shape.count))") }
+                            .foregroundStyle(taste == .Best ? .blue : .red)
                     }
                 }
                 .frame(height: 350)
-                .padding(.top)
-                
-                Spacer().frame(height: 50)
+                .padding(.horizontal)
             }
-            VStack(alignment: .center) {
+            Spacer().frame(height: 50)
+            
+            Section {
                 if taste == .Best {
                     Text("최고의 궁합!")
                         .font(.title2).bold()
@@ -105,7 +86,7 @@ struct ResultExample: View {
                             .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.5))
+                    .background(Color.blue.opacity(0.9))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
@@ -120,7 +101,7 @@ struct ResultExample: View {
                             .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.5))
+                    .background(Color.blue.opacity(0.7))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
@@ -153,7 +134,7 @@ struct ResultExample: View {
                             .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.red.opacity(0.5))
+                    .background(Color.red.opacity(0.9))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
@@ -168,7 +149,7 @@ struct ResultExample: View {
                             .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.red.opacity(0.5))
+                    .background(Color.red.opacity(0.7))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
@@ -188,7 +169,8 @@ struct ResultExample: View {
                     .cornerRadius(25)
                 }
             }
-            .padding()
+            .multilineTextAlignment(.center)
+            Spacer().frame(height: 25)
         }
     }
 }
