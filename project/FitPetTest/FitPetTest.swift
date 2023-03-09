@@ -4,7 +4,6 @@
 //
 //  Created by mnzdrm on 2023/02/27.
 //
-
 import Swift
 import SwiftUI
 
@@ -52,47 +51,25 @@ struct ResultPage: View {
                     .font(.title).bold()
                     .multilineTextAlignment(.center)
                 Divider()
-                HStack {
-                    ForEach(0..<3, id: \.self) { i in
-                        if bestPet[i].value == bestScore {
-                            ForEach(0..<dict.count, id: \.self) { k in
-                                if animalsData[k].title == bestPet[i].key {
-                                    VStack {
-                                        Image(animalsData[k].image)
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fill)
-                                            .frame(width:100, height: 100)
-                                            .clipShape(Circle()) // Apply clipShape modifier
-                                            .overlay(Circle().stroke(Color.yellow, lineWidth: 5))
-                                        Text("\(animalsData[k].title)")
-                                            .font(.title).bold()
-                                            .multilineTextAlignment(.center)
-                                    }
-                                }
-                            }
+                ForEach(bestPet.filter { $0.value == bestScore }, id: \.key) { pet in
+                    if let animal = animalsData.first(where: { $0.title == pet.key }) {
+                        VStack {
+                            Image(animal.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width:100, height: 100)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.yellow, lineWidth: 5))
+                            Text("\(animal.title)")
+                                .font(.title).bold()
+                                .multilineTextAlignment(.center)
                         }
                     }
                 }
-                Divider()
-                Text("으로 선정됐습니다.")
-                    .font(.title).bold()
-                    .multilineTextAlignment(.center)
-            }
-            Spacer().frame(height: 200)
-            //Text("Score Check: \n\(bestPet[0].key) \(bestPet[0].value), \(bestPet[1].key) \(bestPet[1].value), \(bestPet[2].key) \(bestPet[2].value), \(bestPet[3].key) \(bestPet[3].value), \(bestPet[4].key) \(bestPet[4].value), \(bestPet[5].key) \(bestPet[5].value), \(bestPet[6].key) \(bestPet[6].value).").font(.headline)
-            VStack {
-                NavigationLink(destination: ResultExample()) {
-                    Text("결과 자세히 보기")
-                        .font(.headline).bold()
-                        .padding()
-                        .frame(maxWidth: .infinity, minHeight: 50)
-                        .foregroundColor(.white)
-                        .background(Color.yellow)
-                        .cornerRadius(10)
-                }
-                NavigationLink(destination: MainPage()
-                    .navigationBarBackButtonHidden(true)) {
-                        Text("메인으로 돌아가기")
+                Spacer().frame(height: 200)
+                VStack {
+                    NavigationLink(destination: ResultExample()) {
+                        Text("결과 자세히 보기")
                             .font(.headline).bold()
                             .padding()
                             .frame(maxWidth: .infinity, minHeight: 50)
@@ -100,21 +77,32 @@ struct ResultPage: View {
                             .background(Color.yellow)
                             .cornerRadius(10)
                     }
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        showWhyModal = true
-                    }, label: {
-                        Image(systemName: "questionmark.circle.fill")
-                            .foregroundColor(.black)
-                    })
+                    NavigationLink(destination: MainPage()
+                        .navigationBarBackButtonHidden(true)) {
+                            Text("메인으로 돌아가기")
+                                .font(.headline).bold()
+                                .padding()
+                                .frame(maxWidth: .infinity, minHeight: 50)
+                                .foregroundColor(.white)
+                                .background(Color.yellow)
+                                .cornerRadius(10)
+                        }
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            showWhyModal = true
+                        }, label: {
+                            Image(systemName: "questionmark.circle.fill")
+                                .foregroundColor(.black)
+                        })
+                    }
+                }
+                .sheet(isPresented: $showWhyModal) {
+                    WhyModalView(showWhyModal: $showWhyModal)
                 }
             }
-            .sheet(isPresented: $showWhyModal) {
-                WhyModalView()
-            }
-        }.padding()
+        }
     }
 }
 

@@ -27,6 +27,7 @@
 		AC8B694329A262C900286198 /* Animal_Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694229A262C900286198 /* Animal_Web.swift */; };
 		AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */; };
 		AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694629A264BF00286198 /* RecommendedSites.swift */; };
+		AC8D251229BA1324004CFF12 /* HelpModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D251129BA1324004CFF12 /* HelpModalView.swift */; };
 		AC95E87129B268840086D547 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95E87029B268840086D547 /* ProgressBar.swift */; };
 		AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675B29A107570098C9FE /* OnboardingMainView.swift */; };
 		AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675D29A107570098C9FE /* OnboardingPage2.swift */; };
@@ -60,6 +61,7 @@
 		AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEncyclopedia.swift; sourceTree = "<group>"; };
 		AC8B694629A264BF00286198 /* RecommendedSites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedSites.swift; sourceTree = "<group>"; };
 		AC8B694829A273FB00286198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC8D251129BA1324004CFF12 /* HelpModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModalView.swift; sourceTree = "<group>"; };
 		AC95E87029B268840086D547 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		AC99675B29A107570098C9FE /* OnboardingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
 		AC99675D29A107570098C9FE /* OnboardingPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage2.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */,
 				AC8B694229A262C900286198 /* Animal_Web.swift */,
+				AC8D251129BA1324004CFF12 /* HelpModalView.swift */,
 				AC8B694629A264BF00286198 /* RecommendedSites.swift */,
 				AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */,
 				AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */,
@@ -274,6 +277,7 @@
 				AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */,
 				4198EB1829B98AFB00C2906E /* test03.swift in Sources */,
 				4198EB1C29B98B0B00C2906E /* test05.swift in Sources */,
+				AC8D251229BA1324004CFF12 /* HelpModalView.swift in Sources */,
 				AC8B694029A25E9900286198 /* Onboarding_intro.swift in Sources */,
 				AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */,
 				AC888EC529A4A12800FA8026 /* AnimalDetailView.swift in Sources */,
