@@ -48,7 +48,7 @@ struct Question: View {
                             .background(Color.yellow)
                             .cornerRadius(10)
                     }
-                    .simultaneousGesture(TapGesture().onEnded{
+                    .simultaneousGesture(TapGesture().onEnded {
                         Anum = Qnum+0
                     })
                 Spacer().frame(width: 25)
@@ -63,7 +63,7 @@ struct Question: View {
                             .background(Color.yellow)
                             .cornerRadius(10)
                     }
-                    .simultaneousGesture(TapGesture().onEnded{
+                    .simultaneousGesture(TapGesture().onEnded {
                         Anum = Qnum+1
                     })
             }
@@ -154,3 +154,8 @@ struct QualificationTest_Previews: PreviewProvider {
         QualificationTest()
     }
 }
+
+
+// 온보딩 페이지 대신해서 한번은 사용하게끔 하는것을 추천해주심.
+// 관련된 사진을 넣어서 안심심하게 채우기. 텍스트 크기는 줄이고
+

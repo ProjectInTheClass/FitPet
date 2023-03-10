@@ -35,7 +35,7 @@ struct AnimalDetailView: View {
                         Text(animal.headline)
                             .font(.headline)
                         
-                        Text(" \(animal.title)에 대해 더알아보기")
+                        Text(" \(animal.title)에 대해 더 알아보기")
                             .font(.title3)
                             .bold()
                         Divider()

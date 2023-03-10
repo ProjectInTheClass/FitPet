@@ -53,7 +53,7 @@ struct ResultExample: View {
                 
                 Chart {
                     ForEach(selectedData) { shape in
-                        LineMark(
+                        BarMark(
                             x: .value("Total Count", shape.type),
                             y: .value("Shape Type", shape.count)
                         )
@@ -65,7 +65,7 @@ struct ResultExample: View {
                             .foregroundStyle(taste == .Best ? .blue : .red)
                     }
                 }
-                .frame(height: 350)
+                .frame(height: 300)
                 .padding(.horizontal)
             }
             Spacer().frame(height: 50)
@@ -171,6 +171,7 @@ struct ResultExample: View {
             }
             .multilineTextAlignment(.center)
             Spacer().frame(height: 25)
+                .navigationBarTitle("asdasd")
         }
     }
 }
@@ -180,3 +181,6 @@ struct ResultExample_Previews: PreviewProvider {
         ResultExample()
     }
 }
+// 네비게이션 타이틀에서 좋은 궁합, 좋지 않은 궁합으로 전환 되게끔 수정.
+// 점수가 왜 그렇게 나왔는지에 대한 설명? 각 문제당 몇점이 나왔는지가 궁금하다.
+// 
