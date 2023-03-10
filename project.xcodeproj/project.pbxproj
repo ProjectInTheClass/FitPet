@@ -28,12 +28,12 @@
 		AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */; };
 		AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694629A264BF00286198 /* RecommendedSites.swift */; };
 		AC8D251229BA1324004CFF12 /* HelpModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D251129BA1324004CFF12 /* HelpModalView.swift */; };
+		AC8D251329BB2DDF004CFF12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9A299FB32A00B4F82C /* Assets.xcassets */; };
 		AC95E87129B268840086D547 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95E87029B268840086D547 /* ProgressBar.swift */; };
 		AC99676029A107570098C9FE /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675B29A107570098C9FE /* OnboardingMainView.swift */; };
 		AC99676229A107570098C9FE /* OnboardingPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675D29A107570098C9FE /* OnboardingPage2.swift */; };
 		AC99676429A107570098C9FE /* OnboardingPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99675F29A107570098C9FE /* OnboardingPage1.swift */; };
 		ACA18A97299FB32800B4F82C /* projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18A96299FB32800B4F82C /* projectApp.swift */; };
-		ACA18A9B299FB32A00B4F82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9A299FB32A00B4F82C /* Assets.xcassets */; };
 		ACA18A9E299FB32A00B4F82C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9D299FB32A00B4F82C /* Preview Assets.xcassets */; };
 		ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */; };
 		ACA237A629AC8410003538EE /* ResultExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA237A529AC8410003538EE /* ResultExample.swift */; };
@@ -242,8 +242,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8D251329BB2DDF004CFF12 /* Assets.xcassets in Resources */,
 				ACA18A9E299FB32A00B4F82C /* Preview Assets.xcassets in Resources */,
-				ACA18A9B299FB32A00B4F82C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

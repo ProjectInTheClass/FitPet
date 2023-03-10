@@ -33,7 +33,7 @@ struct HelpModalView: View {
                         .cornerRadius(10)
                         .padding()
                         .frame(width: 120, height: 120)
-                    Text("만약 실제 동물을 키우기 위한 더 많은 정보가 필요하시다면 아래 추천 사이트 페이지에서 다양한 동물에 대한 다양한 YouTube 자료와 이미 동물을 키우고 있는 사람들과 소통 할 수 있는 카페에 가입해보세요! ")
+                    Text("만약 실제 동물을 키우기 위한 더 많은 정보가 필요하시다면 아래 추천 사이트 페이지에서 다양한 동물에 대한 YouTube 자료와 이미 동물을 키우고 있는 사람들과 소통 할 수 있는 카페에 가입해보세요! ")
                         .fixedSize(horizontal: false, vertical: true)
                     
                 }

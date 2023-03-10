@@ -24,11 +24,9 @@ struct RecommendedSites: View {
                 // Picker to select classification
                 Picker("Select Classification", selection: $selectedClassification) {
                     Text("포유류").tag("포유류")
-                    Text("양서류").tag("양서류")
                     Text("파충류").tag("파충류")
                     Text("조류").tag("조류")
                     Text("어류").tag("어류")
-                    Text("곤충").tag("곤충")
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal)
@@ -36,61 +34,89 @@ struct RecommendedSites: View {
                 // MARK: - 포유류
                 List {
                     if selectedClassification == "포유류" {
-                        Section(header: Text("포유류")) {
+                        Section {
                             HStack(alignment: .center) {
                                 NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/dogpalza")) {
-                                    Image("강사모")
+                                    Image("네이버카페")
                                         .resizable()
                                         .frame(width: 80, height: 80)
+                                        .clipShape(Circle())
                                     Text("네이버 카페 - 강사모")
                                 }
                             }
                             HStack(alignment: .center) {
                                 NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/ilovecat")) {
-                                    Image("고양이카페")
+                                    Image("네이버카페")
                                         .resizable()
                                         .frame(width: 80, height: 80)
+                                        .clipShape(Circle())
                                     Text("네이버 카페 - 고양이라서 다행이야")
                                 }
                             }
-                        }
-                        // MARK: - 양서류
-                    } else if selectedClassification == "양서류" {
-                        Section(header: Text("양서류")) {
                             HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/edongmu")) {
+                                    Image("네이버카페")
                                         .resizable()
                                         .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
+                                        .clipShape(Circle())
+                                    Text("네이버 카페 - 토끼야 놀자")
                                 }
                             }
                             HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/myfriendspet")) {
+                                    Image("네이버카페")
                                         .resizable()
                                         .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
+                                        .clipShape(Circle())
+                                    Text("네이버 카페 - 햄사모")
                                 }
                             }
+                            HStack(alignment: .center) {
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@Bodeumofficial")) {
+                                    Image("강형욱")
+                                        .resizable()
+                                        .frame(width: 80, height: 80)
+                                        .clipShape(Circle())
+                                    Text("YouTube - 강형욱의 보듬 TV")
+                                }
+                            }
+                            HStack(alignment: .center) {
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/channel/UCFcqNiSjbOpnYCTCACZ7bhQ")) {
+                                    Image("왜그러냥")
+                                        .resizable()
+                                        .frame(width: 80, height: 80)
+                                    Text("YouTube - 왜그러냥 귀엽개")
+                                }
+                            }
+                         
                         }
                         // MARK: - 파충류
                     } else if selectedClassification == "파충류" {
                         Section(header: Text("파충류")) {
                             HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/reptilia")) {
                                     Image("파사모")
                                         .resizable()
                                         .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
+                                        .clipShape(Circle())
+                                    Text("네이버 카페 - 파사모")
                                 }
                             }
                             HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@THEZOO_kr/featured")) {
+                                    Image("다흑")
                                         .resizable()
                                         .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
+                                        .clipShape(Circle())
+                                    Text("YouTube - 다흑")
+                                }
+                            }
+                            HStack(alignment: .center) {
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@jung_brre")) {
+                                    Image("정브르")
+                                        .resizable()
+                                        .frame(width: 80, height: 80)
+                                    Text("YouTube - 정브르")
                                 }
                             }
                         }
@@ -98,19 +124,31 @@ struct RecommendedSites: View {
                     } else if selectedClassification == "조류" {
                         Section(header: Text("조류")) {
                             HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/baekparrotlove")) {
+                                    Image("앵사모")
                                         .resizable()
                                         .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
+                                        .clipShape(Circle())
+                                    Text("네이버 카페 - 앵사모")
+                                }
+                            }
+                            
+                            HStack(alignment: .center) {
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@rumongdaro")) {
+                                    Image("루몽다로")
+                                        .resizable()
+                                        .frame(width: 80, height: 80)
+                                        .clipShape(Circle())
+                                    Text("YouTube - 루몽다로")
                                 }
                             }
                             HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@KoreanBirder")) {
+                                    Image("새덕후")
                                         .resizable()
                                         .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
+                                        .clipShape(Circle())
+                                    Text("YouTube - 새덕후")
                                 }
                             }
                         }
@@ -118,47 +156,21 @@ struct RecommendedSites: View {
                     } else if selectedClassification == "어류" {
                         Section(header: Text("어류")) {
                             HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/ranchu13")) {
+                                    Image("금사사")
                                         .resizable()
                                         .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
+                                        .clipShape(Circle())
+                                    Text("네이버 카페 - 금사사")
                                 }
                             }
                             HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
+                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@tvhesuinbada4267")) {
+                                    Image("해수인")
                                         .resizable()
                                         .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
-                                }
-                            }
-                            HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
-                                }
-                            }
-                        }
-                        // MARK: - 곤충
-                    } else if selectedClassification == "곤충" {
-                        Section(header: Text("곤충")) {
-                            HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
-                                }
-                            }
-                            HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://translate.google.co.kr/")) {
-                                    Image("파사모")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                    Text("Naver Cafe - Passamo")
+                                        .clipShape(Circle())
+                                    Text("YouTube - 해수인TV")
                                 }
                             }
                         }

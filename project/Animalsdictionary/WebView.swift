@@ -14,7 +14,7 @@ struct MyWebview: UIViewRepresentable {
     var urlToLoad: String
     
     //UIView 만들기
-    func makeUIView(context: Context) -> WKWebView { //웹뷰 반횐
+    func makeUIView(context: Context) -> WKWebView { //웹뷰 반환
             
             
             guard let url = URL(string: self.urlToLoad) else{
@@ -35,7 +35,6 @@ struct MyWebview: UIViewRepresentable {
     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MyWebview>) {
     }
 }
-
 
 struct MyWebview_Previews: PreviewProvider {
     static var previews: some View {
