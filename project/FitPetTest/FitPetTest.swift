@@ -43,9 +43,22 @@ struct ResultPage: View {
     var body: some View {
         VStack {
             if bestScore <= defaultScore {
-                Text("아쉽게도 당신에게 알맞은 동물을 찾지 못했습니다.")
+                Spacer().frame(height: 25)
+                Text("아쉽게도\n당신에게 알맞은 동물을 찾지 못했습니다.")
                     .font(.title).bold()
                     .multilineTextAlignment(.center)
+                Spacer().frame(height: 300)
+                NavigationLink(destination: MainPage()
+                    .navigationBarBackButtonHidden(true)) {
+                        Text("메인으로 돌아가기")
+                            .font(.headline).bold()
+                            .padding()
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .foregroundColor(.white)
+                            .background(Color.yellow)
+                            .cornerRadius(10)
+                    }
+                Spacer().frame(height: 50)
             } else {
                 Text("당신에게 알맞은 동물은")
                     .font(.title).bold()
@@ -103,11 +116,12 @@ struct ResultPage: View {
                 }
             }
         }
+        .padding()
     }
 }
 
 struct FitPetTest_Previews: PreviewProvider {
     static var previews: some View {
-        ResultPage()
+        FitPetTest()
     }
 }

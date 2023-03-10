@@ -139,7 +139,6 @@ struct test10: View {
                 }
                 Spacer()
                 NavigationLink(destination: ResultPage()
-                    
                     .navigationBarBackButtonHidden(true)) {
                         Text("결과 보기")
                             .font(.headline).bold()
