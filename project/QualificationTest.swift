@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct QualificationTest: View {
+    
     var body: some View {
         NavigationStack {
             Text("과연 내가 반려동물을 키워도 될까요?")

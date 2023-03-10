@@ -125,5 +125,5 @@ struct FitPetTest_Previews: PreviewProvider {
         FitPetTest()
     }
 }
-// 고슴도치 글자수 때문에 밀림
+// 고슴도치 글자수 때문에 밀림 (수정 완료)
 
