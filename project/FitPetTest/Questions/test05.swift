@@ -16,6 +16,8 @@ struct test05: View {
     @State private var scoreRabbit: Bool = true
     @State private var scoreHamster: Bool = true
     @State private var scoreNth: Bool = true
+    var nav: Bool { (scoreDog == true && scoreCat == true && scoreGoldfish == true && scoreLizard == true && scoreBird == true && scoreRabbit == true && scoreHamster == true && scoreNth == true)  == false }
+    
     var body: some View {
         NavigationStack {
             ProgressBar(progress: 50)
@@ -138,54 +140,56 @@ struct test05: View {
                     }
                 }
                 Spacer()
-                NavigationLink(destination: test06()
-                    .font(.largeTitle)
-                    .navigationBarBackButtonHidden(true)) {
-                        Text("다음")
-                            .font(.headline).bold()
-                            .padding()
-                            .frame(maxWidth: .infinity, minHeight: 50)
-                            .foregroundColor(.black)
-                            .background(Color.yellow)
-                            .cornerRadius(10)
-                    }
-                    .simultaneousGesture(TapGesture().onEnded{
-                        if scoreDog {
-                            dict["강아지"]! += score
-                        } else {
-                            dict["강아지"]! -= score
+                if nav {
+                    NavigationLink(destination: test06()
+                        .font(.largeTitle)
+                        .navigationBarBackButtonHidden(true)) {
+                            Text("다음")
+                                .font(.headline).bold()
+                                .padding()
+                                .frame(maxWidth: .infinity, minHeight: 50)
+                                .foregroundColor(.black)
+                                .background(Color.yellow)
+                                .cornerRadius(10)
                         }
-                        if scoreCat {
-                            dict["고양이"]! += score
-                        } else {
-                            dict["고양이"]! -= score
-                        }
-                        if scoreGoldfish {
-                            dict["금붕어"]! += score
-                        } else {
-                            dict["금붕어"]! -= score
-                        }
-                        if scoreLizard {
-                            dict["도마뱀"]! += score
-                        } else {
-                            dict["도마뱀"]! -= score
-                        }
-                        if scoreBird {
-                            dict["새"]! += score
-                        } else {
-                            dict["새"]! -= score
-                        }
-                        if scoreRabbit {
-                            dict["토끼"]! += score
-                        } else {
-                            dict["토끼"]! -= score
-                        }
-                        if scoreHamster {
-                            dict["햄스터"]! += score
-                        } else {
-                            dict["햄스터"]! -= score
-                        }
-                    })
+                        .simultaneousGesture(TapGesture().onEnded{
+                            if scoreDog {
+                                dict["강아지"]! += score
+                            } else {
+                                dict["강아지"]! -= score
+                            }
+                            if scoreCat {
+                                dict["고양이"]! += score
+                            } else {
+                                dict["고양이"]! -= score
+                            }
+                            if scoreGoldfish {
+                                dict["금붕어"]! += score
+                            } else {
+                                dict["금붕어"]! -= score
+                            }
+                            if scoreLizard {
+                                dict["도마뱀"]! += score
+                            } else {
+                                dict["도마뱀"]! -= score
+                            }
+                            if scoreBird {
+                                dict["새"]! += score
+                            } else {
+                                dict["새"]! -= score
+                            }
+                            if scoreRabbit {
+                                dict["토끼"]! += score
+                            } else {
+                                dict["토끼"]! -= score
+                            }
+                            if scoreHamster {
+                                dict["햄스터"]! += score
+                            } else {
+                                dict["햄스터"]! -= score
+                            }
+                        })
+                }
                 Spacer()
             }.padding()
         }.transition(.scale)
