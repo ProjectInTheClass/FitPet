@@ -22,7 +22,7 @@ struct test10: View {
         VStack {
             ProgressBar(progress: 100)
             VStack {
-                Spacer().frame(height: 50)
+                Spacer().frame(height: 100)
                 Text("가장 선호하는 동물을 선택해 주세요! \n (복수 응답 가능)")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
@@ -142,7 +142,6 @@ struct test10: View {
                 Spacer()
                 if nav {
                     NavigationLink(destination: ResultPage()
-                        .font(.largeTitle)
                         .navigationBarBackButtonHidden(true)) {
                             Text("결과 보기")
                                 .font(.headline).bold()

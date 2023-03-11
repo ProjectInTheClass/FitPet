@@ -18,7 +18,6 @@ struct test09: View {
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
                 NavigationLink(destination: test10()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("입양")
                             .font(.headline).bold()
@@ -38,7 +37,6 @@ struct test09: View {
                         dict["햄스터"]! += score
                     })
                 NavigationLink(destination: test10()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("10만원 미만")
                             .font(.headline).bold()
@@ -58,7 +56,6 @@ struct test09: View {
                         dict["햄스터"]! += score
                     })
                 NavigationLink(destination: test10()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("30만 원 이상")
                             .font(.headline).bold()

@@ -11,53 +11,47 @@ struct WhyModalView: View {
     @Binding var showWhyModal : Bool
     var body: some View {
         NavigationView {
-            VStack(spacing: 30) {
-                Text("왜 저런 결과가 나왔나요?")
+            VStack(spacing: 25) {
+                Spacer().frame(height: 25)
+                Text("왜 이런 결과가 나왔나요?")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                
+                    .padding(.bottom)
+                Spacer().frame(height: 0)
                 VStack(alignment: .center) {
                     Image(systemName: "exclamationmark.triangle.fill")
                         .resizable()
-                        .frame(width: 80, height: 80)
+                        .frame(width: 75, height: 75)
                         .foregroundColor(.yellow)
                         .padding()
-                    
-                    Text("검사 결과중 가장 중요하게 여겨지는 부분은 알레르기 반응입니다. 따라서 알레르기 반응이 있는 동물이 있다면 해당 동물은 결과에서 비교적 낮은 점수로 측정됩니다.")
+                    Text("검사 결과 중 가장 중요하게 다뤄지는 부분은 알레르기 반응입니다. 따라서 특정 동물에게 알레르기가 있다면 해당 동물은 결과에서 비교적 낮은 점수로 측정됩니다.")
                         .fixedSize(horizontal: false, vertical: true)
                 }
-                .padding()
-                
                 VStack(alignment: .center) {
                     Image(systemName:"chart.bar.doc.horizontal")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .cornerRadius(10)
+                        .frame(width: 90, height: 90)
                         .padding()
-                        .frame(width: 120, height: 120)
-                    
-                    Text("알레르기뿐만 아니라 질문지에서 답변하신 내용을 토대로 점수를 부여하기 때문에 기존에 생각하신 반려동물이 제대로 추천되지 않았을수도 있습니다.")
+                    Text("알레르기뿐만 아니라 질문지에서 답변하신 내용을 토대로 점수를 부여하기 때문에, 기존에 생각하신 반려동물이 제대로 추천되지 않았을 수도 있습니다.")
                         .fixedSize(horizontal: false, vertical: true)
                 }
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button(action: {
-                            showWhyModal = false
-                        }, label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundColor(.black)
-                        })
+                Spacer().frame(height: 100)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Button(action: {
+                                showWhyModal = false
+                            }, label: {
+                                Image(systemName: "xmark.circle.fill")
+                                    .foregroundColor(.black)
+                            })
+                        }
                     }
-                }
             }
+            .padding()
         }
-        .padding(.all)
-        
     }
 }
-
-
-
 
 struct WhyModalView_Previews: PreviewProvider {
     static var previews: some View {
@@ -65,40 +59,3 @@ struct WhyModalView_Previews: PreviewProvider {
         return WhyModalView(showWhyModal: showWhyModal)
     }
 }
-
-
-
-//        VStack(spacing: 30) {
-//            Text("왜 저런 결과가 나왔나요?")
-//                .font(.largeTitle)
-//                .fontWeight(.bold)
-//
-//            VStack(alignment: .center) {
-//                Image(systemName: "exclamationmark.triangle.fill")
-//                    .resizable()
-//                    .frame(width: 80, height: 80)
-//                    .foregroundColor(.yellow)
-//                    .padding()
-//
-//                Text("검사 결과중 가장 중요하게 여겨지는 부분은 알레르기 반응입니다. 따라서 알레르기 반응이 있는 동물이 있다면 해당 동물은 결과에서 비교적 낮은 점수로 측정됩니다.")
-//                    .fixedSize(horizontal: false, vertical: true)
-//            }
-//            .padding()
-//
-//            VStack(alignment: .center) {
-//                Image(systemName:"chart.bar.doc.horizontal")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .cornerRadius(10)
-//                    .padding()
-//                    .frame(width: 120, height: 120)
-//
-//                Text("알레르기뿐만 아니라 질문지에서 답변하신 내용을 토대로 점수를 부여하기 때문에 기존에 생각하신 반려동물이 제대로 추천되지 않았을수도 있습니다.")
-//                    .fixedSize(horizontal: false, vertical: true)
-//            }
-//        }
-//        .padding(.all)
-//
-//
-//}
-//}

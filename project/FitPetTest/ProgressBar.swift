@@ -4,11 +4,12 @@
 //
 //  Created by 백대홍 on 2023/03/04.
 //
+
 import SwiftUI
 
 struct ProgressBar: View {
     let progress: CGFloat
-
+    
     var body: some View {
         ZStack(alignment: .leading) {
             Capsule()
@@ -18,9 +19,10 @@ struct ProgressBar: View {
                 .frame(width: progress*(3.6), height: 8)
                 .foregroundColor(Color.blue)
         }.padding()
-        .animation(.linear(duration: 0.5))
+            .animation(.linear(duration: 0.5))
     }
 }
+
 struct ProgressBar_Previews: PreviewProvider {
     static var previews: some View {
         ProgressBar(progress: 50)

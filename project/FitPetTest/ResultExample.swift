@@ -41,16 +41,15 @@ struct ResultExample: View {
     }
     
     var body: some View {
-        
         VStack(alignment: .center) {
-            Spacer().frame(height: 0)
+            Spacer().frame(height: 50)
             Section {
                 Picker("Taste", selection: $taste.animation(.easeInOut)) {
                     Text(Taste.Best.rawValue).tag(Taste.Best)
                     Text(Taste.Worst.rawValue).tag(Taste.Worst)
                 }
                 .pickerStyle(.segmented)
-                .padding()
+                .padding(.horizontal)
                 
                 Chart {
                     ForEach(selectedData) { shape in
@@ -67,10 +66,9 @@ struct ResultExample: View {
                     }
                 }
                 .frame(height: 300)
-                .padding(.horizontal)
+                .padding()
             }
-            Spacer().frame(height: 50)
-            
+            Spacer().frame(height: 100)
             Section {
                 if taste == .Best {
                     HStack  {
@@ -78,9 +76,9 @@ struct ResultExample: View {
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.trailing)
                         Text("|")
-                            .bold().frame(width: 30)
+                            .bold().frame(width: 15)
                             .multilineTextAlignment(.center)
-                        Text("\(bestPet[0].value)점")
+                        Text("\(bestPet[0].value) 점")
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.leading)
                     }
@@ -93,9 +91,9 @@ struct ResultExample: View {
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.trailing)
                         Text("|")
-                            .bold().frame(width: 30)
+                            .bold().frame(width: 15)
                             .multilineTextAlignment(.center)
-                        Text("\(bestPet[1].value)점")
+                        Text("\(bestPet[1].value) 점")
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.leading)
                     }
@@ -108,9 +106,9 @@ struct ResultExample: View {
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.trailing)
                         Text("|")
-                            .bold().frame(width: 30)
+                            .bold().frame(width: 15)
                             .multilineTextAlignment(.center)
-                        Text("\(bestPet[2].value)점")
+                        Text("\(bestPet[2].value) 점")
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.leading)
                     }
@@ -124,9 +122,9 @@ struct ResultExample: View {
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.trailing)
                         Text("|")
-                            .bold().frame(width: 30)
+                            .bold().frame(width: 15)
                             .multilineTextAlignment(.center)
-                        Text("\(bestPet[dict.count-1].value)점")
+                        Text("\(bestPet[dict.count-1].value) 점")
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.leading)
                     }
@@ -139,9 +137,9 @@ struct ResultExample: View {
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.trailing)
                         Text("|")
-                            .bold().frame(width: 30)
+                            .bold().frame(width: 15)
                             .multilineTextAlignment(.center)
-                        Text("\(bestPet[dict.count-2].value)점")
+                        Text("\(bestPet[dict.count-2].value) 점")
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.leading)
                     }
@@ -154,9 +152,9 @@ struct ResultExample: View {
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.trailing)
                         Text("|")
-                            .bold().frame(width: 30)
+                            .bold().frame(width: 15)
                             .multilineTextAlignment(.center)
-                        Text("\(bestPet[dict.count-3].value)점")
+                        Text("\(bestPet[dict.count-3].value) 점")
                             .bold().frame(width: 60)
                             .multilineTextAlignment(.leading)
                     }
@@ -167,7 +165,7 @@ struct ResultExample: View {
                 }
             }
             .multilineTextAlignment(.center)
-            Spacer().frame(height: 25)
+            Spacer().frame(height: 100)
                 .navigationTitle(taste == .Best ? "최고의 궁합" : "좋지 않은 궁합")
         }
     }
@@ -178,6 +176,5 @@ struct ResultExample_Previews: PreviewProvider {
         ResultExample()
     }
 }
-// 네비게이션 타이틀에서 좋은 궁합, 좋지 않은 궁합으로 전환 되게끔 수정. (수정 완료)
+
 // 점수가 왜 그렇게 나왔는지에 대한 설명? 각 문제당 몇점이 나왔는지가 궁금하다.
-// 

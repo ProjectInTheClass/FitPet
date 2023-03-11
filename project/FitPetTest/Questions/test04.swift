@@ -13,12 +13,11 @@ struct test04: View {
             ProgressBar(progress: 40)
             VStack {
                 Spacer()
-                Text("희망하는 반려동물의 크기를 선택해주세요.")
+                Text("희망하는 반려동물의 크기를 선택해 주세요.")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
                 NavigationLink(destination: test05()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("소형")
                             .font(.headline).bold()
@@ -38,7 +37,6 @@ struct test04: View {
                         dict["햄스터"]! += score
                     })
                 NavigationLink(destination: test05()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("중형")
                             .font(.headline).bold()
@@ -58,7 +56,6 @@ struct test04: View {
                         dict["햄스터"]! -= score
                     })
                 NavigationLink(destination: test05()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("대형")
                             .font(.headline).bold()

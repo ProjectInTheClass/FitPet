@@ -19,11 +19,11 @@ struct test05: View {
     var nav: Bool { (scoreDog == true && scoreCat == true && scoreGoldfish == true && scoreLizard == true && scoreBird == true && scoreRabbit == true && scoreHamster == true && scoreNth == true)  == false }
     
     var body: some View {
-        NavigationStack {
+        VStack {
             ProgressBar(progress: 50)
             VStack {
-                Spacer()
-                Text("특정 동물의 알레르기를 가지고 있거나 싫어하는 동물이 있으신가요? \n (복수 응답 가능)")
+                Spacer().frame(height: 100)
+                Text("싫어하거나 알레르기가 있는 동물이 있으신가요? \n (복수 응답 가능)")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
@@ -142,7 +142,6 @@ struct test05: View {
                 Spacer()
                 if nav {
                     NavigationLink(destination: test06()
-                        .font(.largeTitle)
                         .navigationBarBackButtonHidden(true)) {
                             Text("다음")
                                 .font(.headline).bold()

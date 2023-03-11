@@ -18,7 +18,6 @@ struct test07: View {
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
                 NavigationLink(destination: test08()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("네")
                             .font(.headline).bold()
@@ -38,7 +37,6 @@ struct test07: View {
                         dict["햄스터"]! -= score
                     })
                 NavigationLink(destination: test08()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("아니오")
                             .font(.headline).bold()

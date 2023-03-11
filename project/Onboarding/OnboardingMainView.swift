@@ -1,9 +1,10 @@
 //
-//  OnboardingView.swift
-//  Netfulix Clone
+//  OnboardingMainView.swift
+//  project
 //
-//  Created by 백대홍 on 2023/02/13.
+//  Created by 백대홍 on 2023/02/19.
 //
+
 //MARK: - onboardingview
 import SwiftUI
 

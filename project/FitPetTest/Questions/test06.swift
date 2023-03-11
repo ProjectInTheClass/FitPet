@@ -13,12 +13,11 @@ struct test06: View {
             ProgressBar(progress: 60)
             VStack {
                 Spacer()
-                Text("어떤 활동을 선호 하나요?")
+                Text("어떤 활동을 선호하나요?")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
                 NavigationLink(destination: test07()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("활발한 활동\n(운동, 산책, 등산)")
                             .font(.headline).bold()
@@ -38,7 +37,6 @@ struct test06: View {
                         dict["햄스터"]! -= score
                     })
                 NavigationLink(destination: test07()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("정적인 활동\n(독서, 실내 활동)")
                             .font(.headline).bold()
@@ -58,7 +56,6 @@ struct test06: View {
                         dict["햄스터"]! += score
                     })
                 NavigationLink(destination: test07()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("상관없어요")
                             .font(.headline).bold()

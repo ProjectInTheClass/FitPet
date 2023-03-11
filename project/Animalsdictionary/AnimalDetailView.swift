@@ -16,26 +16,22 @@ struct AnimalDetailView: View {
                 Image(animal.image)
                     .resizable()
                     .frame(width: .infinity, height: 200)
-                
                 VStack(alignment:.leading, spacing:20){
                     HStack{
                         Text(animal.title)
                             .font(.largeTitle)
                             .fontWeight(.heavy)
-                       
                         Spacer()
-                        
                         NavigationLink(
                             destination: RecommendedSites(selectedClassification: animal.recommandtype),
-                                    label: {
-                                        Text("추천 사이트").bold().foregroundColor(.blue)
-                                    })
-                            }
+                            label: {
+                                Text("추천 사이트").bold().foregroundColor(.blue)
+                            })
+                    }
                     VStack (alignment:.leading, spacing:20) {
                         Text(animal.headline)
                             .font(.headline)
-                        
-                        Text(" \(animal.title)에 대해 더 알아보기")
+                        Text("\(animal.title)에 대해 더 알아보기")
                             .font(.title3)
                             .bold()
                         Divider()
@@ -48,26 +44,20 @@ struct AnimalDetailView: View {
                                 .bold()
                             Text(animal.characteristics)
                         }
-                      
                         Divider()
-                        
                         VStack (alignment:.leading, spacing:10) {
-                            Text("식이 및 영양관리법")
+                            Text("식이 및 영양 관리법")
                                 .bold()
                             Text(animal.nutrition)
                         }
-                       
                         Divider()
-                        
                         VStack (alignment:.leading, spacing:20) {
                             Text("수명")
                                 .bold()
                             Text(animal.lifecycle)
                         }
-                        
                         ScrollView(.horizontal) {
                             HStack(spacing: 20) {
-                                
                                 ForEach(animal.species.indices, id: \.self) { index in
                                     VStack(spacing: 5) {
                                         Image(animal.speciesImage[index])
@@ -86,9 +76,7 @@ struct AnimalDetailView: View {
                 .padding(.horizontal, 20)
             }
             .padding(.top, 100)
-            
         }
-        
         .edgesIgnoringSafeArea(.all)
     }
 }

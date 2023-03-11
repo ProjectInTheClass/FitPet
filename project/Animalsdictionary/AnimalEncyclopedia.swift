@@ -21,7 +21,6 @@ struct AnimalList: View {
                 Text(animal.title)
                     .font(.title2)
                     .fontWeight(.bold)
-
                 Text(animal.headline)
                     .font(.caption)
                     .foregroundColor(Color.secondary)
@@ -40,7 +39,6 @@ struct AnimalEncyclopedia: View {
                     AnimalList(animal: animal)
                 }
             }
-            
         }
     }
 }

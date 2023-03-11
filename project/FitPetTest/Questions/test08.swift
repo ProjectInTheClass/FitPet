@@ -18,7 +18,6 @@ struct test08: View {
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
                 NavigationLink(destination: test09()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("5년 미만")
                             .font(.headline).bold()
@@ -38,7 +37,6 @@ struct test08: View {
                         dict["햄스터"]! += score
                     })
                 NavigationLink(destination: test09()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("10년 내외")
                             .font(.headline).bold()
@@ -58,7 +56,6 @@ struct test08: View {
                         dict["햄스터"]! -= score
                     })
                 NavigationLink(destination: test09()
-                    .font(.largeTitle)
                     .navigationBarBackButtonHidden(true)) {
                         Text("20년 이상")
                             .font(.headline).bold()
