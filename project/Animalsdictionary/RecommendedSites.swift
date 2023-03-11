@@ -34,7 +34,10 @@ struct RecommendedSites: View {
                 // MARK: - 포유류
                 List {
                     if selectedClassification == "포유류" {
-                        Section {
+                        Section(header: Text("네이버 카페")
+                            .font(.callout)
+                            .foregroundColor(.secondary))
+                        {
                             HStack(alignment: .center) {
                                 NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/dogpalza")) {
                                     Image("네이버카페")
@@ -71,28 +74,37 @@ struct RecommendedSites: View {
                                     Text("네이버 카페 - 햄사모")
                                 }
                             }
-                            HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@Bodeumofficial")) {
-                                    Image("강형욱")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                        .clipShape(Circle())
-                                    Text("YouTube - 강형욱의 보듬 TV")
+                            Section(header: Text("YouTube")
+                                .font(.callout)
+                                .foregroundColor(.secondary))
+                            {
+                                HStack(alignment: .center)
+                                {
+                                    NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@Bodeumofficial")) {
+                                        Image("강형욱")
+                                            .resizable()
+                                            .frame(width: 80, height: 80)
+                                            .clipShape(Circle())
+                                        Text("YouTube - 강형욱의 보듬 TV")
+                                    }
                                 }
-                            }
-                            HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/channel/UCFcqNiSjbOpnYCTCACZ7bhQ")) {
-                                    Image("왜그러냥")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                    Text("YouTube - 왜그러냥 귀엽개")
+                                HStack(alignment: .center) {
+                                    NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/channel/UCFcqNiSjbOpnYCTCACZ7bhQ")) {
+                                        Image("왜그러냥")
+                                            .resizable()
+                                            .frame(width: 80, height: 80)
+                                        Text("YouTube - 왜그러냥 귀엽개")
+                                    }
                                 }
                             }
                          
                         }
                         // MARK: - 파충류
                     } else if selectedClassification == "파충류" {
-                        Section(header: Text("파충류")) {
+                        Section(header: Text("파충류")
+                            .font(.callout)
+                            .foregroundColor(.secondary))
+                        {
                             HStack(alignment: .center) {
                                 NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/reptilia")) {
                                     Image("파사모")
@@ -102,6 +114,10 @@ struct RecommendedSites: View {
                                     Text("네이버 카페 - 파사모")
                                 }
                             }
+                            Section(header: Text("YouTube")
+                                .font(.callout)
+                                .foregroundColor(.secondary))
+                            {
                             HStack(alignment: .center) {
                                 NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@THEZOO_kr/featured")) {
                                     Image("다흑")
@@ -120,6 +136,7 @@ struct RecommendedSites: View {
                                 }
                             }
                         }
+                        }
                         // MARK: - 조류
                     } else if selectedClassification == "조류" {
                         Section(header: Text("조류")) {
@@ -132,29 +149,35 @@ struct RecommendedSites: View {
                                     Text("네이버 카페 - 앵사모")
                                 }
                             }
-                            
-                            HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@rumongdaro")) {
-                                    Image("루몽다로")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                        .clipShape(Circle())
-                                    Text("YouTube - 루몽다로")
+                            Section(header: Text("YouTube")
+                                .font(.callout)
+                                .foregroundColor(.secondary)) {
+                                    HStack(alignment: .center) {
+                                        NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@rumongdaro")) {
+                                            Image("루몽다로")
+                                                .resizable()
+                                                .frame(width: 80, height: 80)
+                                                .clipShape(Circle())
+                                            Text("YouTube - 루몽다로")
+                                        }
+                                    }
+                                    HStack(alignment: .center) {
+                                        NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@KoreanBirder")) {
+                                            Image("새덕후")
+                                                .resizable()
+                                                .frame(width: 80, height: 80)
+                                                .clipShape(Circle())
+                                            Text("YouTube - 새덕후")
+                                        }
+                                    }
                                 }
-                            }
-                            HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@KoreanBirder")) {
-                                    Image("새덕후")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                        .clipShape(Circle())
-                                    Text("YouTube - 새덕후")
-                                }
-                            }
                         }
                         // MARK: - 어류
                     } else if selectedClassification == "어류" {
-                        Section(header: Text("어류")) {
+                        Section(header: Text("어류")
+                            .font(.callout)
+                            .foregroundColor(.secondary))
+                        {
                             HStack(alignment: .center) {
                                 NavigationLink(destination: MyWebview(urlToLoad: "https://cafe.naver.com/ranchu13")) {
                                     Image("금사사")
@@ -164,15 +187,20 @@ struct RecommendedSites: View {
                                     Text("네이버 카페 - 금사사")
                                 }
                             }
-                            HStack(alignment: .center) {
-                                NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@tvhesuinbada4267")) {
-                                    Image("해수인")
-                                        .resizable()
-                                        .frame(width: 80, height: 80)
-                                        .clipShape(Circle())
-                                    Text("YouTube - 해수인TV")
+                            Section(header: Text("YouTube")
+                                .font(.callout)
+                                .foregroundColor(.secondary))
+                            {
+                                    HStack(alignment: .center) {
+                                        NavigationLink(destination: MyWebview(urlToLoad: "https://m.youtube.com/@tvhesuinbada4267")) {
+                                            Image("해수인")
+                                                .resizable()
+                                                .frame(width: 80, height: 80)
+                                                .clipShape(Circle())
+                                            Text("YouTube - 해수인TV")
+                                        }
+                                    }
                                 }
-                            }
                         }
                     }
                 }

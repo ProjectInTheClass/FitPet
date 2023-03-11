@@ -40,6 +40,7 @@ struct FitPetTest: View {
 struct ResultPage: View {
     init() { UINavigationBar.setAnimationsEnabled(true) }
     @State private var showWhyModal = false
+    
     var body: some View {
         VStack {
             if bestScore <= defaultScore {
@@ -64,18 +65,20 @@ struct ResultPage: View {
                     .font(.title).bold()
                     .multilineTextAlignment(.center)
                 Divider()
+                HStack {
                 ForEach(bestPet.filter { $0.value == bestScore }, id: \.key) { pet in
-                    if let animal = animalsData.first(where: { $0.title == pet.key }) {
-                        VStack {
-                            Image(animal.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:100, height: 100)
-                                .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.yellow, lineWidth: 5))
-                            Text("\(animal.title)")
-                                .font(.title).bold()
-                                .multilineTextAlignment(.center)
+                        if let animal = animalsData.first(where: { $0.title == pet.key }) {
+                            VStack {
+                                Image(animal.image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width:100, height: 100)
+                                    .clipShape(Circle())
+                                    .overlay(Circle().stroke(Color.yellow, lineWidth: 5))
+                                Text("\(animal.title)")
+                                    .font(.title).bold()
+                                    .multilineTextAlignment(.center)
+                            }.padding(.all, 5)
                         }
                     }
                 }
@@ -92,7 +95,7 @@ struct ResultPage: View {
                     }
                     NavigationLink(destination: MainPage()
                         .navigationBarBackButtonHidden(true)) {
-                            Text("메인으로 돌아가기")
+                            Text("홈으로 돌아가기")
                                 .font(.headline).bold()
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)

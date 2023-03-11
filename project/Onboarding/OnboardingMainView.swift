@@ -16,8 +16,8 @@ struct OnboardingMainView: View {
             OnboardingPage1(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
             OnboardingPage2(ShowOnboarding: $ShowOnboarding,showsDismissButton: true)
         }
-       
         .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(.page(backgroundDisplayMode: .always))
         .ignoresSafeArea()
     }
 }

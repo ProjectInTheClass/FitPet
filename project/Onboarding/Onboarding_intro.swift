@@ -10,6 +10,7 @@ import SwiftUI
 struct Onboarding_intro: View {
     @Binding var ShowOnboarding: Bool
     let showsDismissButton: Bool
+  
     var body: some View {
         ZStack {
             Color(.white)

@@ -49,7 +49,7 @@ struct test03: View {
                             .cornerRadius(10)
                     }
                     .simultaneousGesture(TapGesture().onEnded{
-                        dict["강아지"]! += score
+                        dict["강아지"]! -= score
                         dict["고양이"]! += score
                         dict["도마뱀"]! -= score
                         dict["금붕어"]! -= score

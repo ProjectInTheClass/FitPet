@@ -52,8 +52,8 @@ struct test08: View {
                         dict["강아지"]! += score
                         dict["고양이"]! += score
                         dict["도마뱀"]! += score
-                        dict["금붕어"]! -= score
-                        dict["새"]! -= score
+                        dict["금붕어"]! += score
+                        dict["새"]! += score
                         dict["토끼"]! -= score
                         dict["햄스터"]! -= score
                     })
@@ -73,7 +73,7 @@ struct test08: View {
                         dict["고양이"]! -= score
                         dict["도마뱀"]! -= score
                         dict["금붕어"]! -= score
-                        dict["새"]! -= score
+                        dict["새"]! += score
                         dict["토끼"]! -= score
                         dict["햄스터"]! -= score
                     })

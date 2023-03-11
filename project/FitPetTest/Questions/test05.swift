@@ -21,7 +21,7 @@ struct test05: View {
             ProgressBar(progress: 50)
             VStack {
                 Spacer()
-                Text("특정 동물의 알레르기를 가지고 있나요? (복수 응답 가능)")
+                Text("특정 동물의 알레르기를 가지고 있거나 싫어하는 동물이 있으신가요? \n (복수 응답 가능)")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)

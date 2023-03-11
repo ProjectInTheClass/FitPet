@@ -16,12 +16,14 @@ struct test10: View {
     @State private var scoreRabbit: Bool = false
     @State private var scoreHamster: Bool = false
     @State private var scoreNth: Bool = false
+    
+    @State private var showWarning = false
     var body: some View {
         VStack {
             ProgressBar(progress: 100)
             VStack {
                 Spacer().frame(height: 50)
-                Text("가장 선호하는 동물을 선택해 주세요! (복수 응답 가능")
+                Text("가장 선호하는 동물을 선택해 주세요! \n (복수 응답 가능)")
                     .font(.largeTitle).bold()
                     .multilineTextAlignment(.center)
                 Spacer().frame(height: 50)
@@ -140,6 +142,7 @@ struct test10: View {
                 Spacer()
                 NavigationLink(destination: ResultPage()
                     .navigationBarBackButtonHidden(true)) {
+
                         Text("결과 보기")
                             .font(.headline).bold()
                             .padding()
