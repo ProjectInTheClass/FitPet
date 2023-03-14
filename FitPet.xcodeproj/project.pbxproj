@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4198EB1429B98ACD00C2906E /* test01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB1329B98ACD00C2906E /* test01.swift */; };
+		4198EB1629B98AF400C2906E /* test02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB1529B98AF400C2906E /* test02.swift */; };
+		4198EB1829B98AFB00C2906E /* test03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB1729B98AFB00C2906E /* test03.swift */; };
+		4198EB1A29B98B0300C2906E /* test04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB1929B98B0300C2906E /* test04.swift */; };
+		4198EB1C29B98B0B00C2906E /* test05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB1B29B98B0B00C2906E /* test05.swift */; };
+		4198EB1E29B98B1300C2906E /* test06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB1D29B98B1300C2906E /* test06.swift */; };
+		4198EB2029B98B1C00C2906E /* test07.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB1F29B98B1C00C2906E /* test07.swift */; };
+		4198EB2229B98B2400C2906E /* test08.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB2129B98B2400C2906E /* test08.swift */; };
+		4198EB2429B98B2C00C2906E /* test09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB2329B98B2C00C2906E /* test09.swift */; };
+		4198EB2629B98B3500C2906E /* test10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB2529B98B3500C2906E /* test10.swift */; };
+		4198EB2829B9A95A00C2906E /* QualificationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB2729B9A95A00C2906E /* QualificationTest.swift */; };
+		AC36BA2829A9ECC7005B90D2 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36BA2629A9ECC7005B90D2 /* MainPage.swift */; };
+		AC83DA0429B3052A00637B95 /* FitPetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83DA0329B3052A00637B95 /* FitPetTest.swift */; };
+		AC83DA0629B31AE500637B95 /* WhyModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83DA0529B31AE400637B95 /* WhyModalView.swift */; };
+		AC888EA129A334D200FA8026 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EA029A334D200FA8026 /* WebView.swift */; };
+		AC888EC529A4A12800FA8026 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */; };
+		AC8B694329A262C900286198 /* Animal_Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694229A262C900286198 /* Animal_Web.swift */; };
+		AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */; };
+		AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694629A264BF00286198 /* RecommendedSites.swift */; };
+		AC8D251229BA1324004CFF12 /* HelpModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D251129BA1324004CFF12 /* HelpModalView.swift */; };
+		AC8D251329BB2DDF004CFF12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9A299FB32A00B4F82C /* Assets.xcassets */; };
+		AC8DB55329C0478D0047C4C3 /* Onboarding_intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB54F29C0478D0047C4C3 /* Onboarding_intro.swift */; };
+		AC8DB55429C0478D0047C4C3 /* OnboardingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB55029C0478D0047C4C3 /* OnboardingMainView.swift */; };
+		AC8DB55529C0478D0047C4C3 /* OnboardingPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB55129C0478D0047C4C3 /* OnboardingPage2.swift */; };
+		AC8DB55629C0478D0047C4C3 /* OnboardingPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB55229C0478D0047C4C3 /* OnboardingPage1.swift */; };
+		AC8DB55829C049780047C4C3 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB55729C049780047C4C3 /* Documentation.docc */; };
+		AC95E87129B268840086D547 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95E87029B268840086D547 /* ProgressBar.swift */; };
+		ACA18A97299FB32800B4F82C /* FitPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18A96299FB32800B4F82C /* FitPetApp.swift */; };
+		ACA18A9E299FB32A00B4F82C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9D299FB32A00B4F82C /* Preview Assets.xcassets */; };
+		ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */; };
+		ACA237A629AC8410003538EE /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA237A529AC8410003538EE /* ResultView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4198EB1329B98ACD00C2906E /* test01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test01.swift; sourceTree = "<group>"; };
+		4198EB1529B98AF400C2906E /* test02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test02.swift; sourceTree = "<group>"; };
+		4198EB1729B98AFB00C2906E /* test03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test03.swift; sourceTree = "<group>"; };
+		4198EB1929B98B0300C2906E /* test04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test04.swift; sourceTree = "<group>"; };
+		4198EB1B29B98B0B00C2906E /* test05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test05.swift; sourceTree = "<group>"; };
+		4198EB1D29B98B1300C2906E /* test06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test06.swift; sourceTree = "<group>"; };
+		4198EB1F29B98B1C00C2906E /* test07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test07.swift; sourceTree = "<group>"; };
+		4198EB2129B98B2400C2906E /* test08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test08.swift; sourceTree = "<group>"; };
+		4198EB2329B98B2C00C2906E /* test09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test09.swift; sourceTree = "<group>"; };
+		4198EB2529B98B3500C2906E /* test10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test10.swift; sourceTree = "<group>"; };
+		4198EB2729B9A95A00C2906E /* QualificationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualificationTest.swift; sourceTree = "<group>"; };
+		AC36BA2629A9ECC7005B90D2 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		AC83DA0329B3052A00637B95 /* FitPetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPetTest.swift; sourceTree = "<group>"; };
+		AC83DA0529B31AE400637B95 /* WhyModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyModalView.swift; sourceTree = "<group>"; };
+		AC888EA029A334D200FA8026 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
+		AC8B694229A262C900286198 /* Animal_Web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal_Web.swift; sourceTree = "<group>"; };
+		AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEncyclopedia.swift; sourceTree = "<group>"; };
+		AC8B694629A264BF00286198 /* RecommendedSites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedSites.swift; sourceTree = "<group>"; };
+		AC8B694829A273FB00286198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC8D251129BA1324004CFF12 /* HelpModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModalView.swift; sourceTree = "<group>"; };
+		AC8DB54F29C0478D0047C4C3 /* Onboarding_intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding_intro.swift; sourceTree = "<group>"; };
+		AC8DB55029C0478D0047C4C3 /* OnboardingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
+		AC8DB55129C0478D0047C4C3 /* OnboardingPage2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage2.swift; sourceTree = "<group>"; };
+		AC8DB55229C0478D0047C4C3 /* OnboardingPage1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage1.swift; sourceTree = "<group>"; };
+		AC8DB55729C049780047C4C3 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		AC95E87029B268840086D547 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		ACA18A93299FB32800B4F82C /* FitPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA18A96299FB32800B4F82C /* FitPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPetApp.swift; sourceTree = "<group>"; };
+		ACA18A9A299FB32A00B4F82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACA18A9D299FB32A00B4F82C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsData.swift; sourceTree = "<group>"; };
+		ACA237A529AC8410003538EE /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACA18A90299FB32800B4F82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4198EB1129B98A2200C2906E /* FitPetTest */ = {
+			isa = PBXGroup;
+			children = (
+				4198EB1229B98A7B00C2906E /* Questions */,
+				AC95E87029B268840086D547 /* ProgressBar.swift */,
+				AC83DA0329B3052A00637B95 /* FitPetTest.swift */,
+				ACA237A529AC8410003538EE /* ResultView.swift */,
+				AC83DA0529B31AE400637B95 /* WhyModalView.swift */,
+			);
+			path = FitPetTest;
+			sourceTree = "<group>";
+		};
+		4198EB1229B98A7B00C2906E /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				4198EB1329B98ACD00C2906E /* test01.swift */,
+				4198EB1529B98AF400C2906E /* test02.swift */,
+				4198EB1729B98AFB00C2906E /* test03.swift */,
+				4198EB1929B98B0300C2906E /* test04.swift */,
+				4198EB1B29B98B0B00C2906E /* test05.swift */,
+				4198EB1D29B98B1300C2906E /* test06.swift */,
+				4198EB1F29B98B1C00C2906E /* test07.swift */,
+				4198EB2129B98B2400C2906E /* test08.swift */,
+				4198EB2329B98B2C00C2906E /* test09.swift */,
+				4198EB2529B98B3500C2906E /* test10.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		AC8B694129A2622200286198 /* Animalsdictionary */ = {
+			isa = PBXGroup;
+			children = (
+				ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */,
+				AC8B694229A262C900286198 /* Animal_Web.swift */,
+				AC8D251129BA1324004CFF12 /* HelpModalView.swift */,
+				AC8B694629A264BF00286198 /* RecommendedSites.swift */,
+				AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */,
+				AC888EC429A4A12800FA8026 /* AnimalDetailView.swift */,
+				AC888EA029A334D200FA8026 /* WebView.swift */,
+			);
+			path = Animalsdictionary;
+			sourceTree = "<group>";
+		};
+		AC8DB54E29C0478D0047C4C3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB55029C0478D0047C4C3 /* OnboardingMainView.swift */,
+				AC8DB54F29C0478D0047C4C3 /* Onboarding_intro.swift */,
+				AC8DB55229C0478D0047C4C3 /* OnboardingPage1.swift */,
+				AC8DB55129C0478D0047C4C3 /* OnboardingPage2.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		ACA18A8A299FB32800B4F82C = {
+			isa = PBXGroup;
+			children = (
+				ACA18A95299FB32800B4F82C /* FitPet */,
+				ACA18A94299FB32800B4F82C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACA18A94299FB32800B4F82C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACA18A93299FB32800B4F82C /* FitPet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACA18A95299FB32800B4F82C /* FitPet */ = {
+			isa = PBXGroup;
+			children = (
+				AC8B694829A273FB00286198 /* Info.plist */,
+				ACA18A96299FB32800B4F82C /* FitPetApp.swift */,
+				AC36BA2629A9ECC7005B90D2 /* MainPage.swift */,
+				4198EB2729B9A95A00C2906E /* QualificationTest.swift */,
+				4198EB1129B98A2200C2906E /* FitPetTest */,
+				AC8B694129A2622200286198 /* Animalsdictionary */,
+				AC8DB54E29C0478D0047C4C3 /* Onboarding */,
+				ACA18A9A299FB32A00B4F82C /* Assets.xcassets */,
+				ACA18A9C299FB32A00B4F82C /* Preview Content */,
+				AC8DB55729C049780047C4C3 /* Documentation.docc */,
+			);
+			path = FitPet;
+			sourceTree = "<group>";
+		};
+		ACA18A9C299FB32A00B4F82C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACA18A9D299FB32A00B4F82C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACA18A92299FB32800B4F82C /* FitPet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA18AA1299FB32A00B4F82C /* Build configuration list for PBXNativeTarget "FitPet" */;
+			buildPhases = (
+				ACA18A8F299FB32800B4F82C /* Sources */,
+				ACA18A90299FB32800B4F82C /* Frameworks */,
+				ACA18A91299FB32800B4F82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitPet;
+			packageProductDependencies = (
+			);
+			productName = project;
+			productReference = ACA18A93299FB32800B4F82C /* FitPet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACA18A8B299FB32800B4F82C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ACA18A92299FB32800B4F82C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = ACA18A8E299FB32800B4F82C /* Build configuration list for PBXProject "FitPet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACA18A8A299FB32800B4F82C;
+			packageReferences = (
+			);
+			productRefGroup = ACA18A94299FB32800B4F82C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA18A92299FB32800B4F82C /* FitPet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA18A91299FB32800B4F82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8D251329BB2DDF004CFF12 /* Assets.xcassets in Resources */,
+				ACA18A9E299FB32A00B4F82C /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACA18A8F299FB32800B4F82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4198EB1429B98ACD00C2906E /* test01.swift in Sources */,
+				AC8DB55629C0478D0047C4C3 /* OnboardingPage1.swift in Sources */,
+				AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */,
+				4198EB1A29B98B0300C2906E /* test04.swift in Sources */,
+				AC95E87129B268840086D547 /* ProgressBar.swift in Sources */,
+				4198EB2029B98B1C00C2906E /* test07.swift in Sources */,
+				AC888EA129A334D200FA8026 /* WebView.swift in Sources */,
+				AC83DA0429B3052A00637B95 /* FitPetTest.swift in Sources */,
+				4198EB1629B98AF400C2906E /* test02.swift in Sources */,
+				AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */,
+				ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */,
+				4198EB2229B98B2400C2906E /* test08.swift in Sources */,
+				4198EB2429B98B2C00C2906E /* test09.swift in Sources */,
+				AC8B694329A262C900286198 /* Animal_Web.swift in Sources */,
+				AC8DB55829C049780047C4C3 /* Documentation.docc in Sources */,
+				AC8DB55529C0478D0047C4C3 /* OnboardingPage2.swift in Sources */,
+				ACA237A629AC8410003538EE /* ResultView.swift in Sources */,
+				4198EB1E29B98B1300C2906E /* test06.swift in Sources */,
+				AC83DA0629B31AE500637B95 /* WhyModalView.swift in Sources */,
+				ACA18A97299FB32800B4F82C /* FitPetApp.swift in Sources */,
+				4198EB2829B9A95A00C2906E /* QualificationTest.swift in Sources */,
+				AC36BA2829A9ECC7005B90D2 /* MainPage.swift in Sources */,
+				4198EB1829B98AFB00C2906E /* test03.swift in Sources */,
+				AC8DB55329C0478D0047C4C3 /* Onboarding_intro.swift in Sources */,
+				4198EB1C29B98B0B00C2906E /* test05.swift in Sources */,
+				AC8D251229BA1324004CFF12 /* HelpModalView.swift in Sources */,
+				AC888EC529A4A12800FA8026 /* AnimalDetailView.swift in Sources */,
+				AC8DB55429C0478D0047C4C3 /* OnboardingMainView.swift in Sources */,
+				4198EB2629B98B3500C2906E /* test10.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ACA18A9F299FB32A00B4F82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACA18AA0299FB32A00B4F82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACA18AA2299FB32A00B4F82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitPet/Preview Content\"";
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitPet/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.FitPet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_DOCUMENTATION_COMPILER = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACA18AA3299FB32A00B4F82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitPet/Preview Content\"";
+				DEVELOPMENT_TEAM = 8N7YRTC92N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitPet/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dae-bong-ski.FitPet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_DOCUMENTATION_COMPILER = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACA18A8E299FB32800B4F82C /* Build configuration list for PBXProject "FitPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA18A9F299FB32A00B4F82C /* Debug */,
+				ACA18AA0299FB32A00B4F82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA18AA1299FB32A00B4F82C /* Build configuration list for PBXNativeTarget "FitPet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA18AA2299FB32A00B4F82C /* Debug */,
+				ACA18AA3299FB32A00B4F82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACA18A8B299FB32800B4F82C /* Project object */;
+}
