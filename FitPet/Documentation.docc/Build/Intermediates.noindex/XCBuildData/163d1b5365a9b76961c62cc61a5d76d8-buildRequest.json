@@ -1,0 +1,73 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "9ffa8381dd3237a9ac0bd1e82b86446fce54b8a9e7daee9949211d0db33f61c9"
+    }
+  ],
+  "containerPath" : "/Users/baegdaehong/Desktop/xcode/FitPet/FitPet.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "docbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos16.2",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/baegdaehong/Desktop/xcode/FitPet/FitPet/Documentation.docc/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/baegdaehong/Desktop/xcode/FitPet/FitPet/Documentation.docc/Build/Products",
+      "derivedDataPath" : "/Users/baegdaehong/Desktop/xcode/FitPet/FitPet/Documentation.docc",
+      "indexDataStoreFolderPath" : "/Users/baegdaehong/Desktop/xcode/FitPet/FitPet/Documentation.docc/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/baegdaehong/Desktop/xcode/FitPet/FitPet/Documentation.docc/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/baegdaehong/Desktop/xcode/FitPet/FitPet/Documentation.docc/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "docbuild",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "MacFamily20,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "16.3",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "MacFamily20,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "COLOR_DIAGNOSTICS" : "YES",
+          "diagnostic_message_length" : "80",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "00008103-000D48CC1433001E",
+          "TARGET_DEVICE_MODEL" : "MacBookAir10,1",
+          "TARGET_DEVICE_OS_VERSION" : "13.2.1",
+          "TARGET_DEVICE_PLATFORM_NAME" : "macosx"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
