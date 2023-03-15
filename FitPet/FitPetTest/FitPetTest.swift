@@ -12,7 +12,7 @@ import SwiftUI
 var defaultScore: Int = 50
 var score: Int = 5
 var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
-var dict: [String: Int] = ["강아지": 60, "고슴도치": defaultScore, "고양이": defaultScore, "금붕어": defaultScore, "도마뱀": defaultScore, "뱀": defaultScore, "새": defaultScore, "토끼": defaultScore, "햄스터": defaultScore]
+var dict: [String: Int] = ["강아지": defaultScore, "고슴도치": defaultScore, "고양이": defaultScore, "금붕어": defaultScore, "도마뱀": defaultScore, "뱀": defaultScore, "새": defaultScore, "토끼": defaultScore, "햄스터": defaultScore]
 let bestPet = dict.sorted { $0.1 > $1.1 }
 let bestScore: Int = dict.values.max()!
 
@@ -33,7 +33,11 @@ struct FitPetTest: View {
                         .foregroundColor(.white)
                         .background(Color.yellow)
                         .cornerRadius(10)
-                }.padding()
+                }
+                .padding()
+                .simultaneousGesture(TapGesture().onEnded{
+                    dict = ["강아지": defaultScore, "고슴도치": defaultScore, "고양이": defaultScore, "금붕어": defaultScore, "도마뱀": defaultScore, "뱀": defaultScore, "새": defaultScore, "토끼": defaultScore, "햄스터": defaultScore]
+                })
             Spacer().frame(height: 50)
         }
     }
@@ -81,7 +85,8 @@ struct ResultPage: View {
                                     Text("\(animal.title)")
                                         .font(.title).bold()
                                         .multilineTextAlignment(.center)
-                                }.padding(5)
+                                }
+                                .padding(5)
                             }
                         }
                     }

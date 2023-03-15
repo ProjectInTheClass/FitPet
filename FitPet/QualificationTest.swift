@@ -20,7 +20,6 @@ struct QualificationTest: View {
             Text("과연 내가 반려동물을 키워도 될까요?")
                 .font(.largeTitle).bold()
                 .multilineTextAlignment(.center)
-                .padding()
             Spacer().frame(height: 350)
             NavigationLink(destination: Question()
                 .navigationBarBackButtonHidden(true)) {
@@ -31,99 +30,112 @@ struct QualificationTest: View {
                         .foregroundColor(.white)
                         .background(Color.yellow)
                         .cornerRadius(10)
-                }.padding()
+                }
+                .simultaneousGesture(TapGesture().onEnded{
+                    Qnum = 0
+                    Anum = 0
+                })
             Spacer().frame(height: 50)
         }
+        .padding()
     }
 }
 
 struct Question: View {
     var body: some View {
-        VStack {
-            //Spacer().frame(height: 50)
-            Text("\(question[Qnum])")
-                .font(.largeTitle).bold()
-                .multilineTextAlignment(.center)
-            Spacer().frame(height: 50)
-            HStack{
-                NavigationLink(destination: Answer()
-                    .navigationBarBackButtonHidden(true)) {
-                        Text("예")
-                            .font(.headline).bold()
-                            .padding()
-                            .frame(maxWidth: .infinity, minHeight: 50)
-                            .foregroundColor(.black)
-                            .background(Color.yellow)
-                            .cornerRadius(10)
-                    }
-                    .simultaneousGesture(TapGesture().onEnded {
-                        Anum = Qnum+0
-                    })
-                Spacer().frame(width: 25)
-                NavigationLink(destination: Answer()
-                    .navigationBarBackButtonHidden(true)) {
-                        Text("아니오")
-                            .font(.headline).bold()
-                            .padding()
-                            .frame(maxWidth: .infinity, minHeight: 50)
-                            .foregroundColor(.black)
-                            .background(Color.yellow)
-                            .cornerRadius(10)
-                    }
-                    .simultaneousGesture(TapGesture().onEnded {
-                        Anum = Qnum+1
-                    })
+        NavigationStack {
+            Text("\(Qnum), \(Anum)")
+            VStack {
+                //Spacer().frame(height: 50)
+                Text("\(question[Qnum])")
+                    .font(.largeTitle).bold()
+                    .multilineTextAlignment(.center)
+                Spacer().frame(height: 50)
+                HStack{
+                    NavigationLink(destination: Answer()
+                        .navigationBarBackButtonHidden(true)) {
+                            Text("예")
+                                .font(.headline).bold()
+                                .padding()
+                                .frame(maxWidth: .infinity, minHeight: 50)
+                                .foregroundColor(.black)
+                                .background(Color.yellow)
+                                .cornerRadius(10)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded {
+                            Anum = Qnum+0
+                        })
+                    Spacer().frame(width: 25)
+                    NavigationLink(destination: Answer()
+                        .navigationBarBackButtonHidden(true)) {
+                            Text("아니오")
+                                .font(.headline).bold()
+                                .padding()
+                                .frame(maxWidth: .infinity, minHeight: 50)
+                                .foregroundColor(.black)
+                                .background(Color.yellow)
+                                .cornerRadius(10)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded {
+                            Anum = Qnum+1
+                        })
+                }
+                Spacer().frame(height: 100)
             }
-            Spacer().frame(height: 100)
-        }.padding()
+            .padding()
+            .navigationBarItems(trailing: NavigationLink(destination: MainPage().navigationBarHidden(true)){Image(systemName: "house.fill").font(.system(size: 25)).foregroundColor(Color.yellow)})
+        }
     }
 }
 
 struct Answer: View {
     var body: some View {
-        VStack {
-            Spacer().frame(height: 0)
-            Text("\(answerYN[Anum])입니다!")
-                .font(.largeTitle).bold()
-            Spacer().frame(height: 50)
-            Image(AnswerImage[Qnum])
-                .resizable()
-                .scaledToFit()
-                .frame(width: 120, height: 120)
-                .padding()
-            Text("\(answerEX[Qnum])")
-                .font(.title2)
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color.gray.opacity(0.3))
-                .foregroundColor(Color.black)
-                .cornerRadius(25)
-            Spacer().frame(height: 100)
-            NavigationLink(destination:
-                            Qnum == 4
-                           ? AnyView(CompletionPage())
-                .navigationBarBackButtonHidden(true)
-                           : AnyView(Question())
-                .navigationBarBackButtonHidden(true)
-            ) {
-                Text("다음")
-                    .font(.headline).bold()
+        NavigationStack {
+            VStack {
+                Spacer().frame(height: 0)
+                Text("\(answerYN[Anum])입니다!")
+                    .font(.largeTitle).bold()
+                Spacer().frame(height: 50)
+                Image(AnswerImage[Qnum])
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 120)
                     .padding()
-                    .frame(maxWidth: .infinity, minHeight: 50)
-                    .foregroundColor(.black)
-                    .background(Color.yellow)
-                    .cornerRadius(10)
+                Text("\(answerEX[Qnum])")
+                    .font(.title2)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Color.gray.opacity(0.3))
+                    .foregroundColor(Color.black)
+                    .cornerRadius(25)
+                Spacer().frame(height: 100)
+                NavigationLink(destination:
+                                Qnum == 4
+                               ? AnyView(CompletionPage())
+                    .navigationBarBackButtonHidden(true)
+                               : AnyView(Question())
+                    .navigationBarBackButtonHidden(true)
+                ) {
+                    Text("다음")
+                        .font(.headline).bold()
+                        .padding()
+                        .frame(maxWidth: .infinity, minHeight: 50)
+                        .foregroundColor(.black)
+                        .background(Color.yellow)
+                        .cornerRadius(10)
+                }
+                .simultaneousGesture(TapGesture().onEnded{
+                    Qnum += 1
+                })
+                Spacer().frame(height: 0)
             }
-            .simultaneousGesture(TapGesture().onEnded{
-                Qnum += 1
-            })
-            Spacer().frame(height: 0)
-        }.padding()
+            .padding()
+            .navigationBarItems(trailing: NavigationLink(destination: MainPage().navigationBarHidden(true)){Image(systemName: "house.fill").font(.system(size: 25)).foregroundColor(Color.yellow)})
+        }
     }
 }
 
 struct CompletionPage: View {
-    
     var body: some View {
         VStack {
             Spacer().frame(height: 50)
@@ -146,10 +158,6 @@ struct CompletionPage: View {
                         .background(Color.yellow)
                         .cornerRadius(10)
                 }
-                .simultaneousGesture(TapGesture().onEnded{
-                    Qnum = 0
-                    Anum = 0
-                })
             Spacer().frame(height: 50)
         }
         .padding()
