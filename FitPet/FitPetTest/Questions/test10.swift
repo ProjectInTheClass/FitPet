@@ -153,6 +153,7 @@ struct test10: View {
                                     .cornerRadius(10)
                             }
                             .simultaneousGesture(TapGesture().onEnded{
+                                firstTest = false
                                 if scoreDog {
                                     dict["강아지"]! += score
                                 } else {
