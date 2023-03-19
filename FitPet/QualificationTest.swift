@@ -44,7 +44,6 @@ struct QualificationTest: View {
 struct Question: View {
     var body: some View {
         NavigationStack {
-            Text("\(Qnum), \(Anum)")
             VStack {
                 //Spacer().frame(height: 50)
                 Text("\(question[Qnum])")

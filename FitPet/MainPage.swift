@@ -39,7 +39,7 @@ struct MainPage: View {
                         .background(Color.yellow)
                         .cornerRadius(10)
                 }.padding(.horizontal)
-                NavigationLink(destination: ResultPage()) {
+                NavigationLink(destination: firstTest ? AnyView(FitPetTest()) : AnyView(ResultPage())) {
                     Text("반려동물 추천받기")
                         .font(.headline).bold()
                         .padding()
