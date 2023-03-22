@@ -45,7 +45,7 @@ struct OnboardingPage2: View {
                 Spacer()
             }.padding()
             Spacer(minLength: 20)
-        }.padding()
+        }
     }
 }
 

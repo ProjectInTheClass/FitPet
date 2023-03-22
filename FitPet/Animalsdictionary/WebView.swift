@@ -33,6 +33,7 @@ struct MyWebview: UIViewRepresentable {
     //업데이트 UIView
     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MyWebview>) {
     }
+    
 }
 
 struct MyWebview_Previews: PreviewProvider {
