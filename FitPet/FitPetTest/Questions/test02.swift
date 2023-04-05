@@ -77,6 +77,11 @@ struct test02: View {
                             dict["햄스터"]! += score
                         })
                     Spacer()
+                    VStack {
+                        ForEach(dict.keys.sorted(), id: \.self) { key in
+                            Text("\(key): \(dict[key] ?? 0)")
+                        }
+                    }
                 }
                 .padding()
             }
