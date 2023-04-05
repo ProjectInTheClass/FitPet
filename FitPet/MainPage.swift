@@ -13,7 +13,7 @@ struct MainPage: View {
     var logoSize: CGFloat = 300
     
     var body: some View {
-        NavigationStack() {
+        NavigationStack {
             Spacer().frame(height: 5)
             VStack {
                 //Image(systemName: "pawprint.fill")
