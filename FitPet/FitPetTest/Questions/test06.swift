@@ -29,13 +29,13 @@ struct test06: View {
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            dict["강아지"]! += score
-                            dict["고양이"]! -= score
-                            dict["도마뱀"]! -= score
-                            dict["금붕어"]! -= score
-                            dict["새"]! -= score
-                            dict["토끼"]! += score
-                            dict["햄스터"]! -= score
+                            dict["강아지"]! += score * 2
+                            dict["고양이"]! -= score * 2
+                            dict["도마뱀"]! -= score * 2
+                            dict["금붕어"]! -= score * 2
+                            dict["새"]! -= score * 2
+                            dict["토끼"]! += score * 2
+                            dict["햄스터"]! -= score * 2
                         })
                     NavigationLink(destination: test07()
                         .navigationBarBackButtonHidden(true)) {
@@ -48,13 +48,13 @@ struct test06: View {
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            dict["강아지"]! -= score
-                            dict["고양이"]! += score
-                            dict["도마뱀"]! += score
-                            dict["금붕어"]! += score
-                            dict["새"]! += score
-                            dict["토끼"]! -= score
-                            dict["햄스터"]! += score
+                            dict["강아지"]! -= score * 2
+                            dict["고양이"]! += score * 2
+                            dict["도마뱀"]! += score * 2
+                            dict["금붕어"]! += score * 2
+                            dict["새"]! += score * 2
+                            dict["토끼"]! -= score * 2
+                            dict["햄스터"]! += score * 2
                         })
                     NavigationLink(destination: test07()
                         .navigationBarBackButtonHidden(true)) {
@@ -67,13 +67,13 @@ struct test06: View {
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            dict["강아지"]! += score
-                            dict["고양이"]! += score
-                            dict["도마뱀"]! += score
-                            dict["금붕어"]! += score
-                            dict["새"]! += score
-                            dict["토끼"]! += score
-                            dict["햄스터"]! += score
+                            dict["강아지"]! += score * 2
+                            dict["고양이"]! += score * 2
+                            dict["도마뱀"]! += score * 2
+                            dict["금붕어"]! += score * 2
+                            dict["새"]! += score * 2
+                            dict["토끼"]! += score * 2
+                            dict["햄스터"]! += score * 2
                         })
                     Spacer()
                     VStack {

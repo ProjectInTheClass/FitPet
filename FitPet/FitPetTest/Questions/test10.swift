@@ -23,11 +23,11 @@ struct test10: View {
             VStack {
                 ProgressBar(progress: 100)
                 VStack {
-                    Spacer().frame(height: 100)
+                    Spacer()
                     Text("가장 선호하는 동물을 선택해 주세요! \n (복수 응답 가능)")
-                        .font(.largeTitle).bold()
+                        .font(.title).bold()
                         .multilineTextAlignment(.center)
-                    Spacer().frame(height: 50)
+                    Spacer().frame(height: 60)
                     LazyVGrid(columns: columns) {
                         Button {
                             scoreDog.toggle()
@@ -155,37 +155,37 @@ struct test10: View {
                             .simultaneousGesture(TapGesture().onEnded{
                                 firstTest = false
                                 if scoreDog {
-                                    dict["강아지"]! += score
+                                    dict["강아지"]! += score * 2
                                 } else {
                                     dict["강아지"]! -= score
                                 }
                                 if scoreCat {
-                                    dict["고양이"]! += score
+                                    dict["고양이"]! += score * 2
                                 } else {
                                     dict["고양이"]! -= score
                                 }
                                 if scoreGoldfish {
-                                    dict["금붕어"]! += score
+                                    dict["금붕어"]! += score * 2
                                 } else {
                                     dict["금붕어"]! -= score
                                 }
                                 if scoreLizard {
-                                    dict["도마뱀"]! += score
+                                    dict["도마뱀"]! += score * 2
                                 } else {
                                     dict["도마뱀"]! -= score
                                 }
                                 if scoreBird {
-                                    dict["새"]! += score
+                                    dict["새"]! += score * 2
                                 } else {
                                     dict["새"]! -= score
                                 }
                                 if scoreRabbit {
-                                    dict["토끼"]! += score
+                                    dict["토끼"]! += score * 2
                                 } else {
                                     dict["토끼"]! -= score
                                 }
                                 if scoreHamster {
-                                    dict["햄스터"]! += score
+                                    dict["햄스터"]! += score * 2
                                 } else {
                                     dict["햄스터"]! -= score
                                 }
