@@ -60,6 +60,28 @@ struct test01: View {
                             dict["햄스터"]! += score * 2
                             dict["뱀"]! += score * 2
                         })
+                    
+                    NavigationLink(destination: test02()
+                        .navigationBarBackButtonHidden(true)) {
+                            Text("원룸")
+                                .font(.headline).bold()
+                                .padding()
+                                .frame(maxWidth: .infinity, minHeight: 50)
+                                .foregroundColor(.black)
+                                .background(Color.yellow)
+                                .cornerRadius(10)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            dict["강아지"]! += score * 2
+                            dict["고양이"]! += score * 2
+                            dict["고슴도치"]! += score * 2
+                            dict["도마뱀"]! += score * 2
+                            dict["금붕어"]! += score * 2
+                            dict["새"]! += score * 2
+                            dict["토끼"]! += score * 2
+                            dict["햄스터"]! += score * 2
+                            dict["뱀"]! += score * 2
+                        })
                     Spacer()
                     VStack {
                         ForEach(dict.keys.sorted(), id: \.self) { key in
