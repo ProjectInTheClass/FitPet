@@ -1,10 +1,3 @@
-//
-//  test07.swift
-//  project
-//
-//  Created by mnzdrm on 2023/03/09.
-//
-
 import SwiftUI
 
 struct test07: View {
@@ -47,7 +40,7 @@ struct test07: View {
                                 .background(Color.yellow)
                                 .cornerRadius(10)
                         }
-                        .simultaneousGesture(TapGesture().onEnded{
+                        .simultaneousGesture(TapGesture().onEnded {
                             dict["강아지"]! -= score * 2
                             dict["고양이"]! -= score * 2
                             dict["도마뱀"]! += score * 2
@@ -55,6 +48,25 @@ struct test07: View {
                             dict["새"]! -= score * 2
                             dict["토끼"]! -= score * 2
                             dict["햄스터"]! += score * 2
+                        })
+                    NavigationLink(destination: test08()
+                        .navigationBarBackButtonHidden(true)) {
+                            Text("잘모르겠어요")
+                                .font(.headline).bold()
+                                .padding()
+                                .frame(maxWidth: .infinity, minHeight: 50)
+                                .foregroundColor(.black)
+                                .background(Color.yellow)
+                                .cornerRadius(10)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded {
+                            dict["강아지"]! += score
+                            dict["고양이"]! += score
+                            dict["도마뱀"]! += score
+                            dict["금붕어"]! += score
+                            dict["새"]! += score
+                            dict["토끼"]! += score
+                            dict["햄스터"]! += score
                         })
                     Spacer()
                     VStack {

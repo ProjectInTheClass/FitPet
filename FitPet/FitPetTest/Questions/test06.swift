@@ -1,10 +1,3 @@
-//
-//  test06.swift
-//  project
-//
-//  Created by mnzdrm on 2023/03/09.
-//
-
 import SwiftUI
 
 struct test06: View {

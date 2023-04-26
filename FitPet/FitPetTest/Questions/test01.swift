@@ -1,10 +1,3 @@
-//
-//  test01.swift
-//  project
-//
-//  Created by mnzdrm on 2023/03/09.
-//
-
 import SwiftUI
 
 struct test01: View {
@@ -31,7 +24,7 @@ struct test01: View {
                         .simultaneousGesture(TapGesture().onEnded{
                             dict["강아지"]! -= score
                             dict["고양이"]! += score
-                            dict["고슴도치"]! += score
+                            
                             dict["도마뱀"]! += score
                             dict["금붕어"]! += score
                             dict["새"]! -= score
@@ -52,7 +45,7 @@ struct test01: View {
                         .simultaneousGesture(TapGesture().onEnded{
                             dict["강아지"]! += score * 2
                             dict["고양이"]! += score * 2
-                            dict["고슴도치"]! += score * 2
+                            
                             dict["도마뱀"]! += score * 2
                             dict["금붕어"]! += score * 2
                             dict["새"]! += score * 2
@@ -72,15 +65,14 @@ struct test01: View {
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
-                            dict["강아지"]! += score * 2
-                            dict["고양이"]! += score * 2
-                            dict["고슴도치"]! += score * 2
+                            dict["강아지"]! -= score * 2
+                            dict["고양이"]! += score
                             dict["도마뱀"]! += score * 2
                             dict["금붕어"]! += score * 2
-                            dict["새"]! += score * 2
-                            dict["토끼"]! += score * 2
+                            dict["새"]! -= score * 2
+                            dict["토끼"]! -= score * 2
                             dict["햄스터"]! += score * 2
-                            dict["뱀"]! += score * 2
+                            dict["뱀"]! += score
                         })
                     Spacer()
                     VStack {

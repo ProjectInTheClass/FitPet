@@ -1,10 +1,3 @@
-//
-//  MainPage.swift
-//  FitPet
-//
-//  Created by mnzdrm on 2023/02/20.
-//
-
 import SwiftUI
 
 struct MainPage: View {

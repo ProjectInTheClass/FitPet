@@ -1,10 +1,3 @@
-//
-//  test05.swift
-//  project
-//
-//  Created by mnzdrm on 2023/03/09.
-//
-
 import SwiftUI
 
 struct test05: View {
@@ -163,6 +156,7 @@ struct test05: View {
                                 } else {
                                     dict["고양이"]! -= score * 4
                                 }
+            
                                 if scoreGoldfish {
                                     dict["금붕어"]! += score * 2
                                 } else {
