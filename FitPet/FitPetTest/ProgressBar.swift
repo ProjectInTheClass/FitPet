@@ -17,7 +17,7 @@ struct ProgressBar: View {
                 .foregroundColor(Color.gray.opacity(0.3))
             Capsule()
                 .frame(width: progress*(3.6), height: 8)
-                .foregroundColor(Color.blue)
+                .foregroundColor(Color(red: 250 / 255, green: 223 / 255, blue: 157 / 255))
         }.padding()
             .animation(.linear(duration: 0.5))
     }

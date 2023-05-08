@@ -18,13 +18,12 @@ struct test01: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(Color.yellow)
+                                .background(Color.BarColor)
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
                             dict["강아지"]! -= score
                             dict["고양이"]! += score
-                            
                             dict["도마뱀"]! += score
                             dict["금붕어"]! += score
                             dict["새"]! -= score
@@ -39,7 +38,7 @@ struct test01: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(Color.yellow)
+                                .background(Color.BarColor)
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
@@ -61,7 +60,7 @@ struct test01: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(Color.yellow)
+                                .background(Color.BarColor)
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
