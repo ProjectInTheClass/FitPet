@@ -32,7 +32,7 @@ struct test10: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(scoreDog ? .blue.opacity(0.75) : .gray.opacity(0.5))
+                                .background(scoreDog ? Color.BarColor : Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                         Button {
@@ -45,7 +45,7 @@ struct test10: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(scoreCat ? .blue.opacity(0.75) : .gray.opacity(0.5))
+                                .background(scoreCat ? Color.BarColor : Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                         Button {
@@ -58,7 +58,7 @@ struct test10: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(scoreGoldfish ? .blue.opacity(0.75) : .gray.opacity(0.5))
+                                .background(scoreGoldfish ? Color.BarColor : Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                         Button {
@@ -71,7 +71,7 @@ struct test10: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(scoreLizard ? .blue.opacity(0.75) : .gray.opacity(0.5))
+                                .background(scoreLizard ? Color.BarColor : Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                         Button {
@@ -84,7 +84,7 @@ struct test10: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(scoreBird ? .blue.opacity(0.75) : .gray.opacity(0.5))
+                                .background(scoreBird ? Color.BarColor : Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                         Button {
@@ -97,7 +97,7 @@ struct test10: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(scoreRabbit ? .blue.opacity(0.75) : .gray.opacity(0.5))
+                                .background(scoreRabbit ? Color.BarColor : Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                         Button {
@@ -110,7 +110,7 @@ struct test10: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(scoreHamster ? .blue.opacity(0.75) : .gray.opacity(0.5))
+                                .background(scoreHamster ? Color.BarColor : Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                         Button {
@@ -129,7 +129,7 @@ struct test10: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(scoreNth ? .blue.opacity(0.75) : .gray.opacity(0.5))
+                                .background(scoreNth ? Color.BarColor : Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                     }
@@ -142,7 +142,7 @@ struct test10: View {
                                     .padding()
                                     .frame(maxWidth: .infinity, minHeight: 50)
                                     .foregroundColor(.black)
-                                    .background(Color.yellow)
+                                    .background(Color.ResultColor)
                                     .cornerRadius(10)
                             }
                             .simultaneousGesture(TapGesture().onEnded{

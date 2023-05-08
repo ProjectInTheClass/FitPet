@@ -107,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				4198EB1329B98ACD00C2906E /* test01.swift */,
-				AC2DCA1C2A0929A700196611 /* ColorExtention.swift */,
 				4198EB1529B98AF400C2906E /* test02.swift */,
 				4198EB1729B98AFB00C2906E /* test03.swift */,
 				4198EB1929B98B0300C2906E /* test04.swift */,
@@ -169,6 +168,7 @@
 				ACA18A96299FB32800B4F82C /* FitPetApp.swift */,
 				AC36BA2629A9ECC7005B90D2 /* MainPage.swift */,
 				4198EB2729B9A95A00C2906E /* QualificationTest.swift */,
+				AC2DCA1C2A0929A700196611 /* ColorExtention.swift */,
 				4198EB1129B98A2200C2906E /* FitPetTest */,
 				AC8B694129A2622200286198 /* Animalsdictionary */,
 				AC8DB54E29C0478D0047C4C3 /* Onboarding */,

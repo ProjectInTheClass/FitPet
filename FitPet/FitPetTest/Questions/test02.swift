@@ -19,7 +19,7 @@ struct test02: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(Color.BarColor)
+                                .background(Color.ButtonColor)
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{

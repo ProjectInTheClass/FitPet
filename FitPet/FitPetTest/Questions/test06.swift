@@ -18,7 +18,7 @@ struct test06: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(Color.yellow)
+                                .background(Color.BarColor)
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
@@ -37,7 +37,7 @@ struct test06: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 50)
                                 .foregroundColor(.black)
-                                .background(Color.yellow)
+                                .background(Color.BarColor)
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
@@ -56,7 +56,7 @@ struct test06: View {
                                 .padding()
                                 .frame(maxWidth: .infinity, minHeight: 75)
                                 .foregroundColor(.black)
-                                .background(Color.yellow)
+                                .background(Color.BarColor)
                                 .cornerRadius(10)
                         }
                         .simultaneousGesture(TapGesture().onEnded{
