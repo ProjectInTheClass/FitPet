@@ -1,11 +1,14 @@
 import SwiftUI
 
 struct test02: View {
+    let totalPages = 10
+    @State var currentPage = 2
     init() { UINavigationBar.setAnimationsEnabled(false) }
     var body: some View {
         NavigationStack {
             VStack {
                 ProgressBar(progress: 20)
+                Text("\(currentPage) / \(totalPages)")
                 VStack {
                     Spacer()
                     Text("생활 공간은 어느 정도 크기인가요?")

@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct test10: View {
+    let totalPages = 10
+    @State var currentPage = 10
     @State private var scoreDog: Bool = false
     @State private var scoreCat: Bool = false
     @State private var scoreGoldfish: Bool = false

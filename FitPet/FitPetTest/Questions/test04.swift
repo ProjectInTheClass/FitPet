@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct test04: View {
+    let totalPages = 10
+    @State var currentPage = 4
     var body: some View {
         NavigationStack {
             VStack {
