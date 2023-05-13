@@ -9,14 +9,14 @@
 		<key>UISceneConfigurations</key>
 		<dict/>
 	</dict>
-	<key>UILaunchScreen</key>
+	<key>UILaunchScreens</key>
 	<dict>
+		<key>UILaunchScreenDefinitions</key>
+		<array/>
 		<key>UIColorName</key>
 		<string>yellow</string>
 		<key>UIImageName</key>
-		<string>Applogo</string>
-		<key>UILaunchScreen</key>
-		<dict/>
+		<string>앱로고</string>
 	</dict>
 </dict>
 </plist>

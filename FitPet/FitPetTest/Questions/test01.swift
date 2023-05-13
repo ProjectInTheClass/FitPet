@@ -20,6 +20,7 @@ struct test01: View {
                
                 ProgressBar(progress: 10)
                 Text("\(currentPage) / \(totalPages)")
+                    .font(.title3).bold()
                 VStack {
                    
                     Spacer().frame(height: 50)

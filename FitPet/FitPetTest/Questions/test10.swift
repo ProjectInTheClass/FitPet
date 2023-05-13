@@ -16,6 +16,17 @@ struct test10: View {
     var body: some View {
         NavigationStack {
             VStack {
+                ZStack {
+                    Color.MainColor
+                    HStack {
+                        Image("상단바")
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                            .padding(.top,80)
+                            .padding(.horizontal,20)
+                        Spacer()
+                    }
+                }.frame(width: .infinity, height: 80).ignoresSafeArea()
                 ProgressBar(progress: 100)
                 VStack {
                     Spacer()
@@ -195,7 +206,7 @@ struct test10: View {
                 }
                 .padding()
             }
-            .navigationBarItems(trailing: NavigationLink(destination: MainPage().navigationBarHidden(true)){Image(systemName: "house.circle.fill").font(.system(size: 25)).foregroundColor(Color.yellow)})
+            .navigationBarItems(trailing: NavigationLink(destination: MainPage().navigationBarHidden(true)){Image(systemName: "house.circle.fill").font(.system(size: 25)).foregroundColor(Color.white)})
         }
         .transition(.scale)
     }

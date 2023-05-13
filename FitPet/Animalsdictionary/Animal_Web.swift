@@ -15,12 +15,15 @@ struct Animal_Web: View {
                 Spacer().frame(height: 25)
                 Text("이제 공부할 시간입니다! \n다양한 정보를 통해 \n반려동물에 대해 학습해 보세요!")
                     .font(.title.bold())
+                    .multilineTextAlignment(.center)
+                    .padding()
                 HStack {
                     Text("어떻게 사용할지 모르겠다면 상단의")
                     Image(systemName: "questionmark.circle.fill")
                         .foregroundColor(Color.MainColor)
                     Text("버튼을 눌러주세요")
-                }
+                }.multilineTextAlignment(.center)
+                
 
                    
                     .padding(.vertical, 5)
@@ -35,8 +38,8 @@ struct Animal_Web: View {
                         .font(.headline).bold()
                         .padding()
                         .frame(maxWidth: .infinity, minHeight: 50)
-                        .foregroundColor(.white)
-                        .background(Color.yellow)
+                        .foregroundColor(.black)
+                        .background(Color.ResultColor)
                         .cornerRadius(10)
                 }
                 NavigationLink(destination: RecommendedSites()) {
@@ -44,8 +47,8 @@ struct Animal_Web: View {
                         .font(.headline).bold()
                         .padding()
                         .frame(maxWidth: .infinity, minHeight: 50)
-                        .foregroundColor(.white)
-                        .background(Color.yellow)
+                        .foregroundColor(.black)
+                        .background(Color.ResultColor)
                         .cornerRadius(10)
                 }
                 Spacer().frame(height: 50)
