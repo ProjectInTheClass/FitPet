@@ -50,7 +50,6 @@ struct test01: View {
                             dict["새"]! -= score
                             dict["토끼"]! -= score
                             dict["햄스터"]! += score
-                            dict["뱀"]! += score
                             currentPage += 1
                         })
                     NavigationLink(destination: test02()
@@ -71,7 +70,7 @@ struct test01: View {
                             dict["새"]! += score * 2
                             dict["토끼"]! += score * 2
                             dict["햄스터"]! += score * 2
-                            dict["뱀"]! += score * 2
+                        
                             currentPage += 1
                         })
                     
@@ -93,7 +92,7 @@ struct test01: View {
                             dict["새"]! -= score * 2
                             dict["토끼"]! -= score * 2
                             dict["햄스터"]! += score * 2
-                            dict["뱀"]! += score
+                            
                             currentPage += 1
                         })
                     Spacer()

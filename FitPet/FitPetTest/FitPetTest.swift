@@ -1,8 +1,8 @@
 import Swift
 import SwiftUI
 
-// 강아지 고슴도치 고양이 금붕어 도마뱀 뱀 새 토끼 햄스터
-var dict: [String: Int] = ["강아지": defaultScore, "고양이": defaultScore, "금붕어": defaultScore, "도마뱀": defaultScore, "뱀": defaultScore, "새": defaultScore, "토끼": defaultScore, "햄스터": defaultScore]
+// 강아지 고슴도치 고양이 금붕어 도마뱀 새 토끼 햄스터
+var dict: [String: Int] = ["강아지": defaultScore, "고양이": defaultScore, "금붕어": defaultScore, "도마뱀": defaultScore,  "새": defaultScore, "토끼": defaultScore, "햄스터": defaultScore]
 let bestPet = dict.sorted { $0.1 > $1.1 }
 let bestScore: Int = dict.values.max()!
 
@@ -31,7 +31,7 @@ struct FitPetTest: View {
                 }
                 .padding()
                 .simultaneousGesture(TapGesture().onEnded{
-                    dict = ["강아지": defaultScore, "고양이": defaultScore, "금붕어": defaultScore, "도마뱀": defaultScore, "뱀": defaultScore, "새": defaultScore, "토끼": defaultScore, "햄스터": defaultScore]
+                    dict = ["강아지": defaultScore, "고양이": defaultScore, "금붕어": defaultScore, "도마뱀": defaultScore, "새": defaultScore, "토끼": defaultScore, "햄스터": defaultScore]
                 })
             Spacer().frame(height: 50)
         }
