@@ -40,6 +40,7 @@
 		ACA18A9E299FB32A00B4F82C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9D299FB32A00B4F82C /* Preview Assets.xcassets */; };
 		ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */; };
 		ACA237A629AC8410003538EE /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA237A529AC8410003538EE /* ResultView.swift */; };
+		ACA5DE5C2A1BBA9400863358 /* PetHoroscopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5DE5B2A1BBA9400863358 /* PetHoroscopeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		ACA18A9D299FB32A00B4F82C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACA18AA4299FB82B00B4F82C /* AnimalsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsData.swift; sourceTree = "<group>"; };
 		ACA237A529AC8410003538EE /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		ACA5DE5B2A1BBA9400863358 /* PetHoroscopeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHoroscopeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				AC36BA2629A9ECC7005B90D2 /* MainPage.swift */,
 				4198EB2729B9A95A00C2906E /* QualificationTest.swift */,
 				AC2DCA1C2A0929A700196611 /* ColorExtention.swift */,
+				ACA5DE5B2A1BBA9400863358 /* PetHoroscopeView.swift */,
 				4198EB1129B98A2200C2906E /* FitPetTest */,
 				AC8B694129A2622200286198 /* Animalsdictionary */,
 				AC8DB54E29C0478D0047C4C3 /* Onboarding */,
@@ -283,6 +286,7 @@
 				ACA237A629AC8410003538EE /* ResultView.swift in Sources */,
 				4198EB1E29B98B1300C2906E /* test06.swift in Sources */,
 				AC83DA0629B31AE500637B95 /* WhyModalView.swift in Sources */,
+				ACA5DE5C2A1BBA9400863358 /* PetHoroscopeView.swift in Sources */,
 				ACA18A97299FB32800B4F82C /* FitPetApp.swift in Sources */,
 				4198EB2829B9A95A00C2906E /* QualificationTest.swift in Sources */,
 				AC36BA2829A9ECC7005B90D2 /* MainPage.swift in Sources */,
