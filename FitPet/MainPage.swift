@@ -16,7 +16,7 @@ struct MainPage: View {
                 Text("\"반려동물과 함께 일상을 공유하다.\"")
                 Spacer().frame(height: 100)
                 
-                NavigationLink(destination: QualificationTest()) {
+                NavigationLink(destination: FortuneView()) {
                     Text("반려동물 상식퀴즈") //반려동물 자격 요건 검사, 사전 지식 퀴즈, 자가 진단 퀴즈
                         .font(.headline).bold()
                         .padding()
