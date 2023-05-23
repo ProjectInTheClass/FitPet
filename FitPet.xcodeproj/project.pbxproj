@@ -28,6 +28,7 @@
 		AC8B694329A262C900286198 /* Animal_Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694229A262C900286198 /* Animal_Web.swift */; };
 		AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */; };
 		AC8B694729A264BF00286198 /* RecommendedSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B694629A264BF00286198 /* RecommendedSites.swift */; };
+		AC8BF5C42A1C8FB1005C023B /* FortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BF5C32A1C8FB1005C023B /* FortuneView.swift */; };
 		AC8D251229BA1324004CFF12 /* HelpModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D251129BA1324004CFF12 /* HelpModalView.swift */; };
 		AC8D251329BB2DDF004CFF12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA18A9A299FB32A00B4F82C /* Assets.xcassets */; };
 		AC8DB55329C0478D0047C4C3 /* Onboarding_intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB54F29C0478D0047C4C3 /* Onboarding_intro.swift */; };
@@ -66,6 +67,7 @@
 		AC8B694429A264B200286198 /* AnimalEncyclopedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEncyclopedia.swift; sourceTree = "<group>"; };
 		AC8B694629A264BF00286198 /* RecommendedSites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedSites.swift; sourceTree = "<group>"; };
 		AC8B694829A273FB00286198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC8BF5C32A1C8FB1005C023B /* FortuneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneView.swift; sourceTree = "<group>"; };
 		AC8D251129BA1324004CFF12 /* HelpModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModalView.swift; sourceTree = "<group>"; };
 		AC8DB54F29C0478D0047C4C3 /* Onboarding_intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding_intro.swift; sourceTree = "<group>"; };
 		AC8DB55029C0478D0047C4C3 /* OnboardingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingMainView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				4198EB2729B9A95A00C2906E /* QualificationTest.swift */,
 				AC2DCA1C2A0929A700196611 /* ColorExtention.swift */,
 				ACA5DE5B2A1BBA9400863358 /* PetHoroscopeView.swift */,
+				AC8BF5C32A1C8FB1005C023B /* FortuneView.swift */,
 				4198EB1129B98A2200C2906E /* FitPetTest */,
 				AC8B694129A2622200286198 /* Animalsdictionary */,
 				AC8DB54E29C0478D0047C4C3 /* Onboarding */,
@@ -276,6 +279,7 @@
 				AC83DA0429B3052A00637B95 /* FitPetTest.swift in Sources */,
 				4198EB1629B98AF400C2906E /* test02.swift in Sources */,
 				AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */,
+				AC8BF5C42A1C8FB1005C023B /* FortuneView.swift in Sources */,
 				ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */,
 				4198EB2229B98B2400C2906E /* test08.swift in Sources */,
 				AC2DCA1D2A0929A700196611 /* ColorExtention.swift in Sources */,
