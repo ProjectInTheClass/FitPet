@@ -9,6 +9,7 @@ import SwiftUI
 struct FortuneView: View {
     // 반려동물의 생년월일을 입력받는 데이트픽커
     @State private var birthday = Date() // 날짜 타입의 상태 변수
+    
     // 운세 메시지를 저장하는 변수들
     @State private var totalFortune = "" // 총운
     @State private var loveFortune = "" // 애정운
@@ -67,14 +68,15 @@ struct FortuneView: View {
             VStack(alignment: .center) {
                 // 데이트픽커에 최대 날짜를 오늘로 설정하고 날짜 형식을 yyyyMMdd로 설정
                 DatePicker("", selection: $birthday, in: ...Date(), displayedComponents: .date)
-                    .datePickerStyle(.compact)
+                    .datePickerStyle(.wheel)
+                    .frame(width: 100, height: 50)
                 // 버튼을 누르면 운세를 계산하는 함수를 호출
                 Button("운세 보기") {
                     calculateFortune()
                 }.frame(width: 100, height: 100)
             }
             // 운세 메시지를 텍스트로 보여줌
-            Text("05월 23일의 운세")
+            Text("오늘의 운세")
                 .font(.title)
             Text("총운: \(totalFortune)")
                 .font(.headline)
@@ -157,3 +159,6 @@ struct FortuneView_Previews: PreviewProvider {
         FortuneView()
     }
 }
+
+
+//데이트 픽커 한글로 수정.

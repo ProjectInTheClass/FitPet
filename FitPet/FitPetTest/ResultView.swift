@@ -58,11 +58,11 @@ struct ResultView: View {
                             y: .value("Shape Type", shape.count)
                         )
                         .interpolationMethod(.cardinal)
-                        .foregroundStyle(taste == .Best ? .blue : .red)
+                        .foregroundStyle(taste == .Best ? Color.MainColor : .red)
                         PointMark(x: .value("Total Count", shape.type), y: .value("Shape Type", shape.count))
                             .symbol(.diamond)
                             .annotation { Text("\(Int(shape.count))") }
-                            .foregroundStyle(taste == .Best ? .blue : .red)
+                            .foregroundStyle(taste == .Best ? Color.MainColor : .red)
                     }
                 }
                 .frame(height: 300)
@@ -83,7 +83,7 @@ struct ResultView: View {
                             .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.9))
+                    .background(Color.MainColor.opacity(0.9))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
@@ -98,7 +98,7 @@ struct ResultView: View {
                             .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.7))
+                    .background(Color.MainColor.opacity(0.7))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                     HStack  {
@@ -113,7 +113,7 @@ struct ResultView: View {
                             .multilineTextAlignment(.leading)
                     }
                     .frame(width: 200, height: 50)
-                    .background(Color.blue.opacity(0.5))
+                    .background(Color.MainColor.opacity(0.5))
                     .foregroundColor(Color.black)
                     .cornerRadius(25)
                 } else {
@@ -179,3 +179,6 @@ struct ResultExample_Previews: PreviewProvider {
 
 // 점수가 왜 그렇게 나왔는지에 대한 설명? 각 문제당 몇점이 나왔는지가 궁금하다. (미해결)
 // 100점 이상 나온 동물에 대해서는 결과에서 제대로 보여주지 않는다. 예를 들면 강아지가 125점이면 정상적으로 출력되지 않고 100점 부터 결과 출력되는 문제.
+
+
+// 위쪽에 버튼 영어를 한글로 변경하기.

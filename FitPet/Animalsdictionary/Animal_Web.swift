@@ -23,15 +23,17 @@ struct Animal_Web: View {
                         .foregroundColor(Color.MainColor)
                     Text("버튼을 눌러주세요")
                 }.multilineTextAlignment(.center)
-                
+                    .padding(.vertical, 5)
 
                    
-                    .padding(.vertical, 5)
+                    
                 Spacer().frame(height: 25)
-                Image("onboarding4")
+                
+                Image("돋보기")
                     .resizable()
-                    .frame(width: 200, height: 200)
-                    .padding(.vertical, 10)
+                    .frame(width: 170, height: 170)
+                
+                
                 Spacer().frame(height: 50)
                 NavigationLink(destination: AnimalEncyclopedia()) {
                     Text("동물 백과사전")
