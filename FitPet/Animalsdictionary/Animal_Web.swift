@@ -13,12 +13,12 @@ struct Animal_Web: View {
         NavigationStack {
             VStack {
                 Spacer().frame(height: 25)
-                Text("이제 공부할 시간입니다! \n다양한 정보를 통해 \n반려동물에 대해 학습해 보세요!")
+                Text("다양한 정보를 통해 반려동물에 대해 학습해 보세요!")
                     .font(.title.bold())
                     .multilineTextAlignment(.center)
                     .padding()
                 HStack {
-                    Text("어떻게 사용할지 모르겠다면 상단의")
+                    Text("잘 모르겠다면 상단의")
                     Image(systemName: "questionmark.circle.fill")
                         .foregroundColor(Color.MainColor)
                     Text("버튼을 눌러주세요")

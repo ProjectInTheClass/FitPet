@@ -15,8 +15,8 @@ struct PetShape: Identifiable {
 }
 
 enum Taste: String {
-    case Best
-    case Worst
+    case Best = "최고"
+    case Worst = "최악"
 }
 
 struct ResultView: View {
