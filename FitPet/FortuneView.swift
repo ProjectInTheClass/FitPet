@@ -64,7 +64,7 @@ struct FortuneView: View {
     
     var body: some View {
         VStack(alignment: .center) {
-            // 데이트픽커와 버튼을 가로로 배치
+            
             VStack(alignment: .center) {
                 // 데이트픽커에 최대 날짜를 오늘로 설정하고 날짜 형식을 yyyyMMdd로 설정
                 DatePicker("", selection: $birthday, in: ...Date(), displayedComponents: .date)

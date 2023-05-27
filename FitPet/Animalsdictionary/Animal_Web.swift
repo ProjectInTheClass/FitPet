@@ -15,7 +15,7 @@ struct Animal_Web: View {
                 Spacer().frame(height: 25)
                 Text("다양한 정보를 통해 반려동물에 대해 학습해 보세요!")
                     .font(.title.bold())
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.leading)
                     .padding()
                 HStack {
                     Text("잘 모르겠다면 상단의")
@@ -32,7 +32,7 @@ struct Animal_Web: View {
                 Image("돋보기")
                     .resizable()
                     .frame(width: 170, height: 170)
-                
+                    .padding()
                 
                 Spacer().frame(height: 50)
                 NavigationLink(destination: AnimalEncyclopedia()) {
