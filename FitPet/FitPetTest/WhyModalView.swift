@@ -33,7 +33,7 @@ struct WhyModalView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 90, height: 90)
                         .padding()
-                    Text("알레르기뿐만 아니라 질문지에서 답변하신 내용을 토대로 점수를 부여하기 때문에, 기존에 생각하신 반려동물이 제대로 추천되지 않았을 수도 있습니다.")
+                    Text("알레르기뿐만 아니라 질문지에서 답변하신 내용을 토대로 점수를 부여하기 때문에, 기존 선호하시던 반려동물로 추천되지 않았을 수도 있습니다.")
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer().frame(height: 100)
