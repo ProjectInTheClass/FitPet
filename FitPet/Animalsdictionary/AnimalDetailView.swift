@@ -25,7 +25,12 @@ struct AnimalDetailView: View {
                         NavigationLink(
                             destination: RecommendedSites(selectedClassification: animal.recommandtype),
                             label: {
-                                Text("추천 사이트").bold().foregroundColor(.blue)
+                                HStack {
+                                    Image(systemName: "globe")
+                                        .resizable()
+                                        .frame(width: 10, height: 10)
+                                    Text("추천 사이트").bold().foregroundColor(.blue)
+                                }
                             })
                     }
                     VStack (alignment:.leading, spacing:20) {
@@ -56,21 +61,26 @@ struct AnimalDetailView: View {
                                 .bold()
                             Text(animal.lifecycle)
                         }
-                        ScrollView(.horizontal) {
-                            HStack(spacing: 20) {
-                                ForEach(animal.species.indices, id: \.self) { index in
-                                    VStack(spacing: 5) {
-                                        Image(animal.speciesImage[index])
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 100, height: 100)
-                                        Text(animal.species[index])
-                                            .font(.footnote)
-                                            .multilineTextAlignment(.center)
+                        Divider()
+                        VStack (alignment:.leading, spacing:20) {
+                            Text("\(animal.title)의 품종")
+                                .bold()
+                            ScrollView(.horizontal) {
+                                HStack(spacing: 20) {
+                                    ForEach(animal.species.indices, id: \.self) { index in
+                                        VStack(spacing: 5) {
+                                            Image(animal.speciesImage[index])
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 100, height: 100)
+                                            Text(animal.species[index])
+                                                .font(.footnote)
+                                                .multilineTextAlignment(.center)
+                                        }
                                     }
                                 }
-                            }
-                        }.padding(.all)
+                            }.padding(.all)
+                        }
                     }
                 }
                 .padding(.horizontal, 20)

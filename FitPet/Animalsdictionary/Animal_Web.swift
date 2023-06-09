@@ -45,13 +45,15 @@ struct Animal_Web: View {
                         .cornerRadius(10)
                 }
                 NavigationLink(destination: RecommendedSites()) {
-                    Text("추천 사이트")
-                        .font(.headline).bold()
-                        .padding()
-                        .frame(maxWidth: .infinity, minHeight: 50)
-                        .foregroundColor(.black)
-                        .background(Color.ResultColor)
-                        .cornerRadius(10)
+                        Text("추천 사이트")
+                            .font(.headline).bold()
+                            .padding()
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .foregroundColor(.black)
+                            .background(Color.ResultColor)
+                            .cornerRadius(10)
+                        
+                    
                 }
                 Spacer().frame(height: 50)
             }

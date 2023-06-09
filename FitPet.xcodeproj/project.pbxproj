@@ -22,6 +22,7 @@
 		AC2DCA1D2A0929A700196611 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCA1C2A0929A700196611 /* ColorExtention.swift */; };
 		AC36BA2829A9ECC7005B90D2 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36BA2629A9ECC7005B90D2 /* MainPage.swift */; };
 		AC436D652A31A7C600A5EC73 /* WhyFortuneModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC436D642A31A7C600A5EC73 /* WhyFortuneModalView.swift */; };
+		AC436D672A32021900A5EC73 /* RandomBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC436D662A32021900A5EC73 /* RandomBoxView.swift */; };
 		AC83DA0429B3052A00637B95 /* FitPetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83DA0329B3052A00637B95 /* FitPetTest.swift */; };
 		AC83DA0629B31AE500637B95 /* WhyModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83DA0529B31AE400637B95 /* WhyModalView.swift */; };
 		AC85FCAD2A29BFB700347042 /* ResultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85FCAC2A29BFB700347042 /* ResultPage.swift */; };
@@ -61,6 +62,7 @@
 		AC2DCA1C2A0929A700196611 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
 		AC36BA2629A9ECC7005B90D2 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		AC436D642A31A7C600A5EC73 /* WhyFortuneModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFortuneModalView.swift; sourceTree = "<group>"; };
+		AC436D662A32021900A5EC73 /* RandomBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBoxView.swift; sourceTree = "<group>"; };
 		AC83DA0329B3052A00637B95 /* FitPetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitPetTest.swift; sourceTree = "<group>"; };
 		AC83DA0529B31AE400637B95 /* WhyModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyModalView.swift; sourceTree = "<group>"; };
 		AC85FCAC2A29BFB700347042 /* ResultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPage.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				4198EB2729B9A95A00C2906E /* QualificationTest.swift */,
 				AC2DCA1C2A0929A700196611 /* ColorExtention.swift */,
 				AC8BF5C32A1C8FB1005C023B /* FortuneView.swift */,
+				AC436D662A32021900A5EC73 /* RandomBoxView.swift */,
 				AC436D642A31A7C600A5EC73 /* WhyFortuneModalView.swift */,
 				4198EB1129B98A2200C2906E /* FitPetTest */,
 				AC8B694129A2622200286198 /* Animalsdictionary */,
@@ -289,6 +292,7 @@
 				4198EB2429B98B2C00C2906E /* test09.swift in Sources */,
 				AC8B694329A262C900286198 /* Animal_Web.swift in Sources */,
 				AC8DB55829C049780047C4C3 /* Documentation.docc in Sources */,
+				AC436D672A32021900A5EC73 /* RandomBoxView.swift in Sources */,
 				AC8DB55529C0478D0047C4C3 /* OnboardingPage2.swift in Sources */,
 				ACA237A629AC8410003538EE /* ResultView.swift in Sources */,
 				4198EB1E29B98B1300C2906E /* test06.swift in Sources */,

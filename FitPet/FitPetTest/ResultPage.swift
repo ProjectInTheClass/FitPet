@@ -18,7 +18,7 @@ struct ResultPage: View {
                     Text("당신에게 알맞은 동물은")
                         .font(.title).bold()
                         .multilineTextAlignment(.center)
-                    Spacer().frame(height: 70)
+                    Spacer().frame(height: 100)
                     HStack {
                         ForEach(bestPet.filter { $0.value == bestScore }, id: \.key) { pet in
                             if let animal = animalsData.first(where: { $0.title == pet.key }) {
