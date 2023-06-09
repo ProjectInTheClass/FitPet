@@ -20,6 +20,7 @@ struct FortuneView: View {
     @State private var moneyFortune = ""
     @State private var luckFortune = ""
     @State private var showFortuneModal = false
+    @State private var isShowingFortune = true
     let totalMessages = [
         "좋은 일이 생길 날",
         "조심스러워야 할 날",
@@ -74,13 +75,7 @@ struct FortuneView: View {
                     .frame(width: 100, height: 100)
                     .foregroundColor(.BarColor)
                 Spacer().frame(height: 50)
-                Button("운세 보기") {
-                    calculateFortune()
-                }
-                .frame(width: 70, height: 50)
-                .background(Color.MainColor)
-                .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
-                .overlay(RoundedRectangle(cornerRadius: 10, style: .continuous).stroke(Color.yellow, lineWidth: 5))
+                
             }
             .padding(.all)
             
@@ -93,18 +88,27 @@ struct FortuneView: View {
                     disclosureGroup(for: "건강운", content: healthFortune,imageName: "staroflife.fill")
                     disclosureGroup(for: "재물운", content: moneyFortune,imageName: "creditcard.fill")
                     disclosureGroup(for: "행운", content: luckFortune,imageName: "hare.fill")
-                }.frame(height: 200).padding(.all)
+                }.frame(height: 300).padding(.all)
             } else {
                 RandomBoxView()
             }
             
-            
-             
-            
-            Button("다시 하기") {
-                reset()
-            }
-            .frame(width: 100, height: 50)
+            Button(action: {
+                            if isShowingFortune {
+                                calculateFortune()
+                            } else {
+                                reset()
+                            }
+                        }) {
+                            Text(isShowingFortune ? "운세 보기" : "다시 하기")
+                                .font(.body)
+                                .foregroundColor(.black)
+                                .bold()
+                        }
+                        .frame(width: 300, height: 50)
+                        .background(Color.MainColor)
+                        .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+                        .overlay(RoundedRectangle(cornerRadius: 25, style: .continuous).stroke(Color.MainColor, lineWidth: 5))
             
             
         }
@@ -149,7 +153,7 @@ struct FortuneView: View {
         healthFortune = healthMessages[healthIndex]
         moneyFortune = moneyMessages[moneyIndex]
         luckFortune = luckMessages[luckIndex]
-        
+        isShowingFortune = false
         isCalculated = true
     }
     
@@ -161,6 +165,8 @@ struct FortuneView: View {
         moneyFortune = ""
         luckFortune = ""
         isCalculated = false
+        isShowingFortune = true
+
     }
     
     private func disclosureGroup(for title: String, content: String, imageName: String) -> some View {

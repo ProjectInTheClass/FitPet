@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RandomBoxView: View {
+    @State private var rotationAngle: Double = 0
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
@@ -18,6 +19,15 @@ struct RandomBoxView: View {
                 .resizable()
                 .foregroundColor(.black)
                 .frame(width: 50, height: 50)
+                .rotation3DEffect(Angle(degrees: rotationAngle), axis: (x: 0.0, y: 1.0, z: 0.0))
+                .onAppear() {
+                    runRotationAnimation()
+                }
+        }
+    }
+    func runRotationAnimation() {
+        withAnimation(Animation.linear(duration: 5).repeatForever(autoreverses: false)) {
+            rotationAngle = 360
         }
     }
 }
