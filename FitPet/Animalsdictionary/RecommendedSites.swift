@@ -13,11 +13,6 @@ struct RecommendedSites: View {
     
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading ,spacing: 20) {
-                Text("아래 링크를 통해 동물에 관련된 더 많은 정보를 확인해 보세요.")
-                    .font(.title3).bold()
-                    .padding(.horizontal)
-            }
             Spacer(minLength: 20)
             Divider()
             Spacer(minLength: 20)
@@ -201,6 +196,7 @@ struct RecommendedSites: View {
                 .listStyle(GroupedListStyle())
                 .padding()
                 .navigationTitle("추천 사이트")
+                .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
