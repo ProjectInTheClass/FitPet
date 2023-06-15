@@ -12,18 +12,19 @@ struct WhyModalView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 25) {
-                Spacer().frame(height: 25)
-                Text("왜 이런 결과가 나왔나요?")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(.bottom)
-                Spacer().frame(height: 0)
+                Spacer().frame(height: 15)
+             
                 VStack(alignment: .center) {
-                    Image(systemName: "exclamationmark.triangle.fill")
+                    Image("?!")
                         .resizable()
-                        .frame(width: 75, height: 75)
+                        .frame(width: 100, height: 100)
                         .foregroundColor(.yellow)
                         .padding()
+                    Text("왜 이런 결과가 나왔나요?")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .padding(.bottom)
+                    Spacer().frame(height: 15)
                     Text("검사 결과 중 가장 중요하게 다뤄지는 부분은 알레르기 반응입니다. 따라서 특정 동물에게 알레르기가 있다면 해당 동물은 결과에서 비교적 낮은 점수로 측정됩니다.")
                         .fixedSize(horizontal: false, vertical: true)
                 }

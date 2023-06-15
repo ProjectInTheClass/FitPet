@@ -204,4 +204,4 @@ struct FortuneView_Previews: PreviewProvider {
 
 //달력 높이 줄이세요.
 //datepicker custom 하기
-
+//배열에서 랜덤하게 값들이 배치되게끔 변경

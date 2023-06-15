@@ -28,7 +28,7 @@ struct AnimalDetailView: View {
                                 HStack {
                                     Image(systemName: "globe")
                                         .resizable()
-                                        .frame(width: 10, height: 10)
+                                        .frame(width: 20, height: 20)
                                     Text("추천 사이트").bold().foregroundColor(.blue)
                                 }
                             })
@@ -36,34 +36,35 @@ struct AnimalDetailView: View {
                     VStack (alignment:.leading, spacing:20) {
                         Text(animal.headline)
                             .font(.headline)
-                        Text("\(animal.title)에 대해 더 알아보기")
+                        Text("아래에서 \(animal.title)에 대해 더 알아보기")
                             .font(.title3)
                             .bold()
+                            .foregroundColor(.secondary)
                         Divider()
                         VStack (alignment:.leading, spacing:10) {
-                            Text("기본적인 정보")
+                            Text("• 기본적인 정보")
                                 .bold()
                             Text(animal.description)
                             Divider()
-                            Text("행동 특성")
+                            Text("• 행동 특성")
                                 .bold()
                             Text(animal.characteristics)
                         }
                         Divider()
                         VStack (alignment:.leading, spacing:10) {
-                            Text("식이 및 영양 관리법")
+                            Text("• 식이 및 영양 관리법")
                                 .bold()
                             Text(animal.nutrition)
                         }
                         Divider()
                         VStack (alignment:.leading, spacing:20) {
-                            Text("수명")
+                            Text("• 수명")
                                 .bold()
                             Text(animal.lifecycle)
                         }
                         Divider()
                         VStack (alignment:.leading, spacing:20) {
-                            Text("\(animal.title)의 품종")
+                            Text("• \(animal.title)의 품종")
                                 .bold()
                             ScrollView(.horizontal) {
                                 HStack(spacing: 20) {
@@ -79,7 +80,7 @@ struct AnimalDetailView: View {
                                         }
                                     }
                                 }
-                            }.padding(.all)
+                            }.padding(.bottom)
                         }
                     }
                 }
