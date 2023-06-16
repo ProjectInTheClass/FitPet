@@ -20,6 +20,7 @@
 		4198EB2829B9A95A00C2906E /* QualificationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198EB2729B9A95A00C2906E /* QualificationTest.swift */; };
 		AC2DCA1A2A09284D00196611 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2DCA192A09284D00196611 /* Color.xcassets */; };
 		AC2DCA1D2A0929A700196611 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCA1C2A0929A700196611 /* ColorExtention.swift */; };
+		AC321A122A3C32890090A2D4 /* OnboardingPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC321A112A3C32890090A2D4 /* OnboardingPage3.swift */; };
 		AC36BA2829A9ECC7005B90D2 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36BA2629A9ECC7005B90D2 /* MainPage.swift */; };
 		AC436D652A31A7C600A5EC73 /* WhyFortuneModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC436D642A31A7C600A5EC73 /* WhyFortuneModalView.swift */; };
 		AC436D672A32021900A5EC73 /* RandomBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC436D662A32021900A5EC73 /* RandomBoxView.swift */; };
@@ -60,6 +61,7 @@
 		4198EB2729B9A95A00C2906E /* QualificationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualificationTest.swift; sourceTree = "<group>"; };
 		AC2DCA192A09284D00196611 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		AC2DCA1C2A0929A700196611 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		AC321A112A3C32890090A2D4 /* OnboardingPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage3.swift; sourceTree = "<group>"; };
 		AC36BA2629A9ECC7005B90D2 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		AC436D642A31A7C600A5EC73 /* WhyFortuneModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFortuneModalView.swift; sourceTree = "<group>"; };
 		AC436D662A32021900A5EC73 /* RandomBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBoxView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				AC8DB54F29C0478D0047C4C3 /* Onboarding_intro.swift */,
 				AC8DB55229C0478D0047C4C3 /* OnboardingPage1.swift */,
 				AC8DB55129C0478D0047C4C3 /* OnboardingPage2.swift */,
+				AC321A112A3C32890090A2D4 /* OnboardingPage3.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				AC888EA129A334D200FA8026 /* WebView.swift in Sources */,
 				AC83DA0429B3052A00637B95 /* FitPetTest.swift in Sources */,
 				4198EB1629B98AF400C2906E /* test02.swift in Sources */,
+				AC321A122A3C32890090A2D4 /* OnboardingPage3.swift in Sources */,
 				AC8B694529A264B200286198 /* AnimalEncyclopedia.swift in Sources */,
 				AC8BF5C42A1C8FB1005C023B /* FortuneView.swift in Sources */,
 				ACA18AA5299FB82B00B4F82C /* AnimalsData.swift in Sources */,

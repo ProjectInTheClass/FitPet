@@ -1,13 +1,13 @@
 //
-//  OnboardingPage2.swift
+//  OnboardingPage3.swift
 //  FitPet
 //
-//  Created by 백대홍 on 2023/02/09.
+//  Created by 백대홍 on 2023/06/16.
 //
 
 import SwiftUI
 
-struct OnboardingPage3:View {
+struct OnboardingPage1: View {
     @Binding var ShowOnboarding: Bool
     let showsDismissButton: Bool
     var body: some View {
@@ -20,14 +20,14 @@ struct OnboardingPage3:View {
                     .resizable()
                     .frame(width: 250, height:  250)
                 
-                Text("자신에게 맞는 반려동물을 찾으셨나요?")
+                Text("오늘 내 반려동물의 운세는?")
                     .padding()
                     .font(.title).bold()
                     .foregroundColor(.black)
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.center)
                 
-                Text("다양한 반려동물 정보를 한곳에서 확인하고 더 많은 정보를 커뮤니티에서 공유해보세요")
+                Text("소소하게 오늘 반려동물의 운세를 확인해보세요!")
                     .padding()
                     .font(.subheadline).bold()
                     .fixedSize(horizontal: false, vertical: true)
@@ -54,8 +54,8 @@ struct OnboardingPage3:View {
     }
 }
 
-struct OnboardingPage3_Previews: PreviewProvider {
+struct OnboardingPage1_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingPage3(ShowOnboarding: .constant(false),showsDismissButton: false)
+        OnboardingPage1(ShowOnboarding: .constant(false),showsDismissButton: false)
     }
 }
