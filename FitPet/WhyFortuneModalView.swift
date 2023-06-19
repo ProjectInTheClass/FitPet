@@ -31,14 +31,18 @@ struct WhyFortuneModalView: View {
                         Text("가볍게 보는 운세이니 재미로만 생각해주세요!")
                             .bold()
                         
-                        Text("이미 키우고 있는 반려동물이 있다면 반려동물의 생년월일을 입력해서 간단한 운세를 매일 확인해보세요.")
+                        Text("이 운세 보기 기능은 어떠한 근거를 두고 있지 않습니다. 가볍게 재미로 보는 운세이니 이점 참고 하여 이용하시면 좋을것 같습니다.")
                             .fixedSize(horizontal: false, vertical: true)
                         
                         Divider()
                         
-                        Text("?")
+                        Text("사용법")
                             .bold()
-                        Text("다른 재미있는 테스트가 리뷰에서 작성해주시면 반영하겠습니다!")
+                        Text("1. 키우고 있는 반려동물의 생년월일을 입력해주세요.")
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text("2. 하단의 운세 보기 버튼을 터치하여 운세를 확인 해보세요.")
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text("3. 각각의 운세 목록을 스크롤을 통해 자세한 사항을 확인 해주세요.")
                             .fixedSize(horizontal: false, vertical: true)
                     }
                    

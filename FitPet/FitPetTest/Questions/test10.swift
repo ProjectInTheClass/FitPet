@@ -198,11 +198,7 @@ struct test10: View {
                             })
                     }
                     Spacer()
-                    VStack {
-                        ForEach(dict.keys.sorted(), id: \.self) { key in
-                            Text("\(key): \(dict[key] ?? 0)")
-                        }
-                    }
+                    
                 }
                 .padding()
             }
