@@ -15,8 +15,9 @@ struct Animal_Web: View {
                 Spacer().frame(height: 25)
                 Text("다양한 정보를 통해 반려동물에 대해 학습해 보세요!")
                     .font(.title.bold())
+                    .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.leading)
-                    .padding()
+                    
                 HStack {
                     Text("잘 모르겠다면 상단의")
                     Image(systemName: "questionmark.circle.fill")

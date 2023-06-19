@@ -36,15 +36,19 @@ struct WhyFortuneModalView: View {
                         
                         Divider()
                         
-                        Text("사용법")
-                            .bold()
-                        Text("1. 키우고 있는 반려동물의 생년월일을 입력해주세요.")
-                            .fixedSize(horizontal: false, vertical: true)
-                        Text("2. 하단의 운세 보기 버튼을 터치하여 운세를 확인 해보세요.")
-                            .fixedSize(horizontal: false, vertical: true)
-                        Text("3. 각각의 운세 목록을 스크롤을 통해 자세한 사항을 확인 해주세요.")
-                            .fixedSize(horizontal: false, vertical: true)
+                            Text("사용법")
+                                .bold()
+                            Text("키우고 있는 반려동물의 생년월일을 입력해주세요.")
+                                .multilineTextAlignment(.leading)
+                            Text("하단의 운세 보기 버튼을 터치하여 운세를 확인 해보세요.")
+                                .multilineTextAlignment(.leading)
+                                .fixedSize(horizontal: false, vertical: true)
+                            Text("각각의 운세 목록을 스크롤을 통해 자세한 사항을 확인 해주세요.")
+                                .multilineTextAlignment(.leading)
+                                .fixedSize(horizontal: false, vertical: true)
+                        
                     }
+                    .padding(.all)
                    
                 }
                 Spacer().frame(height: 100)

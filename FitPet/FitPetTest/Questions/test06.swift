@@ -16,8 +16,10 @@ struct test06: View {
                             .padding(.horizontal,20)
                         Spacer()
                     }
-                }.frame(width: .infinity, height: 80).ignoresSafeArea()
+                }.frame(height: 50).ignoresSafeArea()
                 ProgressBar(progress: 60)
+                Text("\(currentPage) / \(totalPages)")
+                    .font(.title3).bold()
                 VStack {
                     Spacer()
                     Text("어떤 활동을 선호하나요?")

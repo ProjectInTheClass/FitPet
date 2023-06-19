@@ -16,8 +16,10 @@ struct test09: View {
                             .padding(.horizontal,20)
                         Spacer()
                     }
-                }.frame(width: .infinity, height: 80).ignoresSafeArea()
+                }.frame(height: 50).ignoresSafeArea()
                 ProgressBar(progress: 90)
+                Text("\(currentPage) / \(totalPages)")
+                    .font(.title3).bold()
                 VStack {
                     Spacer()
                     Text("반려동물의 분양가는 어느 정도까지 고려하고 있나요?")

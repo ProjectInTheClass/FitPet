@@ -16,7 +16,7 @@ struct test01: View {
                             .padding(.horizontal,20)
                         Spacer()
                     }
-                }.frame(width: .infinity, height: 80).ignoresSafeArea()
+                }.frame(height: 50).ignoresSafeArea()
                
                 ProgressBar(progress: 10)
                 Text("\(currentPage) / \(totalPages)")

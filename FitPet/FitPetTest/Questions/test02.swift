@@ -18,10 +18,11 @@ struct test02: View {
                             .padding(.horizontal,20)
                         Spacer()
                     }
-                }.frame(width: .infinity, height: 80).ignoresSafeArea()
+                }.frame(height: 50).ignoresSafeArea()
                 
                 ProgressBar(progress: 20)
                 Text("\(currentPage) / \(totalPages)")
+                    .font(.title3).bold()
                 VStack {
                     Spacer()
                     Text("생활 공간은 어느 정도 크기인가요?")

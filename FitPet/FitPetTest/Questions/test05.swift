@@ -26,13 +26,16 @@ struct test05: View {
                             .padding(.horizontal,20)
                         Spacer()
                     }
-                }.frame(width: .infinity, height: 80).ignoresSafeArea()
+                }.frame(height: 50).ignoresSafeArea()
                 ProgressBar(progress: 50)
+                Text("\(currentPage) / \(totalPages)")
+                    .font(.title3).bold()
                 VStack {
-                    Spacer().frame(height: 100)
+                    Spacer()
                     Text("싫어하거나 알레르기가 있는 동물이 있으신가요? \n (복수 응답 가능)")
                         .font(.largeTitle).bold()
                         .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
                     Spacer().frame(height: 50)
                     LazyVGrid(columns: columns) {
                         Button {
@@ -197,7 +200,7 @@ struct test05: View {
                                 }
                             })
                     }
-                    Spacer()
+                    Spacer().frame(height: 50)
                     
                 }
                 .padding()
