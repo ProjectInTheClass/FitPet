@@ -14,11 +14,12 @@
 - 개발 언어 : SwiftUI
 
 ### Preview 
-
-<br/>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/75058050/226093441-baa522ed-83af-4b60-8b16-db60b3b88d0d.png" width="200" height="400"/> 
-<img src="https://user-images.githubusercontent.com/75058050/226093442-1187cf44-8ca4-4694-b172-a881865ea680.png" width="200" height="400"/> 
-<img src="https://user-images.githubusercontent.com/75058050/226093445-9ff14194-723f-4bc3-bc15-f1c4ee3b49bd.png" width="200" height="400"/> 
-<img src="https://user-images.githubusercontent.com/75058050/226093447-b870b8cb-f186-4c0e-992c-fa9220a211a4.png" width="200" height="400"/> 
-
+<br />
+<div align="center">
+  <hscrollView>
+   <img src="https://github.com/ProjectInTheClass/FitPet/assets/75058050/8d3997d9-94ab-4ab1-9a69-c5be61ce8beb" width="200" height="200"/> 
+   <img src="https://github.com/ProjectInTheClass/FitPet/assets/75058050/e9600246-6104-4f59-85f8-63c9866fe874" width="200" height="200"/> 
+   <img src="https://github.com/ProjectInTheClass/FitPet/assets/75058050/23e0aa6c-5d7e-49bb-b180-6d9159412c0a" width="200" height="200"/> 
+   <img src="https://github.com/ProjectInTheClass/FitPet/assets/75058050/c01cc364-213a-428c-b5ca-78c51c559472" width="200" height="200"/> 
+  </hscrollView>
+</div>
