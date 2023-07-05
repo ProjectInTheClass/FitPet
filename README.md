@@ -1,4 +1,4 @@
-# FitPet
+# WithPet
 
 ### 반려 동물 추천 앱
 ### **📜 OverView**
@@ -7,6 +7,7 @@
 ### 🧑‍💻 팀원
 - 백대홍
 - 박소정
+  
 ### ⚙️ 개발 환경
 - 개발 도구 : Xcode
 - 협업 도구 : Miroboard, Github, Notion 
