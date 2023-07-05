@@ -24,10 +24,3 @@
   </hscrollView>
 </div>
 
-
-
-
-### Download
-<div align="center">
-![appstore](https://github.com/ProjectInTheClass/FitPet/assets/75058050/17e683aa-b5f6-4da2-b441-9c39735d1002.png)](https://apps.apple.com/kr/app/%EC%9C%84%EB%93%9C%ED%8E%AB-withpet/id6450793840)
-</div>
