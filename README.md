@@ -23,3 +23,11 @@
    <img src="https://github.com/ProjectInTheClass/FitPet/assets/75058050/c01cc364-213a-428c-b5ca-78c51c559472" width="200" height="200"/> 
   </hscrollView>
 </div>
+
+
+
+### Download
+<div align="center">
+<img src="https://github.com/ProjectInTheClass/FitPet/assets/75058050/8e536e6c-e599-4637-b6b3-4ea29ec510ee" width="100" height="100 "onclick="window.location.href='https://apps.apple.com/kr/app/%EC%9C%84%EB%93%9C%ED%8E%AB-withpet/id6450793840'"/>  
+</div>
+
