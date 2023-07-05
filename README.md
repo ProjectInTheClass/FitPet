@@ -26,8 +26,8 @@
 
 
 
+
 ### Download
 <div align="center">
-<img src="https://github.com/ProjectInTheClass/FitPet/assets/75058050/8e536e6c-e599-4637-b6b3-4ea29ec510ee" width="100" height="100 "onclick="window.location.href='https://apps.apple.com/kr/app/%EC%9C%84%EB%93%9C%ED%8E%AB-withpet/id6450793840'"/>  
+![appstore](https://github.com/ProjectInTheClass/FitPet/assets/75058050/17e683aa-b5f6-4da2-b441-9c39735d1002.png)](https://apps.apple.com/kr/app/%EC%9C%84%EB%93%9C%ED%8E%AB-withpet/id6450793840)
 </div>
-
